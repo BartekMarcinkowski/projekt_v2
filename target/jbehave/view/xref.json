@@ -1,0 +1,48 @@
+{"xref": {
+  "whenMade": 1463586322701,
+  "createdBy": "JBehave",
+  "metaFilter": "-ignore",
+  "meta": [],
+  "stories": [
+    {
+      "description": "",
+      "narrative": "",
+      "name": "PoprawneLogowanie.story",
+      "path": "stories/Logowanie/PoprawneLogowanie.story",
+      "html": "stories.Logowanie.PoprawneLogowanie.html",
+      "meta": "",
+      "scenarios": "Scenario:Poprawne logowanie do systemu ICM\nGiven uzytkownik ma otwarta strone logowania\nWhen poprawnie wprowadzi email i haslo\nThen uzytkownik powinien zostac zalogowany na strone z lista incydentow\n\n\n",
+      "passed": true,
+      "pending": false,
+      "started": 1463586276358,
+      "duration": 12282
+    },
+    {
+      "description": "",
+      "narrative": "",
+      "name": "DodanieNowegoPracownika.story",
+      "path": "stories/DodawaniePracownika/DodanieNowegoPracownika.story",
+      "html": "stories.DodawaniePracownika.DodanieNowegoPracownika.html",
+      "meta": "",
+      "scenarios": "Scenario:Dodanie nowego pracownika\nGiven zalogowany administrator jest w zakladce uzytkownicy\nWhen wybierze opcje dodaj pracownika\nAnd wprowdzi nazwe, email i haslo\nThen konto powinno zostac utworzone\n\n\n",
+      "passed": true,
+      "pending": false,
+      "started": 1463586289408,
+      "duration": 17645
+    },
+    {
+      "description": "",
+      "narrative": "",
+      "name": "ZakladanieKonta.story",
+      "path": "stories/Zakladanie Konta/ZakladanieKonta.story",
+      "html": "stories.Zakladanie Konta.ZakladanieKonta.html",
+      "meta": "",
+      "scenarios": "Scenario:Poprawne zalozenie nowego konta\nGiven uzytkownik ma otwarta strone rejstracji\nWhen wprowadzi nazwe uzytkownika, email i haslo\nThen uzytkownik powinien zostac zalogowany\n\n\n",
+      "passed": true,
+      "pending": false,
+      "started": 1463586307467,
+      "duration": 10834
+    }
+  ],
+  "stepMatches": []
+}}

@@ -1,0 +1,7 @@
+<story path="stories/Logowanie/PoprawneLogowanie.story" title="">
+<scenario keyword="Scenario:" title="Poprawne logowanie do systemu ICM">
+<step outcome="successful">Given uzytkownik ma otwarta strone logowania</step>
+<step outcome="successful">When poprawnie wprowadzi email i haslo</step>
+<step outcome="successful">Then uzytkownik powinien zostac zalogowany na strone z lista incydentow</step>
+</scenario>
+</story>

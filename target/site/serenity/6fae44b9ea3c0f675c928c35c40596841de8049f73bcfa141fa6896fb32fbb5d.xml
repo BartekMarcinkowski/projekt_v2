@@ -1,0 +1,107 @@
+<acceptance-test-run title="Dodanie nowego pracownika" name="Dodanie nowego pracownika" steps="12" successful="12" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="17637" timestamp="2016-05-18T17:44:49.415+02:00" session-id="fc5b537e-7692-42fa-b62d-21a0bddeff18">
+  <user-story id="DodanieNowegoPracownika" name="Dodanie nowego pracownika" path="stories/DodawaniePracownika/DodanieNowegoPracownika.story"/>
+  <tags>
+    <tag name="Dodawanie pracownika" type="feature"/>
+    <tag name="Dodawanie pracownika/Dodanie nowego pracownika" type="story"/>
+  </tags>
+  <test-group name="Given zalogowany administrator jest w zakladce uzytkownicy" result="SUCCESS">
+    <screenshots>
+      <screenshot image="ab14f246b45330f03974997896d220b0.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="5807">
+      <screenshots>
+        <screenshot image="6c3a89bbfc175351796ad0362bcde23e.png"/>
+      </screenshots>
+      <description>Otworz strone logowania</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1053">
+      <screenshots>
+        <screenshot image="6c3a89bbfc175351796ad0362bcde23e.png"/>
+        <screenshot image="cd978d08e3bb2afb9180e9cbdd068289.png"/>
+      </screenshots>
+      <description>Wpisz email</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="923">
+      <screenshots>
+        <screenshot image="cd978d08e3bb2afb9180e9cbdd068289.png"/>
+        <screenshot image="cbb996963ea1a3b581b7e03583e3da98.png"/>
+      </screenshots>
+      <description>Wpisz haslo</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="936">
+      <screenshots>
+        <screenshot image="cbb996963ea1a3b581b7e03583e3da98.png"/>
+        <screenshot image="0e1b8812b4139d3f032578a7c2dd423c.png"/>
+      </screenshots>
+      <description>Wcisnij przycisk zaloguj sie</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="785">
+      <screenshots>
+        <screenshot image="0e1b8812b4139d3f032578a7c2dd423c.png"/>
+        <screenshot image="ab14f246b45330f03974997896d220b0.png"/>
+      </screenshots>
+      <description>Wcisnij przycisk uzytkownicy</description>
+    </test-step>
+  </test-group>
+  <test-group name="When wybierze opcje dodaj pracownika" result="SUCCESS">
+    <screenshots>
+      <screenshot image="96fa2ce34bedc855dd4ee80ee63e1147.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1009">
+      <screenshots>
+        <screenshot image="96fa2ce34bedc855dd4ee80ee63e1147.png"/>
+      </screenshots>
+      <description>Kliknij dodaj pracownika</description>
+    </test-step>
+  </test-group>
+  <test-group name="And wprowdzi nazwe, email i haslo" result="SUCCESS">
+    <screenshots>
+      <screenshot image="3a95a44346016e5a539cffb1ea0cb775.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1077">
+      <screenshots>
+        <screenshot image="f4af96d3defb6a25a7242c30a2eec982.png"/>
+      </screenshots>
+      <description>Wpisz nazwe</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1044">
+      <screenshots>
+        <screenshot image="f4af96d3defb6a25a7242c30a2eec982.png"/>
+        <screenshot image="3c5d34b51b65c8e81c8a1c27a253364a.png"/>
+      </screenshots>
+      <description>Wprowadz email</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="937">
+      <screenshots>
+        <screenshot image="3c5d34b51b65c8e81c8a1c27a253364a.png"/>
+        <screenshot image="36178115fb3ce188e9cc1f7d50c0206f.png"/>
+      </screenshots>
+      <description>Wprowadz haslo</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1009">
+      <screenshots>
+        <screenshot image="36178115fb3ce188e9cc1f7d50c0206f.png"/>
+        <screenshot image="9d406587df7efe8a232ff19f79237ad6.png"/>
+      </screenshots>
+      <description>Potwierdz haslo</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1197">
+      <screenshots>
+        <screenshot image="9d406587df7efe8a232ff19f79237ad6.png"/>
+        <screenshot image="3a95a44346016e5a539cffb1ea0cb775.png"/>
+      </screenshots>
+      <description>Wcisnij przycisk dodaj pracownika</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then konto powinno zostac utworzone" result="SUCCESS">
+    <screenshots>
+      <screenshot image="3a95a44346016e5a539cffb1ea0cb775.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="462">
+      <screenshots>
+        <screenshot image="3a95a44346016e5a539cffb1ea0cb775.png"/>
+      </screenshots>
+      <description>Assert napis konto utworzone</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

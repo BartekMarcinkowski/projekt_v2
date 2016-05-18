@@ -1,0 +1,8 @@
+<story path="stories/DodawaniePracownika/DodanieNowegoPracownika.story" title="">
+<scenario keyword="Scenario:" title="Dodanie nowego pracownika">
+<step outcome="successful">Given zalogowany administrator jest w zakladce uzytkownicy</step>
+<step outcome="successful">When wybierze opcje dodaj pracownika</step>
+<step outcome="successful">And wprowdzi nazwe, email i haslo</step>
+<step outcome="successful">Then konto powinno zostac utworzone</step>
+</scenario>
+</story>

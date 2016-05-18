@@ -1,0 +1,8 @@
+#org.jbehave.core.embedder.StoryManager
+#Wed May 18 17:45:18 CEST 2016
+stories/DodawaniePracownika/DodanieNowegoPracownika.story=17000
+stories/Logowanie/PoprawneLogowanie.story=13000
+threads=1
+total=41000
+stories/Zakladanie\ Konta/ZakladanieKonta.story=11000
+threadAverage=41000

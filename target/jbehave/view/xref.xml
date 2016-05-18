@@ -1,0 +1,67 @@
+<xref>
+  <whenMade>1463586322701</whenMade>
+  <createdBy>JBehave</createdBy>
+  <metaFilter>-ignore</metaFilter>
+  <meta/>
+  <stories>
+    <story>
+      <description></description>
+      <narrative></narrative>
+      <name>PoprawneLogowanie.story</name>
+      <path>stories/Logowanie/PoprawneLogowanie.story</path>
+      <html>stories.Logowanie.PoprawneLogowanie.html</html>
+      <meta></meta>
+      <scenarios>Scenario:Poprawne logowanie do systemu ICM
+Given uzytkownik ma otwarta strone logowania
+When poprawnie wprowadzi email i haslo
+Then uzytkownik powinien zostac zalogowany na strone z lista incydentow
+
+
+</scenarios>
+      <passed>true</passed>
+      <pending>false</pending>
+      <started>1463586276358</started>
+      <duration>12282</duration>
+    </story>
+    <story>
+      <description></description>
+      <narrative></narrative>
+      <name>DodanieNowegoPracownika.story</name>
+      <path>stories/DodawaniePracownika/DodanieNowegoPracownika.story</path>
+      <html>stories.DodawaniePracownika.DodanieNowegoPracownika.html</html>
+      <meta></meta>
+      <scenarios>Scenario:Dodanie nowego pracownika
+Given zalogowany administrator jest w zakladce uzytkownicy
+When wybierze opcje dodaj pracownika
+And wprowdzi nazwe, email i haslo
+Then konto powinno zostac utworzone
+
+
+</scenarios>
+      <passed>true</passed>
+      <pending>false</pending>
+      <started>1463586289408</started>
+      <duration>17645</duration>
+    </story>
+    <story>
+      <description></description>
+      <narrative></narrative>
+      <name>ZakladanieKonta.story</name>
+      <path>stories/Zakladanie Konta/ZakladanieKonta.story</path>
+      <html>stories.Zakladanie Konta.ZakladanieKonta.html</html>
+      <meta></meta>
+      <scenarios>Scenario:Poprawne zalozenie nowego konta
+Given uzytkownik ma otwarta strone rejstracji
+When wprowadzi nazwe uzytkownika, email i haslo
+Then uzytkownik powinien zostac zalogowany
+
+
+</scenarios>
+      <passed>true</passed>
+      <pending>false</pending>
+      <started>1463586307467</started>
+      <duration>10834</duration>
+    </story>
+  </stories>
+  <stepMatches/>
+</xref>

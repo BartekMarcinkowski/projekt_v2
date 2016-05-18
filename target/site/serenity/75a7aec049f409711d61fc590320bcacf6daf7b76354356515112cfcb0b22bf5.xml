@@ -1,0 +1,68 @@
+<acceptance-test-run title="Poprawne zalozenie nowego konta" name="Poprawne zalozenie nowego konta" steps="7" successful="7" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="10830" timestamp="2016-05-18T17:45:07.470+02:00" session-id="fb2726a0-68fb-4614-a5db-6729c12d834e">
+  <user-story id="ZakladanieKonta" name="Zakladanie konta" path="stories/Zakladanie Konta/ZakladanieKonta.story"/>
+  <tags>
+    <tag name="Zakladanie konta" type="feature"/>
+    <tag name="Zakladanie konta/Zakladanie konta" type="story"/>
+  </tags>
+  <test-group name="Given uzytkownik ma otwarta strone rejstracji" result="SUCCESS">
+    <screenshots>
+      <screenshot image="b5d5fed0577abbcff44443337f6da7ea.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="5206">
+      <screenshots>
+        <screenshot image="b5d5fed0577abbcff44443337f6da7ea.png"/>
+      </screenshots>
+      <description>Otworz strone rejstracji</description>
+    </test-step>
+  </test-group>
+  <test-group name="When wprowadzi nazwe uzytkownika, email i haslo" result="SUCCESS">
+    <screenshots>
+      <screenshot image="3c37e64d105f797b750b6df752e133d2.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1010">
+      <screenshots>
+        <screenshot image="ae732400390da8c6989968b8d9b65bae.png"/>
+      </screenshots>
+      <description>Wpisz nazwe uzytkownika</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="963">
+      <screenshots>
+        <screenshot image="ae732400390da8c6989968b8d9b65bae.png"/>
+        <screenshot image="98658571bb2817deff70a3c5de75953d.png"/>
+      </screenshots>
+      <description>Wpisz email1</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="844">
+      <screenshots>
+        <screenshot image="98658571bb2817deff70a3c5de75953d.png"/>
+        <screenshot image="81d82e6023fae927e1d395c34da93b02.png"/>
+      </screenshots>
+      <description>Wpisz haslo1</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="857">
+      <screenshots>
+        <screenshot image="81d82e6023fae927e1d395c34da93b02.png"/>
+        <screenshot image="47cea644c57e330a650d553dafe9c1f0.png"/>
+      </screenshots>
+      <description>Potwierdz haslo1</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="996">
+      <screenshots>
+        <screenshot image="47cea644c57e330a650d553dafe9c1f0.png"/>
+        <screenshot image="3c37e64d105f797b750b6df752e133d2.png"/>
+      </screenshots>
+      <description>Wcisnij przycisk zarejstruj</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then uzytkownik powinien zostac zalogowany" result="SUCCESS">
+    <screenshots>
+      <screenshot image="3c37e64d105f797b750b6df752e133d2.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="308">
+      <screenshots>
+        <screenshot image="3c37e64d105f797b750b6df752e133d2.png"/>
+      </screenshots>
+      <description>Assert przycisk logout</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>
