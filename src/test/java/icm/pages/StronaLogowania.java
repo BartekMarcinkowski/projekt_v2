@@ -32,4 +32,5 @@ public class StronaLogowania extends PageObject {
     public void wcisnijPrzyciskZalogujSie() {
         element(przyciskZaloguj).click();
     }
+
 }

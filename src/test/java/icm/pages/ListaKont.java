@@ -18,11 +18,27 @@ public class ListaKont extends PageObject{
     @FindBy (xpath = "//span[contains(.,'Konto zostało utworzone')]")
     private WebElement napisKontoUtworzone;
 
+    @FindBy (xpath = "//button[contains(.,'Filter')]")
+    private WebElement przyciskFiltruj;
+
+    @FindBy(xpath = "//a[contains(.,'ROLE_USER')]")
+    private WebElement roleUser;
+
     public void kliknijDodajPracownika() {
         element(przyciskDodajPracownika).click();
     }
 
     public void assertNapisKontoUtworzone() {
         element(napisKontoUtworzone).shouldContainOnlyText("Konto zostało utworzone");
+    }
+
+/**Filtrowanie pracownikow*/
+
+    public void kliknijFilter() {
+        element(przyciskFiltruj).click();
+    }
+
+    public void kliknijRoleUser() {
+        element(roleUser).click();
     }
 }
