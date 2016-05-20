@@ -1,4 +1,4 @@
-Projekt stworzony przez grupę: Joanna Sobisz, Aneta Prześladkiewicz, Przemysław Kujawa, Bartosz marcinkowski
+Projekt stworzony przez grupę: Joanna Sobisz, Aneta Prześladkiewicz, Przemysław Kujawa, Bartosz marcinkowski.
 Projekt wykonywany w ramach pracy dyplomowej na temat: "Projekt i wykonanie automatycznych testów funkcjonalnych wg filozofii BDD za pomocą jBehave i Selenium".
 Projekt maven stworzony w programie IntelliJ IDEA, wykorzystuje Serenity, jBehave, Selenium.
 Jest to projekt testów automatycznych aplikacji ICM.
