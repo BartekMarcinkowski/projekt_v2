@@ -1,0 +1,58 @@
+<acceptance-test-run title="Usuniecie pracownika z listy" name="Usuniecie pracownika z listy" steps="8" successful="5" failures="0" skipped="0" ignored="0" pending="3" annotated-result="PENDING" result="PENDING" duration="32065" timestamp="2016-05-20T21:24:08.469+02:00" session-id="4e179449-9b4d-4170-ae7f-5428b9e55e70">
+  <user-story id="UsunieciePracownika" name="Usuniecie pracownika" path="stories/UsuwaniePracownika/UsunieciePracownika.story"/>
+  <tags>
+    <tag name="Usuwanie pracownika" type="feature"/>
+    <tag name="Usuwanie pracownika/Usuniecie pracownika" type="story"/>
+  </tags>
+  <test-group name="Given zalogowany administrator jest w zakladce uzytkownicy" result="SUCCESS">
+    <screenshots>
+      <screenshot image="1d0a0774641714ed28e89c0177cdf06a.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="23633">
+      <screenshots>
+        <screenshot image="6c3a89bbfc175351796ad0362bcde23e.png"/>
+      </screenshots>
+      <description>Otworz strone logowania</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1381">
+      <screenshots>
+        <screenshot image="6c3a89bbfc175351796ad0362bcde23e.png"/>
+        <screenshot image="cd978d08e3bb2afb9180e9cbdd068289.png"/>
+      </screenshots>
+      <description>Wpisz email</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1171">
+      <screenshots>
+        <screenshot image="cd978d08e3bb2afb9180e9cbdd068289.png"/>
+        <screenshot image="cbb996963ea1a3b581b7e03583e3da98.png"/>
+      </screenshots>
+      <description>Wpisz haslo</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1966">
+      <screenshots>
+        <screenshot image="cbb996963ea1a3b581b7e03583e3da98.png"/>
+        <screenshot image="0e1b8812b4139d3f032578a7c2dd423c.png"/>
+      </screenshots>
+      <description>Wcisnij przycisk zaloguj sie</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1135">
+      <screenshots>
+        <screenshot image="0e1b8812b4139d3f032578a7c2dd423c.png"/>
+        <screenshot image="1d0a0774641714ed28e89c0177cdf06a.png"/>
+      </screenshots>
+      <description>Wcisnij przycisk uzytkownicy</description>
+    </test-step>
+  </test-group>
+  <test-step result="PENDING" duration="123">
+    <screenshots>
+      <screenshot image="1d0a0774641714ed28e89c0177cdf06a.png"/>
+    </screenshots>
+    <description>When wyszuka pracownika</description>
+  </test-step>
+  <test-step result="PENDING" duration="1">
+    <description>And wybierze akcje delete</description>
+  </test-step>
+  <test-step result="PENDING" duration="0">
+    <description>Then konto powinno zostac usuniete</description>
+  </test-step>
+</acceptance-test-run>

@@ -1,0 +1,7 @@
+<story path="stories/FiltrowanieIncydentow/FiltrowanieIncydentow.story" title="">
+<scenario keyword="Scenario:" title="Filtrowanie incydentow po statusie &quot;zgloszony&quot;">
+<step outcome="successful">Given pracownik jest zalogowany i znajduje sie w zakladce incydenty</step>
+<step outcome="successful">When filtruje incydenty po statusie zgloszony</step>
+<step outcome="successful">Then na liscie incydentow pozostaja incydenty ze statusem zgloszony</step>
+</scenario>
+</story>

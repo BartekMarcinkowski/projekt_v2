@@ -1,0 +1,56 @@
+<story path="stories/ObslugaIncydentu/ObslugaIncydentuAdministrator.story" title="">
+<scenario keyword="Scenario:" title="Narrative:
+Jako administrator
+Chce miec dostep do formularza obslugi incydentow
+Aby miec moc zarzadzac incydentami
+
+
+
+Scenario1: administrator zmienia status incydentu z &quot;niepotwierdzony&quot; lub &quot;rozwiazany&quot;">
+<step outcome="pending" keyword="PENDING">Given formualarz obslugi incydentu posiada status,przypisanie incydentu, opis wykonanych prac</step>
+<step outcome="pending" keyword="PENDING">When administrator zmienia status incydentu</step>
+<step outcome="pending" keyword="PENDING">Then incydent posiada nowy status &quot;zgloszony&quot; lub &quot;zamkniety&quot;
+
+
+Scenario2: administrator przypisuje incydent do pracownika lub innego administratora</step>
+<step outcome="pending" keyword="PENDING">Given formualarz obslugi incydentu posiada status,przypisanie incydentu, opis wykonanych prac</step>
+<step outcome="pending" keyword="PENDING">When administrator przypisuje incydent do pracownika lub innego administratora</step>
+<step outcome="pending" keyword="PENDING">Then w opisie incdentu pojawia sie nowy teskt</step>
+<pendingMethod>@Given(&quot;formualarz obslugi incydentu posiada status,przypisanie incydentu, opis wykonanych prac&quot;)
+@Pending
+public void givenFormualarzObslugiIncydentuPosiadaStatusprzypisanieIncydentuOpisWykonanychPrac() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@When(&quot;administrator zmienia status incydentu&quot;)
+@Pending
+public void whenAdministratorZmieniaStatusIncydentu() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@Then(&quot;incydent posiada nowy status \&quot;zgloszony\&quot; lub \&quot;zamkniety\&quot;\r\n\r\n\r\nScenario2: administrator przypisuje incydent do pracownika lub innego administratora&quot;)
+@Pending
+public void thenIncydentPosiadaNowyStatuszgloszonyLubzamknietyScenario2AdministratorPrzypisujeIncydentDoPracownikaLubInnegoAdministratora() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@Given(&quot;formualarz obslugi incydentu posiada status,przypisanie incydentu, opis wykonanych prac&quot;)
+@Pending
+public void givenFormualarzObslugiIncydentuPosiadaStatusprzypisanieIncydentuOpisWykonanychPrac() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@When(&quot;administrator przypisuje incydent do pracownika lub innego administratora&quot;)
+@Pending
+public void whenAdministratorPrzypisujeIncydentDoPracownikaLubInnegoAdministratora() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@Then(&quot;w opisie incdentu pojawia sie nowy teskt&quot;)
+@Pending
+public void thenWOpisieIncdentuPojawiaSieNowyTeskt() {
+  // PENDING
+}
+</pendingMethod>
+</scenario>
+</story>

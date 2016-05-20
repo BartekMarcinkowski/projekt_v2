@@ -1,0 +1,56 @@
+<story path="stories/SzczegolyIncydentu/SzczegolyIncydentuPracownik.story" title="">
+<scenario keyword="Scenario:" title="Narrative:
+Jako pracownik
+Chce miec dostep do szczegolow incydentow
+Aby miec moc edytowac i sprawdzac incydenty
+
+
+
+Scenario1: Pracownik edytuje opis incydentu">
+<step outcome="pending" keyword="PENDING">Given pracownik zalogowany wyswietla liste incydentow</step>
+<step outcome="pending" keyword="PENDING">When pracownik edytuje opis incydentu</step>
+<step outcome="pending" keyword="PENDING">Then w opisie incdentu pojawia sie nowy teskt
+
+
+Scenario2: Pracownik dodaje plik do incydentu</step>
+<step outcome="pending" keyword="PENDING">Given poprawne logowanie uzytkownika i wyswietlenie listy plikow na stronie szczegolow</step>
+<step outcome="pending" keyword="PENDING">When pracownik dodaje plik do incydentu</step>
+<step outcome="pending" keyword="PENDING">Then nowy plik zostaje dodany do incydentu</step>
+<pendingMethod>@Given(&quot;pracownik zalogowany wyswietla liste incydentow&quot;)
+@Pending
+public void givenPracownikZalogowanyWyswietlaListeIncydentow() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@When(&quot;pracownik edytuje opis incydentu&quot;)
+@Pending
+public void whenPracownikEdytujeOpisIncydentu() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@Then(&quot;w opisie incdentu pojawia sie nowy teskt\r\n\r\n\r\nScenario2: Pracownik dodaje plik do incydentu&quot;)
+@Pending
+public void thenWOpisieIncdentuPojawiaSieNowyTesktScenario2PracownikDodajePlikDoIncydentu() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@Given(&quot;poprawne logowanie uzytkownika i wyswietlenie listy plikow na stronie szczegolow&quot;)
+@Pending
+public void givenPoprawneLogowanieUzytkownikaIWyswietlenieListyPlikowNaStronieSzczegolow() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@When(&quot;pracownik dodaje plik do incydentu&quot;)
+@Pending
+public void whenPracownikDodajePlikDoIncydentu() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@Then(&quot;nowy plik zostaje dodany do incydentu&quot;)
+@Pending
+public void thenNowyPlikZostajeDodanyDoIncydentu() {
+  // PENDING
+}
+</pendingMethod>
+</scenario>
+</story>

@@ -1,8 +1,20 @@
 #org.jbehave.core.embedder.StoryManager
-#Wed May 18 17:45:18 CEST 2016
-stories/DodawaniePracownika/DodanieNowegoPracownika.story=17000
-stories/Logowanie/PoprawneLogowanie.story=13000
+#Fri May 20 21:25:59 CEST 2016
+stories/FiltrowanieIncydentow/FiltrowanieIncydentow.story=12000
+stories/Statystyki/Statystyki.story=0
+stories/WyszukiwanieIncydentowPoIdentyfikatorze/WyszukiwanieIncydentowPoIdentyfikatorze.story=0
+stories/DodawaniePracownika/DodanieNowegoPracownika.story=21000
+stories/SzczegolyIncydentu/SzczegołyIncydentuAdministrator.story=0
+stories/FormularzDodaniaNowegoIncydentu/FormularzDodaniaNowegoIncydentu.story=0
+threadAverage=109000
+stories/FiltrowanieUzytkownikow/FiltrowanieUzytkownikow.story=14000
+stories/ObslugaIncydentu/ObsługaIncydentuPracownik.story=0
+stories/SzczegolyIncydentu/SzczegolyIncydentuPracownik.story=0
+stories/Zakladanie\ Konta/ZakladanieKonta.story=14000
+stories/SzczegolyIncydentu/SzczegolyIncydentuUzytkownik.story=0
+stories/SprawdzenieListyIncydentow/SprawdzenieListyIncydentow.story=0
+stories/Logowanie/PoprawneLogowanie.story=12000
 threads=1
-total=41000
-stories/Zakladanie\ Konta/ZakladanieKonta.story=11000
-threadAverage=41000
+stories/ObslugaIncydentu/ObslugaIncydentuAdministrator.story=0
+stories/UsuwaniePracownika/UsunieciePracownika.story=36000
+total=109000

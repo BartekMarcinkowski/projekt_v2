@@ -17,6 +17,8 @@ public class EndUserSteps extends ScenarioSteps {
     NoweIncydenty noweIncydenty;
     StronaLogowaniaP stronaLogowaniaP;
     ListaKontRoleUser listaKontRoleUser;
+    StronaLogowaniaU stronaLogowaniaU;
+    NowyIncydent nowyIncydent;
 
 /**Zakladanie konta*/
 
@@ -177,5 +179,63 @@ public class EndUserSteps extends ScenarioSteps {
     @Step
     public void assertRoleUser() {
         listaKontRoleUser.assertRoleUser();
+    }
+
+/**Dodanie nowego incydentu*/
+
+    @Step
+    public void otworzStroneLogowaniaU() {
+        stronaLogowaniaU.open();
+        getDriver().navigate().refresh();
+    }
+
+    @Step
+    public void wpiszEmailU() {
+        stronaLogowaniaU.wpiszEmailU();
+    }
+
+    @Step
+    public void wpiszHasloU() {
+        stronaLogowaniaU.wpiszHasloU();
+    }
+
+    @Step
+    public void kliknijPrzyciskUtworzIncydent() {
+        incydenty.kliknijUtworzIncydent();
+    }
+
+    @Step
+    public void typIncydentu() {
+        nowyIncydent.wpiszTypIncydentu();
+    }
+
+    @Step
+    public void opisIncydentu() {
+        nowyIncydent.wpiszOpisIncydentu();
+    }
+
+    @Step
+    public void adresIncydentu() {
+        nowyIncydent.wpiszAdresIncydentu();
+    }
+
+    @Step
+    public void kodMiastoIncydentu() {
+        nowyIncydent.kodMiastoIncydentu();
+    }
+
+    @Step
+    public void kliknijUtworzI() {
+        nowyIncydent.kliknijUtworzI();
+    }
+
+    @Step
+    public void assertIncydentUtworzony() {
+        incydenty.assertIncydentUtworzony();
+    }
+
+    @Step
+    public void assertIncydentNieUtworzony() {
+        nowyIncydent.assertIncydentNieUtworzony();
     }
 }

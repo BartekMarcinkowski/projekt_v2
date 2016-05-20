@@ -1,0 +1,79 @@
+<acceptance-test-run title="Filtrowanie uzytkownikow po roli ROLE_USER" name="Filtrowanie uzytkownikow po roli ROLE_USER" steps="8" successful="8" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="13850" timestamp="2016-05-20T21:25:19.968+02:00" session-id="0fa53170-ca2b-4e5b-a69f-fa42c307aaa0">
+  <user-story id="FiltrowanieUzytkownikow" name="Filtrowanie uzytkownikow" path="stories/FiltrowanieUzytkownikow/FiltrowanieUzytkownikow.story"/>
+  <tags>
+    <tag name="Filtrowanie uzytkownikow" type="feature"/>
+    <tag name="Filtrowanie uzytkownikow/Filtrowanie uzytkownikow" type="story"/>
+  </tags>
+  <test-group name="Given zalogowany administrator jest w zakladce uzytkownicy" result="SUCCESS">
+    <screenshots>
+      <screenshot image="a622be211f9fd7d208ac75da0fe2f07f.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="6712">
+      <screenshots>
+        <screenshot image="6c3a89bbfc175351796ad0362bcde23e.png"/>
+      </screenshots>
+      <description>Otworz strone logowania</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1110">
+      <screenshots>
+        <screenshot image="6c3a89bbfc175351796ad0362bcde23e.png"/>
+        <screenshot image="cd978d08e3bb2afb9180e9cbdd068289.png"/>
+      </screenshots>
+      <description>Wpisz email</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="896">
+      <screenshots>
+        <screenshot image="cd978d08e3bb2afb9180e9cbdd068289.png"/>
+        <screenshot image="cbb996963ea1a3b581b7e03583e3da98.png"/>
+      </screenshots>
+      <description>Wpisz haslo</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1026">
+      <screenshots>
+        <screenshot image="cbb996963ea1a3b581b7e03583e3da98.png"/>
+        <screenshot image="0e1b8812b4139d3f032578a7c2dd423c.png"/>
+      </screenshots>
+      <description>Wcisnij przycisk zaloguj sie</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="785">
+      <screenshots>
+        <screenshot image="0e1b8812b4139d3f032578a7c2dd423c.png"/>
+        <screenshot image="a622be211f9fd7d208ac75da0fe2f07f.png"/>
+      </screenshots>
+      <description>Wcisnij przycisk uzytkownicy</description>
+    </test-step>
+  </test-group>
+  <test-group name="When wybierze opcje filtruj" result="SUCCESS">
+    <screenshots>
+      <screenshot image="241a1ae021fee470609d9746080df491.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="754">
+      <screenshots>
+        <screenshot image="241a1ae021fee470609d9746080df491.png"/>
+      </screenshots>
+      <description>Kliknij filter</description>
+    </test-step>
+  </test-group>
+  <test-group name="And wybierze role ROLE_USER" result="SUCCESS">
+    <screenshots>
+      <screenshot image="28162c65233c2aaf83427ce42584fa3a.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="983">
+      <screenshots>
+        <screenshot image="28162c65233c2aaf83427ce42584fa3a.png"/>
+      </screenshots>
+      <description>Kliknij role user</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then powinni zostac pokazani uzytkownicy z rola ROLE_USER" result="SUCCESS">
+    <screenshots>
+      <screenshot image="28162c65233c2aaf83427ce42584fa3a.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="356">
+      <screenshots>
+        <screenshot image="28162c65233c2aaf83427ce42584fa3a.png"/>
+      </screenshots>
+      <description>Assert role user</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

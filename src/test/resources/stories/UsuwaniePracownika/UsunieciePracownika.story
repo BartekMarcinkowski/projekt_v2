@@ -1,5 +1,3 @@
-Meta:
-
 Narrative:
 Jako administrator
 Chce usunac pracownika

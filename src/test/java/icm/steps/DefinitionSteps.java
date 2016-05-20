@@ -131,4 +131,46 @@ public class DefinitionSteps {
     public void sprawdzenieCzyRoleUser() {
         endUser.assertRoleUser();
     }
+
+/**Dodanie nowego incydentu*/
+
+    @Given("poprawne logowanie uzytkownika")
+    public void logowanieUzytkownika() {
+        endUser.otworzStroneLogowaniaU();
+        endUser.wpiszEmailU();
+        endUser.wpiszHasloU();
+        endUser.wcisnijPrzyciskZalogujSie();
+    }
+
+    @When("kliknie przycisk utworz incydent")
+    public void przyciskUtworzIncydent() {
+        endUser.kliknijPrzyciskUtworzIncydent();
+    }
+
+    @When("poprawne wprowadzi wszystkie dane incydentu")
+    public void daneIncydentu() {
+        endUser.typIncydentu();
+        endUser.opisIncydentu();
+        endUser.adresIncydentu();
+        endUser.kodMiastoIncydentu();
+        endUser.kliknijUtworzI();
+    }
+
+    @Then("incydent powinien zostac poprawnie dodany")
+    public void incydentUtworzony() {
+        endUser.assertIncydentUtworzony();
+    }
+
+    @When("nie wypelni wszystkich wymaganych pol danych incydentu")
+    public void niepelneDaneIncydentu() {
+        endUser.typIncydentu();
+        endUser.opisIncydentu();
+        endUser.kliknijUtworzI();
+    }
+
+    @Then("incydend powinien nie zostac utworzony")
+    public void incydentNieUtworzony() {
+        endUser.assertIncydentNieUtworzony();
+    }
+
 }

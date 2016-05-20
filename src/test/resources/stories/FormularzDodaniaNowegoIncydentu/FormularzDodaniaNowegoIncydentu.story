@@ -5,13 +5,14 @@ Aby moc zglaszac problem
 
 
 
-Scenario1: Uzytkownik dodaje nowy incydent poprawnie 
+Scenario: Uzytkownik dodaje nowy incydent poprawnie
 Given poprawne logowanie uzytkownika
-When poprawne wprowadzenie wszystkich danych incydentu
-Then poprawne dodanie nowego incydentu
+When kliknie przycisk utworz incydent
+And poprawne wprowadzi wszystkie dane incydentu
+Then incydent powinien zostac poprawnie dodany
 
-
-Scenario2: Uzytkownik dodaje nowy incydent blednie
+Scenario: Uzytkownik dodaje nowy incydent blednie
 Given poprawne logowanie uzytkownika
-When niepoprawne wprowadzenie wszystkich danych incydentu
-Then brak mozliwosci utworzenia nowego incydentu
+When kliknie przycisk utworz incydent
+When nie wypelni wszystkich wymaganych pol danych incydentu
+Then incydend powinien nie zostac utworzony

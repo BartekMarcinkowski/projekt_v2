@@ -1,5 +1,3 @@
-Meta:
-
 Narrative:
 Jako uzytkownik
 Chce zalozyc nowe konto w systemie ICM

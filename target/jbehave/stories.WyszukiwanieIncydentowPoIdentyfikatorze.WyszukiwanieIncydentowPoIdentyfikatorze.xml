@@ -1,0 +1,53 @@
+<story path="stories/WyszukiwanieIncydentowPoIdentyfikatorze/WyszukiwanieIncydentowPoIdentyfikatorze.story" title="">
+<scenario keyword="Scenario:" title="Narrative:
+Jako uzytkownik
+Chce wyszukac incydent o danym identyfikatorze
+Aby odnalezc konkretny incydent
+
+Scenario1: Incydent o danym identyfikatorze istnieje">
+<step outcome="pending" keyword="PENDING">Given uzytkownik jest zalogowany do konta and lista incydentow zawiera incydenty</step>
+<step outcome="pending" keyword="PENDING">When uzytkownik wprowadza istniejacy identyfikator incydentu</step>
+<step outcome="pending" keyword="PENDING">Then sytsem wyswietla strone zawierajaca szczegoly incydentu
+
+Scenario2: Incydent o danym identyfikatorze nie istnieje</step>
+<step outcome="pending" keyword="PENDING">Given uzytkownik jest zalogowany do konta</step>
+<step outcome="pending" keyword="PENDING">When uzytkownik wprowadza nieistniejacy identyfikator incydentu</step>
+<step outcome="pending" keyword="PENDING">Then system wyswietla komunikat &quot;Nie znaleziono incydentu&quot;</step>
+<pendingMethod>@Given(&quot;uzytkownik jest zalogowany do konta and lista incydentow zawiera incydenty&quot;)
+@Pending
+public void givenUzytkownikJestZalogowanyDoKontaAndListaIncydentowZawieraIncydenty() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@When(&quot;uzytkownik wprowadza istniejacy identyfikator incydentu&quot;)
+@Pending
+public void whenUzytkownikWprowadzaIstniejacyIdentyfikatorIncydentu() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@Then(&quot;sytsem wyswietla strone zawierajaca szczegoly incydentu\r\n\r\nScenario2: Incydent o danym identyfikatorze nie istnieje&quot;)
+@Pending
+public void thenSytsemWyswietlaStroneZawierajacaSzczegolyIncydentuScenario2IncydentODanymIdentyfikatorzeNieIstnieje() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@Given(&quot;uzytkownik jest zalogowany do konta&quot;)
+@Pending
+public void givenUzytkownikJestZalogowanyDoKonta() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@When(&quot;uzytkownik wprowadza nieistniejacy identyfikator incydentu&quot;)
+@Pending
+public void whenUzytkownikWprowadzaNieistniejacyIdentyfikatorIncydentu() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@Then(&quot;system wyswietla komunikat \&quot;Nie znaleziono incydentu\&quot;&quot;)
+@Pending
+public void thenSystemWyswietlaKomunikatNieZnalezionoIncydentu() {
+  // PENDING
+}
+</pendingMethod>
+</scenario>
+</story>

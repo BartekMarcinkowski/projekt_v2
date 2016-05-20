@@ -26,6 +26,12 @@ public class Incydenty extends PageObject {
     @FindBy(xpath = "//a[contains(.,'Zgłoszony')]")
     private WebElement przycisk3;
 
+    @FindBy(xpath = "//a[contains(.,'Utwórz incydent')]")
+    private WebElement przycisk4;
+
+    @FindBy (id = "alert")
+    private WebElement komunikat;
+
     /**Logowanie*/
     public void assertNapisIncydenty() {
         element(naglowek).shouldContainOnlyText("Incydenty");
@@ -50,5 +56,15 @@ public class Incydenty extends PageObject {
 
     public void kliknijZgloszony() {
         element(przycisk3).click();
+    }
+
+/**Dodanie nowego incydentu*/
+
+    public void kliknijUtworzIncydent() {
+        element(przycisk4).click();
+    }
+
+    public void assertIncydentUtworzony() {
+        element(komunikat).containsElements("//span[@id='alert']");
     }
 }

@@ -1,0 +1,8 @@
+<story path="stories/FiltrowanieUzytkownikow/FiltrowanieUzytkownikow.story" title="">
+<scenario keyword="Scenario:" title="Filtrowanie uzytkownikow po roli ROLE_USER">
+<step outcome="successful">Given zalogowany administrator jest w zakladce uzytkownicy</step>
+<step outcome="successful">When wybierze opcje filtruj</step>
+<step outcome="successful">And wybierze role ROLE_USER</step>
+<step outcome="successful">Then powinni zostac pokazani uzytkownicy z rola ROLE_USER</step>
+</scenario>
+</story>

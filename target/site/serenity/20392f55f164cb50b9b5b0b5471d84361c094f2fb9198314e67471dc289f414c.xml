@@ -1,0 +1,27 @@
+<acceptance-test-run title="Narrative" name="Narrative:&#xd;&#xa;Jako pracownik &#xd;&#xa;Chce miec dostep do formularza oblsugi incydentow&#xd;&#xa;Aby moc oslugiwac incydenty&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;Scenario1: Pracownik zmienia status incydentu poprawnie" steps="6" successful="0" failures="0" skipped="0" ignored="0" pending="6" annotated-result="PENDING" result="PENDING" duration="43" timestamp="2016-05-20T21:25:34.332+02:00">
+  <user-story id="ObsługaIncydentuPracownik" name="Obsługa incydentu pracownik" path="stories/ObslugaIncydentu/ObsługaIncydentuPracownik.story"/>
+  <tags>
+    <tag name="Obsluga incydentu" type="feature"/>
+    <tag name="Obsluga incydentu/Obsługa incydentu pracownik" type="story"/>
+  </tags>
+  <test-step result="PENDING" duration="0">
+    <description>Given poprawne logowanie uzytkownika</description>
+  </test-step>
+  <test-step result="PENDING" duration="0">
+    <description>When uzytkownik wprowadza poprawne dane do formularza</description>
+  </test-step>
+  <test-step result="PENDING" duration="1">
+    <description>Then poprawne wyswietlenie przez system komunikatu&#xd;
+&#xd;
+Scenario2: Pracownik zmienia status incydentu blednie</description>
+  </test-step>
+  <test-step result="PENDING" duration="0">
+    <description>Given poprawne logowanie uzytkownika</description>
+  </test-step>
+  <test-step result="PENDING" duration="0">
+    <description>When uzytkownik wprowadza niepoprawne dane do formularza</description>
+  </test-step>
+  <test-step result="PENDING" duration="0">
+    <description>Then system wyswietla komunikat &quot;Nie mozna utworzyc nowego rekordu&quot;</description>
+  </test-step>
+</acceptance-test-run>

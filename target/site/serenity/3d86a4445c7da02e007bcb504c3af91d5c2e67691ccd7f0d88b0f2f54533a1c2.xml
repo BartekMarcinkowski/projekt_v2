@@ -1,0 +1,16 @@
+<acceptance-test-run title="Przegladanie statystyk incydentow" name="Przegladanie statystyk incydentow" steps="3" successful="0" failures="0" skipped="0" ignored="0" pending="3" annotated-result="PENDING" result="PENDING" duration="19" timestamp="2016-05-20T21:25:59.703+02:00">
+  <user-story id="Statystyki" name="Statystyki" path="stories/Statystyki/Statystyki.story"/>
+  <tags>
+    <tag name="Statystyki" type="feature"/>
+    <tag name="Statystyki/Statystyki" type="story"/>
+  </tags>
+  <test-step result="PENDING" duration="0">
+    <description>Given zalogowany administrator</description>
+  </test-step>
+  <test-step result="PENDING" duration="0">
+    <description>When wybierze zakladke dashboard</description>
+  </test-step>
+  <test-step result="PENDING" duration="0">
+    <description>Then powinien widziec statystyki incydentow</description>
+  </test-step>
+</acceptance-test-run>

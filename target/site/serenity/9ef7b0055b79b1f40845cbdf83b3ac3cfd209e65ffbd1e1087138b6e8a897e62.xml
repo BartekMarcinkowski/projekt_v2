@@ -1,0 +1,16 @@
+<acceptance-test-run title="Brak zgloszonych incydentow" name="Brak zgloszonych incydentow" steps="3" successful="0" failures="0" skipped="0" ignored="0" pending="3" annotated-result="PENDING" result="PENDING" duration="42" timestamp="2016-05-20T21:24:44.356+02:00">
+  <user-story id="SprawdzenieListyIncydentow" name="Sprawdzenie listy incydentow" path="stories/SprawdzenieListyIncydentow/SprawdzenieListyIncydentow.story"/>
+  <tags>
+    <tag name="Sprawdzenie listy incydentow" type="feature"/>
+    <tag name="Sprawdzenie listy incydentow/Sprawdzenie listy incydentow" type="story"/>
+  </tags>
+  <test-step result="PENDING" duration="0">
+    <description>Given uzytkownik jest zalogowany do systemu</description>
+  </test-step>
+  <test-step result="PENDING" duration="1">
+    <description>When sprawdza liste incydentow</description>
+  </test-step>
+  <test-step result="PENDING" duration="0">
+    <description>Then system wyswietla komunikat o braku incydentow do wyswietlenia</description>
+  </test-step>
+</acceptance-test-run>

@@ -1,0 +1,28 @@
+<acceptance-test-run title="Narrative" name="Narrative:&#xd;&#xa;Jako pracownik&#xd;&#xa;Chce miec dostep do szczegolow incydentow&#xd;&#xa;Aby miec moc edytowac i sprawdzac incydenty&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;Scenario1: Pracownik edytuje opis incydentu" steps="6" successful="0" failures="0" skipped="0" ignored="0" pending="6" annotated-result="PENDING" result="PENDING" duration="68" timestamp="2016-05-20T21:24:44.270+02:00">
+  <user-story id="SzczegolyIncydentuPracownik" name="Szczegoly incydentu pracownik" path="stories/SzczegolyIncydentu/SzczegolyIncydentuPracownik.story"/>
+  <tags>
+    <tag name="Szczegoly incydentu" type="feature"/>
+    <tag name="Szczegoly incydentu/Szczegoly incydentu pracownik" type="story"/>
+  </tags>
+  <test-step result="PENDING" duration="0">
+    <description>Given pracownik zalogowany wyswietla liste incydentow</description>
+  </test-step>
+  <test-step result="PENDING" duration="0">
+    <description>When pracownik edytuje opis incydentu</description>
+  </test-step>
+  <test-step result="PENDING" duration="1">
+    <description>Then w opisie incdentu pojawia sie nowy teskt&#xd;
+&#xd;
+&#xd;
+Scenario2: Pracownik dodaje plik do incydentu</description>
+  </test-step>
+  <test-step result="PENDING" duration="0">
+    <description>Given poprawne logowanie uzytkownika i wyswietlenie listy plikow na stronie szczegolow</description>
+  </test-step>
+  <test-step result="PENDING" duration="0">
+    <description>When pracownik dodaje plik do incydentu</description>
+  </test-step>
+  <test-step result="PENDING" duration="0">
+    <description>Then nowy plik zostaje dodany do incydentu</description>
+  </test-step>
+</acceptance-test-run>
