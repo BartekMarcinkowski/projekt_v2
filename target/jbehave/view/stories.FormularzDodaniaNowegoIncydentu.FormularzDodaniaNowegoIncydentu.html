@@ -10,59 +10,18 @@
 <h1></h1>
 <div class="path">stories/FormularzDodaniaNowegoIncydentu/FormularzDodaniaNowegoIncydentu.story</div>
 <div class="scenario">
-<h2>Scenario: Narrative:
-Jako uzytkownik
-Chce dodac nowy incydent
-Aby moc zglaszac problem
-
-
-
-Scenario1: Uzytkownik dodaje nowy incydent poprawnie</h2>
-<div class="step pending">Given poprawne logowanie uzytkownika <span class="keyword pending">(PENDING)</span></div>
-<div class="step pending">When poprawne wprowadzenie wszystkich danych incydentu <span class="keyword pending">(PENDING)</span></div>
-<div class="step pending">Then poprawne dodanie nowego incydentu
-
-
-Scenario2: Uzytkownik dodaje nowy incydent blednie <span class="keyword pending">(PENDING)</span></div>
-<div class="step pending">Given poprawne logowanie uzytkownika <span class="keyword pending">(PENDING)</span></div>
-<div class="step pending">When niepoprawne wprowadzenie wszystkich danych incydentu <span class="keyword pending">(PENDING)</span></div>
-<div class="step pending">Then brak mozliwosci utworzenia nowego incydentu <span class="keyword pending">(PENDING)</span></div>
-<div><pre class="pending">@Given(&quot;poprawne logowanie uzytkownika&quot;)
-@Pending
-public void givenPoprawneLogowanieUzytkownika() {
-  // PENDING
-}
-</pre></div>
-<div><pre class="pending">@When(&quot;poprawne wprowadzenie wszystkich danych incydentu&quot;)
-@Pending
-public void whenPoprawneWprowadzenieWszystkichDanychIncydentu() {
-  // PENDING
-}
-</pre></div>
-<div><pre class="pending">@Then(&quot;poprawne dodanie nowego incydentu\r\n\r\n\r\nScenario2: Uzytkownik dodaje nowy incydent blednie&quot;)
-@Pending
-public void thenPoprawneDodanieNowegoIncydentuScenario2UzytkownikDodajeNowyIncydentBlednie() {
-  // PENDING
-}
-</pre></div>
-<div><pre class="pending">@Given(&quot;poprawne logowanie uzytkownika&quot;)
-@Pending
-public void givenPoprawneLogowanieUzytkownika() {
-  // PENDING
-}
-</pre></div>
-<div><pre class="pending">@When(&quot;niepoprawne wprowadzenie wszystkich danych incydentu&quot;)
-@Pending
-public void whenNiepoprawneWprowadzenieWszystkichDanychIncydentu() {
-  // PENDING
-}
-</pre></div>
-<div><pre class="pending">@Then(&quot;brak mozliwosci utworzenia nowego incydentu&quot;)
-@Pending
-public void thenBrakMozliwosciUtworzeniaNowegoIncydentu() {
-  // PENDING
-}
-</pre></div>
+<h2>Scenario: Uzytkownik dodaje nowy incydent poprawnie</h2>
+<div class="step successful">Given poprawne logowanie uzytkownika</div>
+<div class="step successful">When kliknie przycisk utworz incydent</div>
+<div class="step successful">And poprawne wprowadzi wszystkie dane incydentu</div>
+<div class="step successful">Then incydent powinien zostac poprawnie dodany</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Uzytkownik dodaje nowy incydent blednie</h2>
+<div class="step successful">Given poprawne logowanie uzytkownika</div>
+<div class="step successful">When kliknie przycisk utworz incydent</div>
+<div class="step successful">When nie wypelni wszystkich wymaganych pol danych incydentu</div>
+<div class="step successful">Then incydend powinien nie zostac utworzony</div>
 </div>
 </div>
 

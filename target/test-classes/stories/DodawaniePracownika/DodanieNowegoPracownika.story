@@ -1,5 +1,3 @@
-Meta:
-
 Narrative:
 Jako Administrator
 Chce dodac nowego pracownika

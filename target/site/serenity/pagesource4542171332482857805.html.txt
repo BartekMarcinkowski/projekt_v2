@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <title>ICM</title>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <link media="screen" rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link media="screen" rel="stylesheet" href="/css/core.css" />
+    <link href="/images/favicon.ico" type="image/x-icon" rel="shortcut icon" />
+    <script src="/js/jquery-latest.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+<nav role="navigation" class="navbar  navbar-fixed-top navbar-inverse">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" class="navbar-toggle" type="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+            <a ondblclick="alert('ICM!');" href="#" class="navbar-brand">ICM</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="/">Incydenty</a></li>
+                
+                
+            </ul>
+            <form action="/incident/search" role="search" class="navbar-form navbar-left">
+                <div class="form-group">
+                    <input type="text" name="q" class="form-control" />
+                </div>
+                <button class="btn btn-default" type="submit" id="search">Szukaj</button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="?language=pl">Polski</a></li>
+                <li><a href="?language=en">English</a></li>
+                
+                <li><a href="/logout">Logout</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<div class="container">
+    
+    
+    <div class="container">
+<h2>Incydenty</h2>
+<table class="table table-hover" id="incidents">
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>Utworzony</th>
+			
+            <th>Opis incydentu</th>
+			<th>Status</th>
+			<th>Akcja</th>
+		</tr>
+	</thead>
+	<tbody>
+        
+        <tr>
+            <td>1</td>
+            <td>1 stycznia 2014 23:00:00 CET</td>
+            <td>Rozszczelnione okno</td>
+            <td>Zgłoszony</td>
+            <td>
+                <div class="btn-group">
+                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle">
+                        <span>Akcja</span> <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="" href="/incident/1">Szczegóły</a></li>
+                        
+                    </ul>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>2 stycznia 2014 22:01:00 CET</td>
+            <td>Wyciek</td>
+            <td>Niepotwierdzony</td>
+            <td>
+                <div class="btn-group">
+                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle">
+                        <span>Akcja</span> <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="" href="/incident/2">Szczegóły</a></li>
+                        
+                    </ul>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>23 maja 2016 21:56:49 CEST</td>
+            <td>Zalana piwnica</td>
+            <td>Zgłoszony</td>
+            <td>
+                <div class="btn-group">
+                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle">
+                        <span>Akcja</span> <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="" href="/incident/4">Szczegóły</a></li>
+                        
+                    </ul>
+                </div>
+            </td>
+        </tr>
+	</tbody>
+    <tfoot>
+        <tr>
+            <td colspan="5">
+                <div class="btn-group">
+                    <div class="btn-group">
+                        <button data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button">
+                            Filter
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="/incident/list?status=NEW">Zgłoszony</a>
+                            </li>
+                            <li>
+                                <a href="/incident/list?status=CONFIRMED">Potwierdzony</a>
+                            </li>
+                            <li>
+                                <a href="/incident/list?status=NOT_CONFIRMED">Niepotwierdzony</a>
+                            </li>
+                            <li>
+                                <a href="/incident/list?status=SOLVED">Rozwiązany</a>
+                            </li>
+                            <li>
+                                <a href="/incident/list?status=CLOSED">Zamknięty</a>
+                            </li>
+                            <li>
+                                <a href="/incident/list">All</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-default" href="/incident/create">Utwórz incydent</a>
+                </div>
+            </td>
+        </tr>
+    </tfoot>
+</table>
+</div>
+    <div class="text-center">
+        © 2013 Footer
+    </div>
+</div>
+
+
+</body><canvas id="fxdriver-screenshot-canvas" style="display: none;" width="1366" height="659"></canvas></html>

@@ -1,10 +1,10 @@
-<acceptance-test-run title="Narrative" name="Narrative:&#xd;&#xa;Jako administrator&#xd;&#xa;Chce miec dostep do formularza obslugi incydentow&#xd;&#xa;Aby miec moc zarzadzac incydentami&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;Scenario1: administrator zmienia status incydentu z &quot;niepotwierdzony&quot; lub &quot;rozwiazany&quot;" steps="6" successful="0" failures="0" skipped="0" ignored="0" pending="6" annotated-result="PENDING" result="PENDING" duration="41" timestamp="2016-05-20T21:25:19.911+02:00">
+<acceptance-test-run title="Narrative" name="Narrative:&#xd;&#xa;Jako administrator&#xd;&#xa;Chce miec dostep do formularza obslugi incydentow&#xd;&#xa;Aby miec moc zarzadzac incydentami&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;Scenario1: administrator zmienia status incydentu z &quot;niepotwierdzony&quot; lub &quot;rozwiazany&quot;" steps="6" successful="0" failures="0" skipped="0" ignored="0" pending="6" annotated-result="PENDING" result="PENDING" duration="82" timestamp="2016-05-26T18:22:47.046+02:00">
   <user-story id="ObslugaIncydentuAdministrator" name="Obsluga incydentu administrator" path="stories/ObslugaIncydentu/ObslugaIncydentuAdministrator.story"/>
   <tags>
     <tag name="Obsluga incydentu" type="feature"/>
     <tag name="Obsluga incydentu/Obsluga incydentu administrator" type="story"/>
   </tags>
-  <test-step result="PENDING" duration="1">
+  <test-step result="PENDING" duration="2">
     <description>Given formualarz obslugi incydentu posiada status,przypisanie incydentu, opis wykonanych prac</description>
   </test-step>
   <test-step result="PENDING" duration="0">
@@ -16,13 +16,13 @@
 &#xd;
 Scenario2: administrator przypisuje incydent do pracownika lub innego administratora</description>
   </test-step>
-  <test-step result="PENDING" duration="0">
+  <test-step result="PENDING" duration="1">
     <description>Given formualarz obslugi incydentu posiada status,przypisanie incydentu, opis wykonanych prac</description>
   </test-step>
   <test-step result="PENDING" duration="0">
     <description>When administrator przypisuje incydent do pracownika lub innego administratora</description>
   </test-step>
-  <test-step result="PENDING" duration="0">
+  <test-step result="PENDING" duration="1">
     <description>Then w opisie incdentu pojawia sie nowy teskt</description>
   </test-step>
 </acceptance-test-run>

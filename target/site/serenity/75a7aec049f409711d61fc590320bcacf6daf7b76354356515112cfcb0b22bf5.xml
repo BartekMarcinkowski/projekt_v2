@@ -1,4 +1,4 @@
-<acceptance-test-run title="Poprawne zalozenie nowego konta" name="Poprawne zalozenie nowego konta" steps="7" successful="7" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="13416" timestamp="2016-05-20T21:25:05.501+02:00" session-id="c2d49da8-eb0a-4253-9253-ece4d4522137">
+<acceptance-test-run title="Poprawne zalozenie nowego konta" name="Poprawne zalozenie nowego konta" steps="7" successful="7" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="17958" timestamp="2016-05-26T18:22:28.146+02:00" session-id="0bd8135f-ae0e-4bfb-84ce-928f013e1554">
   <user-story id="ZakladanieKonta" name="Zakladanie konta" path="stories/Zakladanie Konta/ZakladanieKonta.story"/>
   <tags>
     <tag name="Zakladanie konta" type="feature"/>
@@ -6,61 +6,61 @@
   </tags>
   <test-group name="Given uzytkownik ma otwarta strone rejstracji" result="SUCCESS">
     <screenshots>
-      <screenshot image="b5d5fed0577abbcff44443337f6da7ea.png"/>
+      <screenshot image="3adf15220cc2454b83e259bc88f5e203.png"/>
     </screenshots>
-    <test-step result="SUCCESS" duration="7128">
+    <test-step result="SUCCESS" duration="9361">
       <screenshots>
-        <screenshot image="b5d5fed0577abbcff44443337f6da7ea.png"/>
+        <screenshot image="3adf15220cc2454b83e259bc88f5e203.png"/>
       </screenshots>
       <description>Otworz strone rejstracji</description>
     </test-step>
   </test-group>
   <test-group name="When wprowadzi nazwe uzytkownika, email i haslo" result="SUCCESS">
     <screenshots>
-      <screenshot image="3c37e64d105f797b750b6df752e133d2.png"/>
+      <screenshot image="600e8be2d8be1506a9675644468f3b4e.png"/>
     </screenshots>
-    <test-step result="SUCCESS" duration="1187">
+    <test-step result="SUCCESS" duration="1837">
       <screenshots>
-        <screenshot image="ae732400390da8c6989968b8d9b65bae.png"/>
+        <screenshot image="e0c6a66ba89144a18802c4f55fe71b95.png"/>
       </screenshots>
       <description>Wpisz nazwe uzytkownika</description>
     </test-step>
-    <test-step result="SUCCESS" duration="1053">
+    <test-step result="SUCCESS" duration="1622">
       <screenshots>
-        <screenshot image="ae732400390da8c6989968b8d9b65bae.png"/>
-        <screenshot image="98658571bb2817deff70a3c5de75953d.png"/>
+        <screenshot image="e0c6a66ba89144a18802c4f55fe71b95.png"/>
+        <screenshot image="d59bd74efd537d46dbf2968693a63501.png"/>
       </screenshots>
       <description>Wpisz email1</description>
     </test-step>
-    <test-step result="SUCCESS" duration="810">
+    <test-step result="SUCCESS" duration="1208">
       <screenshots>
-        <screenshot image="98658571bb2817deff70a3c5de75953d.png"/>
-        <screenshot image="81d82e6023fae927e1d395c34da93b02.png"/>
+        <screenshot image="d59bd74efd537d46dbf2968693a63501.png"/>
+        <screenshot image="5eb6b03d7c1be9806efb25b10f217219.png"/>
       </screenshots>
       <description>Wpisz haslo1</description>
     </test-step>
-    <test-step result="SUCCESS" duration="844">
+    <test-step result="SUCCESS" duration="1187">
       <screenshots>
-        <screenshot image="81d82e6023fae927e1d395c34da93b02.png"/>
-        <screenshot image="47cea644c57e330a650d553dafe9c1f0.png"/>
+        <screenshot image="5eb6b03d7c1be9806efb25b10f217219.png"/>
+        <screenshot image="4da40d455770afc00025620b0d49fa47.png"/>
       </screenshots>
       <description>Potwierdz haslo1</description>
     </test-step>
-    <test-step result="SUCCESS" duration="1247">
+    <test-step result="SUCCESS" duration="1642">
       <screenshots>
-        <screenshot image="47cea644c57e330a650d553dafe9c1f0.png"/>
-        <screenshot image="3c37e64d105f797b750b6df752e133d2.png"/>
+        <screenshot image="4da40d455770afc00025620b0d49fa47.png"/>
+        <screenshot image="600e8be2d8be1506a9675644468f3b4e.png"/>
       </screenshots>
       <description>Wcisnij przycisk zarejstruj</description>
     </test-step>
   </test-group>
   <test-group name="Then uzytkownik powinien zostac zalogowany" result="SUCCESS">
     <screenshots>
-      <screenshot image="3c37e64d105f797b750b6df752e133d2.png"/>
+      <screenshot image="600e8be2d8be1506a9675644468f3b4e.png"/>
     </screenshots>
-    <test-step result="SUCCESS" duration="461">
+    <test-step result="SUCCESS" duration="360">
       <screenshots>
-        <screenshot image="3c37e64d105f797b750b6df752e133d2.png"/>
+        <screenshot image="600e8be2d8be1506a9675644468f3b4e.png"/>
       </screenshots>
       <description>Assert przycisk logout</description>
     </test-step>

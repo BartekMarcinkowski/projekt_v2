@@ -1,5 +1,3 @@
-Meta:
-
 Narrative:
 Jako uzytkownik
 Chce sie zalogowac do ICM

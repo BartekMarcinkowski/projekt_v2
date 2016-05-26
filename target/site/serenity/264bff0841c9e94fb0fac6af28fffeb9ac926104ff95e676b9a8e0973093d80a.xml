@@ -1,4 +1,4 @@
-<acceptance-test-run title="Narrative" name="Narrative:&#xd;&#xa;Jako uzytkownik&#xd;&#xa;Chce miec dostep do incydentow&#xd;&#xa;Aby miec moc edytowac opis incydentu&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;Scenario1: Edytowanie opisu incydentu" steps="6" successful="0" failures="0" skipped="0" ignored="0" pending="6" annotated-result="PENDING" result="PENDING" duration="32" timestamp="2016-05-20T21:25:47.303+02:00">
+<acceptance-test-run title="Narrative" name="Narrative:&#xd;&#xa;Jako uzytkownik&#xd;&#xa;Chce miec dostep do incydentow&#xd;&#xa;Aby miec moc edytowac opis incydentu&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;Scenario1: Edytowanie opisu incydentu" steps="6" successful="0" failures="0" skipped="0" ignored="0" pending="6" annotated-result="PENDING" result="PENDING" duration="48" timestamp="2016-05-26T18:24:16.192+02:00">
   <user-story id="SzczegolyIncydentuUzytkownik" name="Szczegoly incydentu uzytkownik" path="stories/SzczegolyIncydentu/SzczegolyIncydentuUzytkownik.story"/>
   <tags>
     <tag name="Szczegoly incydentu" type="feature"/>
@@ -8,7 +8,7 @@
     <description>Given uzytkownik zalogowany do konta &#xd;
 AND lista incydentow zawiera incydenty i je  wyswietla</description>
   </test-step>
-  <test-step result="PENDING" duration="0">
+  <test-step result="PENDING" duration="1">
     <description>When uzytkownik edytuje opis incydentu</description>
   </test-step>
   <test-step result="PENDING" duration="0">
@@ -20,7 +20,7 @@ Scenario2: uzytkownik dodaje plik do incydentu</description>
   <test-step result="PENDING" duration="0">
     <description>Given lista plikow znajduje sie na stronie szczegolow</description>
   </test-step>
-  <test-step result="PENDING" duration="0">
+  <test-step result="PENDING" duration="1">
     <description>When uzytkownik dodaje plik do incydentu</description>
   </test-step>
   <test-step result="PENDING" duration="0">

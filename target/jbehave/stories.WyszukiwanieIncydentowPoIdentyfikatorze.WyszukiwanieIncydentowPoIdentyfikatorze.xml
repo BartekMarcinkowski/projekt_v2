@@ -5,26 +5,14 @@ Chce wyszukac incydent o danym identyfikatorze
 Aby odnalezc konkretny incydent
 
 Scenario1: Incydent o danym identyfikatorze istnieje">
-<step outcome="pending" keyword="PENDING">Given uzytkownik jest zalogowany do konta and lista incydentow zawiera incydenty</step>
-<step outcome="pending" keyword="PENDING">When uzytkownik wprowadza istniejacy identyfikator incydentu</step>
+<step outcome="successful">Given uzytkownik jest zalogowany do konta and lista incydentow zawiera incydenty</step>
+<step outcome="successful">When uzytkownik wprowadza istniejacy identyfikator incydentu</step>
 <step outcome="pending" keyword="PENDING">Then sytsem wyswietla strone zawierajaca szczegoly incydentu
 
 Scenario2: Incydent o danym identyfikatorze nie istnieje</step>
 <step outcome="pending" keyword="PENDING">Given uzytkownik jest zalogowany do konta</step>
 <step outcome="pending" keyword="PENDING">When uzytkownik wprowadza nieistniejacy identyfikator incydentu</step>
 <step outcome="pending" keyword="PENDING">Then system wyswietla komunikat &quot;Nie znaleziono incydentu&quot;</step>
-<pendingMethod>@Given(&quot;uzytkownik jest zalogowany do konta and lista incydentow zawiera incydenty&quot;)
-@Pending
-public void givenUzytkownikJestZalogowanyDoKontaAndListaIncydentowZawieraIncydenty() {
-  // PENDING
-}
-</pendingMethod>
-<pendingMethod>@When(&quot;uzytkownik wprowadza istniejacy identyfikator incydentu&quot;)
-@Pending
-public void whenUzytkownikWprowadzaIstniejacyIdentyfikatorIncydentu() {
-  // PENDING
-}
-</pendingMethod>
 <pendingMethod>@Then(&quot;sytsem wyswietla strone zawierajaca szczegoly incydentu\r\n\r\nScenario2: Incydent o danym identyfikatorze nie istnieje&quot;)
 @Pending
 public void thenSytsemWyswietlaStroneZawierajacaSzczegolyIncydentuScenario2IncydentODanymIdentyfikatorzeNieIstnieje() {

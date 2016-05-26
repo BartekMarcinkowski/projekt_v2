@@ -1,5 +1,3 @@
-Meta:
-
 Narrative:
 Jako administrator
 Chce miec dostep do statystyk

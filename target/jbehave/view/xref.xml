@@ -1,5 +1,5 @@
 <xref>
-  <whenMade>1463772364445</whenMade>
+  <whenMade>1464279899479</whenMade>
   <createdBy>JBehave</createdBy>
   <metaFilter>-ignore</metaFilter>
   <meta/>
@@ -21,8 +21,8 @@ Then konto powinno zostac usuniete
 </scenarios>
       <passed>true</passed>
       <pending>true</pending>
-      <started>1463772248121</started>
-      <duration>33098</duration>
+      <started>1464279684607</started>
+      <duration>19717</duration>
     </story>
     <story>
       <description></description>
@@ -53,8 +53,8 @@ Then nowy plik zostaje dodany do incydentu
 </scenarios>
       <passed>true</passed>
       <pending>true</pending>
-      <started>1463772284267</started>
-      <duration>72</duration>
+      <started>1464279705590</started>
+      <duration>140</duration>
     </story>
     <story>
       <description></description>
@@ -71,9 +71,9 @@ Then system wyswietla komunikat o braku incydentow do wyswietlenia
 
 </scenarios>
       <passed>true</passed>
-      <pending>true</pending>
-      <started>1463772284352</started>
-      <duration>47</duration>
+      <pending>false</pending>
+      <started>1464279705753</started>
+      <duration>15973</duration>
     </story>
     <story>
       <description></description>
@@ -92,8 +92,8 @@ Then konto powinno zostac utworzone
 </scenarios>
       <passed>true</passed>
       <pending>false</pending>
-      <started>1463772284409</started>
-      <duration>20410</duration>
+      <started>1464279722683</started>
+      <duration>24455</duration>
     </story>
     <story>
       <description></description>
@@ -111,8 +111,8 @@ Then uzytkownik powinien zostac zalogowany
 </scenarios>
       <passed>true</passed>
       <pending>false</pending>
-      <started>1463772305498</started>
-      <duration>13420</duration>
+      <started>1464279748143</started>
+      <duration>17963</duration>
     </story>
     <story>
       <description></description>
@@ -143,8 +143,8 @@ Then w opisie incdentu pojawia sie nowy teskt
 </scenarios>
       <passed>true</passed>
       <pending>true</pending>
-      <started>1463772319908</started>
-      <duration>45</duration>
+      <started>1464279767043</started>
+      <duration>86</duration>
     </story>
     <story>
       <description></description>
@@ -163,8 +163,8 @@ Then powinni zostac pokazani uzytkownicy z rola ROLE_USER
 </scenarios>
       <passed>true</passed>
       <pending>false</pending>
-      <started>1463772319963</started>
-      <duration>13856</duration>
+      <started>1464279767143</started>
+      <duration>18869</duration>
     </story>
     <story>
       <description></description>
@@ -173,30 +173,25 @@ Then powinni zostac pokazani uzytkownicy z rola ROLE_USER
       <path>stories/FormularzDodaniaNowegoIncydentu/FormularzDodaniaNowegoIncydentu.story</path>
       <html>stories.FormularzDodaniaNowegoIncydentu.FormularzDodaniaNowegoIncydentu.html</html>
       <meta></meta>
-      <scenarios>Scenario:Narrative:&#xd;
-Jako uzytkownik&#xd;
-Chce dodac nowy incydent&#xd;
-Aby moc zglaszac problem&#xd;
-&#xd;
-&#xd;
-&#xd;
-Scenario1: Uzytkownik dodaje nowy incydent poprawnie
+      <scenarios>Scenario:Uzytkownik dodaje nowy incydent poprawnie
 Given poprawne logowanie uzytkownika
-When poprawne wprowadzenie wszystkich danych incydentu
-Then poprawne dodanie nowego incydentu&#xd;
-&#xd;
-&#xd;
-Scenario2: Uzytkownik dodaje nowy incydent blednie
+When kliknie przycisk utworz incydent
+And poprawne wprowadzi wszystkie dane incydentu
+Then incydent powinien zostac poprawnie dodany
+
+
+Scenario:Uzytkownik dodaje nowy incydent blednie
 Given poprawne logowanie uzytkownika
-When niepoprawne wprowadzenie wszystkich danych incydentu
-Then brak mozliwosci utworzenia nowego incydentu
+When kliknie przycisk utworz incydent
+When nie wypelni wszystkich wymaganych pol danych incydentu
+Then incydend powinien nie zostac utworzony
 
 
 </scenarios>
       <passed>true</passed>
-      <pending>true</pending>
-      <started>1463772334279</started>
-      <duration>38</duration>
+      <pending>false</pending>
+      <started>1464279786935</started>
+      <duration>36744</duration>
     </story>
     <story>
       <description></description>
@@ -226,8 +221,8 @@ Then system wyswietla komunikat &quot;Nie mozna utworzyc nowego rekordu&quot;
 </scenarios>
       <passed>true</passed>
       <pending>true</pending>
-      <started>1463772334329</started>
-      <duration>47</duration>
+      <started>1464279824640</started>
+      <duration>14149</duration>
     </story>
     <story>
       <description></description>
@@ -245,8 +240,8 @@ Then uzytkownik powinien zostac zalogowany na strone z lista incydentow
 </scenarios>
       <passed>true</passed>
       <pending>false</pending>
-      <started>1463772334385</started>
-      <duration>12099</duration>
+      <started>1464279839703</started>
+      <duration>15444</duration>
     </story>
     <story>
       <description></description>
@@ -277,8 +272,8 @@ Then nowy plik zostaje dodany do incydentu
 </scenarios>
       <passed>true</passed>
       <pending>true</pending>
-      <started>1463772347301</started>
-      <duration>35</duration>
+      <started>1464279856189</started>
+      <duration>54</duration>
     </story>
     <story>
       <description></description>
@@ -296,8 +291,8 @@ Then na liscie incydentow pozostaja incydenty ze statusem zgloszony
 </scenarios>
       <passed>true</passed>
       <pending>false</pending>
-      <started>1463772347391</started>
-      <duration>11835</duration>
+      <started>1464279856260</started>
+      <duration>18066</duration>
     </story>
     <story>
       <description></description>
@@ -328,8 +323,8 @@ Then nowy plik zostaje dodany do incydentu
 </scenarios>
       <passed>true</passed>
       <pending>true</pending>
-      <started>1463772359666</started>
-      <duration>24</duration>
+      <started>1464279875364</started>
+      <duration>69</duration>
     </story>
     <story>
       <description></description>
@@ -347,8 +342,8 @@ Then powinien widziec statystyki incydentow
 </scenarios>
       <passed>true</passed>
       <pending>true</pending>
-      <started>1463772359701</started>
-      <duration>25</duration>
+      <started>1464279875448</started>
+      <duration>40</duration>
     </story>
     <story>
       <description></description>
@@ -376,8 +371,8 @@ Then system wyswietla komunikat &quot;Nie znaleziono incydentu&quot;
 </scenarios>
       <passed>true</passed>
       <pending>true</pending>
-      <started>1463772359735</started>
-      <duration>31</duration>
+      <started>1464279875505</started>
+      <duration>18201</duration>
     </story>
   </stories>
   <stepMatches/>

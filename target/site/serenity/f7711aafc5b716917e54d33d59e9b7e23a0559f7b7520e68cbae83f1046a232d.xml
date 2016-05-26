@@ -1,0 +1,88 @@
+<acceptance-test-run title="Uzytkownik dodaje nowy incydent blednie" name="Uzytkownik dodaje nowy incydent blednie" steps="9" successful="9" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="12197" timestamp="2016-05-26T18:23:31.480+02:00" session-id="61c972f6-171c-49cd-8bca-2690f5277b2b">
+  <user-story id="FormularzDodaniaNowegoIncydentu" name="Formularz dodania nowego incydentu" path="stories/FormularzDodaniaNowegoIncydentu/FormularzDodaniaNowegoIncydentu.story"/>
+  <tags>
+    <tag name="Formularz dodania nowego incydentu" type="feature"/>
+    <tag name="Formularz dodania nowego incydentu/Formularz dodania nowego incydentu" type="story"/>
+  </tags>
+  <test-group name="Given poprawne logowanie uzytkownika" result="SUCCESS">
+    <screenshots>
+      <screenshot image="3c37e2e5fa0603056391d0ad39c2ef33.png"/>
+      <screenshot image="5770341faaf22fca5e9d9f4da5c8de06.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1010">
+      <screenshots>
+        <screenshot image="3c37e2e5fa0603056391d0ad39c2ef33.png"/>
+        <screenshot image="ef1fa3ec8fc8cdb91179a536af817046.png"/>
+      </screenshots>
+      <description>Otworz strone logowania u</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1295">
+      <screenshots>
+        <screenshot image="ef1fa3ec8fc8cdb91179a536af817046.png"/>
+        <screenshot image="43edbf8bea9c67a942e71cf11dcb7ec1.png"/>
+      </screenshots>
+      <description>Wpisz email u</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1146">
+      <screenshots>
+        <screenshot image="43edbf8bea9c67a942e71cf11dcb7ec1.png"/>
+        <screenshot image="405ed3cb5993cd0134c0c41e7f70ef54.png"/>
+      </screenshots>
+      <description>Wpisz haslo u</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1378">
+      <screenshots>
+        <screenshot image="405ed3cb5993cd0134c0c41e7f70ef54.png"/>
+        <screenshot image="5770341faaf22fca5e9d9f4da5c8de06.png"/>
+      </screenshots>
+      <description>Wcisnij przycisk zaloguj sie</description>
+    </test-step>
+  </test-group>
+  <test-group name="When kliknie przycisk utworz incydent" result="SUCCESS">
+    <screenshots>
+      <screenshot image="0c60c9e2a6452c3c9b45e9fe4a77672a.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1139">
+      <screenshots>
+        <screenshot image="0c60c9e2a6452c3c9b45e9fe4a77672a.png"/>
+      </screenshots>
+      <description>Kliknij przycisk utworz incydent</description>
+    </test-step>
+  </test-group>
+  <test-group name="When nie wypelni wszystkich wymaganych pol danych incydentu" result="SUCCESS">
+    <screenshots>
+      <screenshot image="f94657305af106c73a48bd3233909662.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1557">
+      <screenshots>
+        <screenshot image="95e19412d154cfeb647542a21690719c.png"/>
+      </screenshots>
+      <description>Typ incydentu</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1504">
+      <screenshots>
+        <screenshot image="95e19412d154cfeb647542a21690719c.png"/>
+        <screenshot image="a7dfb42d39a9009739bf6d336b2a1f43.png"/>
+      </screenshots>
+      <description>Opis incydentu</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1391">
+      <screenshots>
+        <screenshot image="a7dfb42d39a9009739bf6d336b2a1f43.png"/>
+        <screenshot image="f94657305af106c73a48bd3233909662.png"/>
+      </screenshots>
+      <description>Kliknij utworz i</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then incydend powinien nie zostac utworzony" result="SUCCESS">
+    <screenshots>
+      <screenshot image="f94657305af106c73a48bd3233909662.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="419">
+      <screenshots>
+        <screenshot image="f94657305af106c73a48bd3233909662.png"/>
+      </screenshots>
+      <description>Assert incydent nie utworzony</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

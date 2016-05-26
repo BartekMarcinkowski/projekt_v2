@@ -1,5 +1,3 @@
-Meta:
-
 Narrative:
 Jako administrator
 Chce miec mozliwosc filtrowania uzytkownikow

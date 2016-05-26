@@ -1,4 +1,4 @@
-<acceptance-test-run title="Przegladanie statystyk incydentow" name="Przegladanie statystyk incydentow" steps="3" successful="0" failures="0" skipped="0" ignored="0" pending="3" annotated-result="PENDING" result="PENDING" duration="19" timestamp="2016-05-20T21:25:59.703+02:00">
+<acceptance-test-run title="Przegladanie statystyk incydentow" name="Przegladanie statystyk incydentow" steps="3" successful="0" failures="0" skipped="0" ignored="0" pending="3" annotated-result="PENDING" result="PENDING" duration="35" timestamp="2016-05-26T18:24:35.452+02:00">
   <user-story id="Statystyki" name="Statystyki" path="stories/Statystyki/Statystyki.story"/>
   <tags>
     <tag name="Statystyki" type="feature"/>

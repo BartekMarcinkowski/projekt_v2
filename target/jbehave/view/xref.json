@@ -1,5 +1,5 @@
 {"xref": {
-  "whenMade": 1463772364445,
+  "whenMade": 1464279899479,
   "createdBy": "JBehave",
   "metaFilter": "-ignore",
   "meta": [],
@@ -14,8 +14,8 @@
       "scenarios": "Scenario:Usuniecie pracownika z listy\nGiven zalogowany administrator jest w zakladce uzytkownicy\nWhen wyszuka pracownika\nAnd wybierze akcje delete\nThen konto powinno zostac usuniete\n\n\n",
       "passed": true,
       "pending": true,
-      "started": 1463772248121,
-      "duration": 33098
+      "started": 1464279684607,
+      "duration": 19717
     },
     {
       "description": "",
@@ -27,8 +27,8 @@
       "scenarios": "Scenario:Narrative:\r\nJako pracownik\r\nChce miec dostep do szczegolow incydentow\r\nAby miec moc edytowac i sprawdzac incydenty\r\n\r\n\r\n\r\nScenario1: Pracownik edytuje opis incydentu\nGiven pracownik zalogowany wyswietla liste incydentow\nWhen pracownik edytuje opis incydentu\nThen w opisie incdentu pojawia sie nowy teskt\r\n\r\n\r\nScenario2: Pracownik dodaje plik do incydentu\nGiven poprawne logowanie uzytkownika i wyswietlenie listy plikow na stronie szczegolow\nWhen pracownik dodaje plik do incydentu\nThen nowy plik zostaje dodany do incydentu\n\n\n",
       "passed": true,
       "pending": true,
-      "started": 1463772284267,
-      "duration": 72
+      "started": 1464279705590,
+      "duration": 140
     },
     {
       "description": "",
@@ -39,9 +39,9 @@
       "meta": "",
       "scenarios": "Scenario:Brak zgloszonych incydentow\nGiven uzytkownik jest zalogowany do systemu\nWhen sprawdza liste incydentow\nThen system wyswietla komunikat o braku incydentow do wyswietlenia\n\n\n",
       "passed": true,
-      "pending": true,
-      "started": 1463772284352,
-      "duration": 47
+      "pending": false,
+      "started": 1464279705753,
+      "duration": 15973
     },
     {
       "description": "",
@@ -53,8 +53,8 @@
       "scenarios": "Scenario:Dodanie nowego pracownika\nGiven zalogowany administrator jest w zakladce uzytkownicy\nWhen wybierze opcje dodaj pracownika\nAnd wprowdzi nazwe, email i haslo\nThen konto powinno zostac utworzone\n\n\n",
       "passed": true,
       "pending": false,
-      "started": 1463772284409,
-      "duration": 20410
+      "started": 1464279722683,
+      "duration": 24455
     },
     {
       "description": "",
@@ -66,8 +66,8 @@
       "scenarios": "Scenario:Poprawne zalozenie nowego konta\nGiven uzytkownik ma otwarta strone rejstracji\nWhen wprowadzi nazwe uzytkownika, email i haslo\nThen uzytkownik powinien zostac zalogowany\n\n\n",
       "passed": true,
       "pending": false,
-      "started": 1463772305498,
-      "duration": 13420
+      "started": 1464279748143,
+      "duration": 17963
     },
     {
       "description": "",
@@ -79,8 +79,8 @@
       "scenarios": "Scenario:Narrative:\r\nJako administrator\r\nChce miec dostep do formularza obslugi incydentow\r\nAby miec moc zarzadzac incydentami\r\n\r\n\r\n\r\nScenario1: administrator zmienia status incydentu z \"niepotwierdzony\" lub \"rozwiazany\"\nGiven formualarz obslugi incydentu posiada status,przypisanie incydentu, opis wykonanych prac\nWhen administrator zmienia status incydentu\nThen incydent posiada nowy status \"zgloszony\" lub \"zamkniety\"\r\n\r\n\r\nScenario2: administrator przypisuje incydent do pracownika lub innego administratora\nGiven formualarz obslugi incydentu posiada status,przypisanie incydentu, opis wykonanych prac\nWhen administrator przypisuje incydent do pracownika lub innego administratora\nThen w opisie incdentu pojawia sie nowy teskt\n\n\n",
       "passed": true,
       "pending": true,
-      "started": 1463772319908,
-      "duration": 45
+      "started": 1464279767043,
+      "duration": 86
     },
     {
       "description": "",
@@ -92,8 +92,8 @@
       "scenarios": "Scenario:Filtrowanie uzytkownikow po roli ROLE_USER\nGiven zalogowany administrator jest w zakladce uzytkownicy\nWhen wybierze opcje filtruj\nAnd wybierze role ROLE_USER\nThen powinni zostac pokazani uzytkownicy z rola ROLE_USER\n\n\n",
       "passed": true,
       "pending": false,
-      "started": 1463772319963,
-      "duration": 13856
+      "started": 1464279767143,
+      "duration": 18869
     },
     {
       "description": "",
@@ -102,11 +102,11 @@
       "path": "stories/FormularzDodaniaNowegoIncydentu/FormularzDodaniaNowegoIncydentu.story",
       "html": "stories.FormularzDodaniaNowegoIncydentu.FormularzDodaniaNowegoIncydentu.html",
       "meta": "",
-      "scenarios": "Scenario:Narrative:\r\nJako uzytkownik\r\nChce dodac nowy incydent\r\nAby moc zglaszac problem\r\n\r\n\r\n\r\nScenario1: Uzytkownik dodaje nowy incydent poprawnie\nGiven poprawne logowanie uzytkownika\nWhen poprawne wprowadzenie wszystkich danych incydentu\nThen poprawne dodanie nowego incydentu\r\n\r\n\r\nScenario2: Uzytkownik dodaje nowy incydent blednie\nGiven poprawne logowanie uzytkownika\nWhen niepoprawne wprowadzenie wszystkich danych incydentu\nThen brak mozliwosci utworzenia nowego incydentu\n\n\n",
+      "scenarios": "Scenario:Uzytkownik dodaje nowy incydent poprawnie\nGiven poprawne logowanie uzytkownika\nWhen kliknie przycisk utworz incydent\nAnd poprawne wprowadzi wszystkie dane incydentu\nThen incydent powinien zostac poprawnie dodany\n\n\nScenario:Uzytkownik dodaje nowy incydent blednie\nGiven poprawne logowanie uzytkownika\nWhen kliknie przycisk utworz incydent\nWhen nie wypelni wszystkich wymaganych pol danych incydentu\nThen incydend powinien nie zostac utworzony\n\n\n",
       "passed": true,
-      "pending": true,
-      "started": 1463772334279,
-      "duration": 38
+      "pending": false,
+      "started": 1464279786935,
+      "duration": 36744
     },
     {
       "description": "",
@@ -118,8 +118,8 @@
       "scenarios": "Scenario:Narrative:\r\nJako pracownik \r\nChce miec dostep do formularza oblsugi incydentow\r\nAby moc oslugiwac incydenty\r\n\r\n\r\n\r\nScenario1: Pracownik zmienia status incydentu poprawnie\nGiven poprawne logowanie uzytkownika\nWhen uzytkownik wprowadza poprawne dane do formularza\nThen poprawne wyswietlenie przez system komunikatu\r\n\r\nScenario2: Pracownik zmienia status incydentu blednie\nGiven poprawne logowanie uzytkownika\nWhen uzytkownik wprowadza niepoprawne dane do formularza\nThen system wyswietla komunikat \"Nie mozna utworzyc nowego rekordu\"\n\n\n",
       "passed": true,
       "pending": true,
-      "started": 1463772334329,
-      "duration": 47
+      "started": 1464279824640,
+      "duration": 14149
     },
     {
       "description": "",
@@ -131,8 +131,8 @@
       "scenarios": "Scenario:Poprawne logowanie do systemu ICM\nGiven uzytkownik ma otwarta strone logowania\nWhen poprawnie wprowadzi email i haslo\nThen uzytkownik powinien zostac zalogowany na strone z lista incydentow\n\n\n",
       "passed": true,
       "pending": false,
-      "started": 1463772334385,
-      "duration": 12099
+      "started": 1464279839703,
+      "duration": 15444
     },
     {
       "description": "",
@@ -144,8 +144,8 @@
       "scenarios": "Scenario:Narrative:\r\nJako uzytkownik\r\nChce miec dostep do incydentow\r\nAby miec moc edytowac opis incydentu\r\n\r\n\r\nScenario1: Edytowanie opisu incydentu\nGiven uzytkownik zalogowany do konta \r\nAND lista incydentow zawiera incydenty i je  wyswietla\nWhen uzytkownik edytuje opis incydentu\nThen w opisie incydentu pojawia sie nowy teskt\r\n\r\n\r\nScenario2: uzytkownik dodaje plik do incydentu\nGiven lista plikow znajduje sie na stronie szczegolow\nWhen uzytkownik dodaje plik do incydentu\nThen nowy plik zostaje dodany do incydentu\n\n\n",
       "passed": true,
       "pending": true,
-      "started": 1463772347301,
-      "duration": 35
+      "started": 1464279856189,
+      "duration": 54
     },
     {
       "description": "",
@@ -157,8 +157,8 @@
       "scenarios": "Scenario:Filtrowanie incydentow po statusie \"zgloszony\"\nGiven pracownik jest zalogowany i znajduje sie w zakladce incydenty\nWhen filtruje incydenty po statusie zgloszony\nThen na liscie incydentow pozostaja incydenty ze statusem zgloszony\n\n\n",
       "passed": true,
       "pending": false,
-      "started": 1463772347391,
-      "duration": 11835
+      "started": 1464279856260,
+      "duration": 18066
     },
     {
       "description": "",
@@ -170,8 +170,8 @@
       "scenarios": "Scenario:Narrative:\r\nJako administrator\r\nChce miec dostep do szczegolow incydentu\r\nAby zarzadzac incydentami\r\n\r\n\r\nScenario1: Administrator edytuje opis incydentu\nGiven poprawne zalogowanie administratora \r\nAND wyswietlenie listy incydentow\nWhen administrator edytuje opis incydentu\nThen w opisie incdentu pojawia sie nowy teskt\r\n\r\nScenario2: Administrator dodaje plik do incydentu\nGiven poprawne zalogowanie administratora \r\nAND wyswietlenie listy incydentow\nWhen dodanie pliku do incydentu\nThen nowy plik zostaje dodany do incydentu\n\n\n",
       "passed": true,
       "pending": true,
-      "started": 1463772359666,
-      "duration": 24
+      "started": 1464279875364,
+      "duration": 69
     },
     {
       "description": "",
@@ -183,8 +183,8 @@
       "scenarios": "Scenario:Przegladanie statystyk incydentow\nGiven zalogowany administrator\nWhen wybierze zakladke dashboard\nThen powinien widziec statystyki incydentow\n\n\n",
       "passed": true,
       "pending": true,
-      "started": 1463772359701,
-      "duration": 25
+      "started": 1464279875448,
+      "duration": 40
     },
     {
       "description": "",
@@ -196,8 +196,8 @@
       "scenarios": "Scenario:Narrative:\r\nJako uzytkownik\r\nChce wyszukac incydent o danym identyfikatorze\r\nAby odnalezc konkretny incydent\r\n\r\nScenario1: Incydent o danym identyfikatorze istnieje\nGiven uzytkownik jest zalogowany do konta and lista incydentow zawiera incydenty\nWhen uzytkownik wprowadza istniejacy identyfikator incydentu\nThen sytsem wyswietla strone zawierajaca szczegoly incydentu\r\n\r\nScenario2: Incydent o danym identyfikatorze nie istnieje\nGiven uzytkownik jest zalogowany do konta\nWhen uzytkownik wprowadza nieistniejacy identyfikator incydentu\nThen system wyswietla komunikat \"Nie znaleziono incydentu\"\n\n\n",
       "passed": true,
       "pending": true,
-      "started": 1463772359735,
-      "duration": 31
+      "started": 1464279875505,
+      "duration": 18201
     }
   ],
   "stepMatches": []

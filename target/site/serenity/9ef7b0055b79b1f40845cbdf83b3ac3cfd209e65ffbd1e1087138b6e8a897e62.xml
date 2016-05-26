@@ -1,16 +1,61 @@
-<acceptance-test-run title="Brak zgloszonych incydentow" name="Brak zgloszonych incydentow" steps="3" successful="0" failures="0" skipped="0" ignored="0" pending="3" annotated-result="PENDING" result="PENDING" duration="42" timestamp="2016-05-20T21:24:44.356+02:00">
+<acceptance-test-run title="Brak zgloszonych incydentow" name="Brak zgloszonych incydentow" steps="6" successful="6" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="15952" timestamp="2016-05-26T18:21:45.769+02:00" session-id="8c246af3-dfe2-4449-b644-f34f4b09ff6c">
   <user-story id="SprawdzenieListyIncydentow" name="Sprawdzenie listy incydentow" path="stories/SprawdzenieListyIncydentow/SprawdzenieListyIncydentow.story"/>
   <tags>
     <tag name="Sprawdzenie listy incydentow" type="feature"/>
     <tag name="Sprawdzenie listy incydentow/Sprawdzenie listy incydentow" type="story"/>
   </tags>
-  <test-step result="PENDING" duration="0">
-    <description>Given uzytkownik jest zalogowany do systemu</description>
-  </test-step>
-  <test-step result="PENDING" duration="1">
-    <description>When sprawdza liste incydentow</description>
-  </test-step>
-  <test-step result="PENDING" duration="0">
-    <description>Then system wyswietla komunikat o braku incydentow do wyswietlenia</description>
-  </test-step>
+  <test-group name="Given uzytkownik jest zalogowany do systemu" result="SUCCESS">
+    <screenshots>
+      <screenshot image="600e8be2d8be1506a9675644468f3b4e.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="9408">
+      <screenshots>
+        <screenshot image="ef1fa3ec8fc8cdb91179a536af817046.png"/>
+      </screenshots>
+      <description>Otworz strone logowania2</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1979">
+      <screenshots>
+        <screenshot image="ef1fa3ec8fc8cdb91179a536af817046.png"/>
+        <screenshot image="926f38933efcd956e01ca19e74fc81ab.png"/>
+      </screenshots>
+      <description>Wpisz email2</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1499">
+      <screenshots>
+        <screenshot image="926f38933efcd956e01ca19e74fc81ab.png"/>
+        <screenshot image="fc43642810a9b1f18f4c42e906b93915.png"/>
+      </screenshots>
+      <description>Wpisz haslo2</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1492">
+      <screenshots>
+        <screenshot image="fc43642810a9b1f18f4c42e906b93915.png"/>
+        <screenshot image="600e8be2d8be1506a9675644468f3b4e.png"/>
+      </screenshots>
+      <description>Wcisnij przycisk zaloguj sie2</description>
+    </test-step>
+  </test-group>
+  <test-group name="When sprawdza liste incydentow" result="SUCCESS">
+    <screenshots>
+      <screenshot image="600e8be2d8be1506a9675644468f3b4e.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="369">
+      <screenshots>
+        <screenshot image="600e8be2d8be1506a9675644468f3b4e.png"/>
+      </screenshots>
+      <description>Assert napis incydenty2</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then system wyswietla komunikat o braku incydentow do wyswietlenia" result="SUCCESS">
+    <screenshots>
+      <screenshot image="600e8be2d8be1506a9675644468f3b4e.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="386">
+      <screenshots>
+        <screenshot image="600e8be2d8be1506a9675644468f3b4e.png"/>
+      </screenshots>
+      <description>Assert nie znaleziono rekordow</description>
+    </test-step>
+  </test-group>
 </acceptance-test-run>

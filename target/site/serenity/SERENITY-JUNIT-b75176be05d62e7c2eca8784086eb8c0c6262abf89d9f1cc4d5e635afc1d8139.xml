@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Formularz dodania nowego incydentu" skipped="0" tests="2" time="36.74" timestamp="2016-05-147 06:23:06"><testcase name="Uzytkownik dodaje nowy incydent poprawnie"/><testcase name="Uzytkownik dodaje nowy incydent blednie"/></testsuite>

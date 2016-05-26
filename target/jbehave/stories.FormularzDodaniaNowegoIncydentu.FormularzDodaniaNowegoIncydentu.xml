@@ -1,56 +1,14 @@
 <story path="stories/FormularzDodaniaNowegoIncydentu/FormularzDodaniaNowegoIncydentu.story" title="">
-<scenario keyword="Scenario:" title="Narrative:
-Jako uzytkownik
-Chce dodac nowy incydent
-Aby moc zglaszac problem
-
-
-
-Scenario1: Uzytkownik dodaje nowy incydent poprawnie">
-<step outcome="pending" keyword="PENDING">Given poprawne logowanie uzytkownika</step>
-<step outcome="pending" keyword="PENDING">When poprawne wprowadzenie wszystkich danych incydentu</step>
-<step outcome="pending" keyword="PENDING">Then poprawne dodanie nowego incydentu
-
-
-Scenario2: Uzytkownik dodaje nowy incydent blednie</step>
-<step outcome="pending" keyword="PENDING">Given poprawne logowanie uzytkownika</step>
-<step outcome="pending" keyword="PENDING">When niepoprawne wprowadzenie wszystkich danych incydentu</step>
-<step outcome="pending" keyword="PENDING">Then brak mozliwosci utworzenia nowego incydentu</step>
-<pendingMethod>@Given(&quot;poprawne logowanie uzytkownika&quot;)
-@Pending
-public void givenPoprawneLogowanieUzytkownika() {
-  // PENDING
-}
-</pendingMethod>
-<pendingMethod>@When(&quot;poprawne wprowadzenie wszystkich danych incydentu&quot;)
-@Pending
-public void whenPoprawneWprowadzenieWszystkichDanychIncydentu() {
-  // PENDING
-}
-</pendingMethod>
-<pendingMethod>@Then(&quot;poprawne dodanie nowego incydentu\r\n\r\n\r\nScenario2: Uzytkownik dodaje nowy incydent blednie&quot;)
-@Pending
-public void thenPoprawneDodanieNowegoIncydentuScenario2UzytkownikDodajeNowyIncydentBlednie() {
-  // PENDING
-}
-</pendingMethod>
-<pendingMethod>@Given(&quot;poprawne logowanie uzytkownika&quot;)
-@Pending
-public void givenPoprawneLogowanieUzytkownika() {
-  // PENDING
-}
-</pendingMethod>
-<pendingMethod>@When(&quot;niepoprawne wprowadzenie wszystkich danych incydentu&quot;)
-@Pending
-public void whenNiepoprawneWprowadzenieWszystkichDanychIncydentu() {
-  // PENDING
-}
-</pendingMethod>
-<pendingMethod>@Then(&quot;brak mozliwosci utworzenia nowego incydentu&quot;)
-@Pending
-public void thenBrakMozliwosciUtworzeniaNowegoIncydentu() {
-  // PENDING
-}
-</pendingMethod>
+<scenario keyword="Scenario:" title="Uzytkownik dodaje nowy incydent poprawnie">
+<step outcome="successful">Given poprawne logowanie uzytkownika</step>
+<step outcome="successful">When kliknie przycisk utworz incydent</step>
+<step outcome="successful">And poprawne wprowadzi wszystkie dane incydentu</step>
+<step outcome="successful">Then incydent powinien zostac poprawnie dodany</step>
+</scenario>
+<scenario keyword="Scenario:" title="Uzytkownik dodaje nowy incydent blednie">
+<step outcome="successful">Given poprawne logowanie uzytkownika</step>
+<step outcome="successful">When kliknie przycisk utworz incydent</step>
+<step outcome="successful">When nie wypelni wszystkich wymaganych pol danych incydentu</step>
+<step outcome="successful">Then incydend powinien nie zostac utworzony</step>
 </scenario>
 </story>

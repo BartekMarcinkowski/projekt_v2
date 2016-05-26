@@ -19,8 +19,12 @@ public class EndUserSteps extends ScenarioSteps {
     ListaKontRoleUser listaKontRoleUser;
     StronaLogowaniaU stronaLogowaniaU;
     NowyIncydent nowyIncydent;
+    SprawdzanieListyIncydentow sprawdzanieListyIncydentow;
+    WyszukiwanieIncydentowPoIdentyfikatorze wyszukiwanieIncydentowPoIdentyfikatorze;
 
-/**Zakladanie konta*/
+    /**
+     * Zakladanie konta
+     */
 
     @Step
     public void otworzStroneRejstracji() {
@@ -57,10 +61,13 @@ public class EndUserSteps extends ScenarioSteps {
     public void assertPrzyciskLogout() {
         incydenty.assertPrzyciskLogout();
     }
-/**Logowanie*/
+
+    /**
+     * Logowanie
+     */
 
     @Step
-    public void otworzStroneLogowania(){
+    public void otworzStroneLogowania() {
         stronaLogowania.open();
         getDriver().navigate().refresh();
     }
@@ -69,10 +76,12 @@ public class EndUserSteps extends ScenarioSteps {
     public void wpiszEmail() {
         stronaLogowania.wpiszEmail();
     }
+
     @Step
     public void wpiszHaslo() {
         stronaLogowania.wpiszHaslo();
     }
+
     @Step
     public void wcisnijPrzyciskZalogujSie() {
         stronaLogowania.wcisnijPrzyciskZalogujSie();
@@ -84,7 +93,9 @@ public class EndUserSteps extends ScenarioSteps {
     }
 
 
-/** Dodawanie nowego pracownika*/
+    /**
+     * Dodawanie nowego pracownika
+     */
 
     @Step
     public void wcisnijPrzyciskUzytkownicy() {
@@ -127,13 +138,16 @@ public class EndUserSteps extends ScenarioSteps {
     }
 
 
-/**Filtrowanie incydentow*/
+    /**
+     * Filtrowanie incydentow
+     */
 
     @Step
     public void otworzStroneLogowaniaP() {
         stronaLogowaniaP.open();
         getDriver().navigate().refresh();
     }
+
     @Step
     public void wpiszEmailP() {
         stronaLogowaniaP.wpiszEmailP();
@@ -164,7 +178,9 @@ public class EndUserSteps extends ScenarioSteps {
         noweIncydenty.assertZgloszonyIncydent();
     }
 
-/**Filtrowanie pracownikow*/
+    /**
+     * Filtrowanie pracownikow
+     */
 
     @Step
     public void kliknijFilter() {
@@ -181,7 +197,9 @@ public class EndUserSteps extends ScenarioSteps {
         listaKontRoleUser.assertRoleUser();
     }
 
-/**Dodanie nowego incydentu*/
+    /**
+     * Dodanie nowego incydentu
+     */
 
     @Step
     public void otworzStroneLogowaniaU() {
@@ -238,4 +256,72 @@ public class EndUserSteps extends ScenarioSteps {
     public void assertIncydentNieUtworzony() {
         nowyIncydent.assertIncydentNieUtworzony();
     }
+
+
+    /**
+     * Sprawdzanie listy incydentow
+     */
+
+    @Step
+    public void otworzStroneLogowania2() {
+        stronaLogowania.open();
+        getDriver().navigate().refresh();
+    }
+
+    @Step
+    public void wpiszEmail2() {
+        sprawdzanieListyIncydentow.wpiszEmail();
+    }
+
+    @Step
+    public void wpiszHaslo2() {
+        sprawdzanieListyIncydentow.wpiszHaslo();
+    }
+
+    @Step
+    public void wcisnijPrzyciskZalogujSie2() {
+        sprawdzanieListyIncydentow.wcisnijPrzyciskZalogujSie();
+    }
+
+    @Step
+    public void assertNapisIncydenty2() {
+        incydenty.assertNapisIncydenty();
+    }
+
+    @Step
+    public void assertNieZnalezionoRekordow() {sprawdzanieListyIncydentow.assertNieZnalezionoRekordow();}
+
+
+    /**
+     * Wyszukiwanie incydentow po identyfikatorze
+     */
+
+    @Step
+    public void otworzStroneLogowania3() {
+        stronaLogowaniaU.open();
+        getDriver().navigate().refresh();
+    }
+
+    @Step
+    public void wpiszEmail3() {
+        stronaLogowaniaU.wpiszEmailU();
+    }
+
+    @Step
+    public void wpiszHaslo3() {
+        stronaLogowaniaU.wpiszHasloU();
+    }
+
+    @Step
+    public void assertNieZnalezionoRekordow2() {wyszukiwanieIncydentowPoIdentyfikatorze.assertNieZnalezionoRekordow2();}
+
+    @Step
+    public void wpiszIDIncydentu() { wyszukiwanieIncydentowPoIdentyfikatorze.wpiszIDIncydentu(); }
+
+    @Step
+    public void kliknijSzukaj() { wyszukiwanieIncydentowPoIdentyfikatorze.kliknijSzukaj(); }
+
+    @Step
+    public void assert2() { wyszukiwanieIncydentowPoIdentyfikatorze.assert2(); }
+
 }
