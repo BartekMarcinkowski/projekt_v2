@@ -1,1 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Usuniecie pracownika" skipped="1" tests="1" time="19.32" timestamp="2016-05-147 06:21:24"><testcase name="Usuniecie pracownika z listy"><skipped/></testcase></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Usuniecie pracownika" skipped="0" tests="1" time="39.52" timestamp="2016-05-149 04:35:01"><testcase name="Usuniecie pracownika z listy"><failure message="The text 'jas@wp.pl' was found in the web element when it should not have. Element text 'Id Nazwa E-mail Rola Telefon Akcja&#10;1 icm-admin icm-admin@icm.com ROLE_ADMIN (58) 111-11-10&#10;Akcja &#10;2 icm-employee icm-employee@icm.com ROLE_EMPLOYEE (58) 111-11-11&#10;Akcja &#10;6 jas jas@wp.pl ROLE_EMPLOYEE 987654321&#10;Akcja &#10;3 icm-user1 icm-user1@icm.com ROLE_USER (58) 111-11-12&#10;Akcja &#10;4 icm-user2 icm-user2@icm.com ROLE_USER (58) 111-11-13&#10;Akcja &#10;5 icm-user3 icm-user3@icm.com ROLE_USER (58) 111-11-14&#10;Akcja &#10;Filter&#10;Dodaj pracownika'." type="java.lang.AssertionError">The text 'jas@wp.pl' was found in the web element when it should not have. Element text 'Id Nazwa E-mail Rola Telefon Akcja
+1 icm-admin icm-admin@icm.com ROLE_ADMIN (58) 111-11-10
+Akcja 
+2 icm-employee icm-employee@icm.com ROLE_EMPLOYEE (58) 111-11-11
+Akcja 
+6 jas jas@wp.pl ROLE_EMPLOYEE 987654321
+Akcja 
+3 icm-user1 icm-user1@icm.com ROLE_USER (58) 111-11-12
+Akcja 
+4 icm-user2 icm-user2@icm.com ROLE_USER (58) 111-11-13
+Akcja 
+5 icm-user3 icm-user3@icm.com ROLE_USER (58) 111-11-14
+Akcja 
+Filter
+Dodaj pracownika'.</failure><system-err>The text 'jas@wp.pl' was found in the web element when it should not have. Element text 'Id Nazwa E-mail Rola Telefon Akcja
+1 icm-admin icm-admin@icm.com ROLE_ADMIN (58) 111-11-10
+Akcja 
+2 icm-employee icm-employee@icm.com ROLE_EMPLOYEE (58) 111-11-11
+Akcja 
+6 jas jas@wp.pl ROLE_EMPLOYEE 987654321
+Akcja 
+3 icm-user1 icm-user1@icm.com ROLE_USER (58) 111-11-12
+Akcja 
+4 icm-user2 icm-user2@icm.com ROLE_USER (58) 111-11-13
+Akcja 
+5 icm-user3 icm-user3@icm.com ROLE_USER (58) 111-11-14
+Akcja 
+Filter
+Dodaj pracownika'.&#13;
+icm.pages.ListaKont.brakKontaNaLiscie(ListaKont.java:86)&#13;
+icm.steps.serenity.EndUserSteps.brakKontaNaLiscie(EndUserSteps.java:307)&#13;
+icm.steps.DefinitionSteps.kontoUsunieta(DefinitionSteps.java:242)&#13;
+</system-err></testcase></testsuite>

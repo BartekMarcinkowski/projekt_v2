@@ -2,58 +2,17 @@
 <h1></h1>
 <div class="path">stories/SzczegolyIncydentu/SzczegolyIncydentuUzytkownik.story</div>
 <div class="scenario">
-<h2>Scenario: Narrative:
-Jako uzytkownik
-Chce miec dostep do incydentow
-Aby miec moc edytowac opis incydentu
-
-
-Scenario1: Edytowanie opisu incydentu</h2>
-<div class="step pending">Given uzytkownik zalogowany do konta 
-AND lista incydentow zawiera incydenty i je  wyswietla <span class="keyword pending">(PENDING)</span></div>
-<div class="step pending">When uzytkownik edytuje opis incydentu <span class="keyword pending">(PENDING)</span></div>
-<div class="step pending">Then w opisie incydentu pojawia sie nowy teskt
-
-
-Scenario2: uzytkownik dodaje plik do incydentu <span class="keyword pending">(PENDING)</span></div>
-<div class="step pending">Given lista plikow znajduje sie na stronie szczegolow <span class="keyword pending">(PENDING)</span></div>
-<div class="step pending">When uzytkownik dodaje plik do incydentu <span class="keyword pending">(PENDING)</span></div>
-<div class="step pending">Then nowy plik zostaje dodany do incydentu <span class="keyword pending">(PENDING)</span></div>
-<div><pre class="pending">@Given(&quot;uzytkownik zalogowany do konta \r\nAND lista incydentow zawiera incydenty i je  wyswietla&quot;)
-@Pending
-public void givenUzytkownikZalogowanyDoKontaANDListaIncydentowZawieraIncydentyIJeWyswietla() {
-  // PENDING
-}
-</pre></div>
-<div><pre class="pending">@When(&quot;uzytkownik edytuje opis incydentu&quot;)
-@Pending
-public void whenUzytkownikEdytujeOpisIncydentu() {
-  // PENDING
-}
-</pre></div>
-<div><pre class="pending">@Then(&quot;w opisie incydentu pojawia sie nowy teskt\r\n\r\n\r\nScenario2: uzytkownik dodaje plik do incydentu&quot;)
-@Pending
-public void thenWOpisieIncydentuPojawiaSieNowyTesktScenario2UzytkownikDodajePlikDoIncydentu() {
-  // PENDING
-}
-</pre></div>
-<div><pre class="pending">@Given(&quot;lista plikow znajduje sie na stronie szczegolow&quot;)
-@Pending
-public void givenListaPlikowZnajdujeSieNaStronieSzczegolow() {
-  // PENDING
-}
-</pre></div>
-<div><pre class="pending">@When(&quot;uzytkownik dodaje plik do incydentu&quot;)
-@Pending
-public void whenUzytkownikDodajePlikDoIncydentu() {
-  // PENDING
-}
-</pre></div>
-<div><pre class="pending">@Then(&quot;nowy plik zostaje dodany do incydentu&quot;)
-@Pending
-public void thenNowyPlikZostajeDodanyDoIncydentu() {
-  // PENDING
-}
-</pre></div>
+<h2>Scenario: Uzytkownik edytuje opis incydentu</h2>
+<div class="step successful">Given uzytkownik jest zalogowany i znajduje sie w zakladce incydenty</div>
+<div class="step successful">And uzytkownik wyswietli szczegoly incydentu</div>
+<div class="step successful">When uzytkownik edytuje opis incydentu</div>
+<div class="step successful">Then w opisie incydentu pojawia sie nowy teskt</div>
+</div>
+<div class="scenario">
+<h2>Scenario: uzytkownik dodaje plik do incydentu</h2>
+<div class="step successful">Given uzytkownik jest zalogowany i znajduje sie w zakladce incydenty</div>
+<div class="step successful">And uzytkownik wyswietli szczegoly incydentu</div>
+<div class="step successful">When w sekcji pliki wybierze plik do dodania i kliknie upload</div>
+<div class="step successful">Then plik powinien zostac dodany do incydentu</div>
 </div>
 </div>

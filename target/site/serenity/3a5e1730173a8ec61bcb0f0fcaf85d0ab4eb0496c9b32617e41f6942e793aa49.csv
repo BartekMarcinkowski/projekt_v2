@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Formularz dodania nowego incydentu","Uzytkownik dodaje nowy incydent blednie","SUCCESS","2016-05-28T16:38:03.389+02:00","0.0","9.01"
+"Formularz dodania nowego incydentu","Uzytkownik dodaje nowy incydent poprawnie","SUCCESS","2016-05-28T16:37:46.878+02:00","0.0","16.51"

@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Obsługa incydentu pracownik" skipped="2" tests="2" time="12.97" timestamp="2016-05-149 04:38:12"><testcase name="Pracownik zmienia status incydentu poprawnie"><skipped/></testcase><testcase name="Pracownik zmienia status incydentu blednie"><skipped/></testcase></testsuite>

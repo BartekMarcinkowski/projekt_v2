@@ -1,0 +1,94 @@
+<acceptance-test-run title="administrator przypisuje incydent do pracownika" name="administrator przypisuje incydent do pracownika" steps="10" successful="10" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="9326" timestamp="2016-05-28T16:37:22.247+02:00" session-id="9a5b03e1-95d3-4bba-9e23-cbe893be386a">
+  <user-story id="ObslugaIncydentuAdministrator" name="Obsluga incydentu administrator" path="stories/ObslugaIncydentu/ObslugaIncydentuAdministrator.story"/>
+  <tags>
+    <tag name="Obsluga incydentu" type="feature"/>
+    <tag name="Obsluga incydentu/Obsluga incydentu administrator" type="story"/>
+  </tags>
+  <test-group name="Given zalogowany administrator jest w zakladce incydenty" result="SUCCESS">
+    <screenshots>
+      <screenshot image="e80796b80aa87ed71f920ca32b740395.png"/>
+      <screenshot image="3462a809b4706ffca722a0579b221d09.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="792">
+      <screenshots>
+        <screenshot image="e80796b80aa87ed71f920ca32b740395.png"/>
+        <screenshot image="6c3a89bbfc175351796ad0362bcde23e.png"/>
+      </screenshots>
+      <description>Otworz strone logowania</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="855">
+      <screenshots>
+        <screenshot image="6c3a89bbfc175351796ad0362bcde23e.png"/>
+        <screenshot image="cd978d08e3bb2afb9180e9cbdd068289.png"/>
+      </screenshots>
+      <description>Wpisz email</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="815">
+      <screenshots>
+        <screenshot image="cd978d08e3bb2afb9180e9cbdd068289.png"/>
+        <screenshot image="cbb996963ea1a3b581b7e03583e3da98.png"/>
+      </screenshots>
+      <description>Wpisz haslo</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1034">
+      <screenshots>
+        <screenshot image="cbb996963ea1a3b581b7e03583e3da98.png"/>
+        <screenshot image="3462a809b4706ffca722a0579b221d09.png"/>
+      </screenshots>
+      <description>Wcisnij przycisk zaloguj sie</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="379">
+      <screenshots>
+        <screenshot image="3462a809b4706ffca722a0579b221d09.png"/>
+      </screenshots>
+      <description>Assert napis incydenty</description>
+    </test-step>
+  </test-group>
+  <test-group name="When wybierze wybierze akcje dodaj audyt incydentu" result="SUCCESS">
+    <screenshots>
+      <screenshot image="e7a573637ba46fccffc1c943e3b6a747.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="609">
+      <screenshots>
+        <screenshot image="62c8eae7026a88789ec7754e310294c5.png"/>
+      </screenshots>
+      <description>Wybranie akcja</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="929">
+      <screenshots>
+        <screenshot image="62c8eae7026a88789ec7754e310294c5.png"/>
+        <screenshot image="e7a573637ba46fccffc1c943e3b6a747.png"/>
+      </screenshots>
+      <description>Wybierz dodaj audyt</description>
+    </test-step>
+  </test-group>
+  <test-group name="And w formularzu audytu przypisze incydent do pracownika" result="SUCCESS">
+    <screenshots>
+      <screenshot image="d0466f305124efaa5bba6e4e45ad9c09.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="588">
+      <screenshots>
+        <screenshot image="9a32e81f42e1f79cc64d5b63e5551fe8.png"/>
+      </screenshots>
+      <description>Wybranie pracownika</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1071">
+      <screenshots>
+        <screenshot image="02599338f2e7e20aa8b58e8bc1d572bf.png"/>
+        <screenshot image="d0466f305124efaa5bba6e4e45ad9c09.png"/>
+      </screenshots>
+      <description>Klikniecie dodaj audyt</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then incydent powinien zostac przypisany do pracownika" result="SUCCESS">
+    <screenshots>
+      <screenshot image="d0466f305124efaa5bba6e4e45ad9c09.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="594">
+      <screenshots>
+        <screenshot image="d0466f305124efaa5bba6e4e45ad9c09.png"/>
+      </screenshots>
+      <description>Incydent przypisany</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

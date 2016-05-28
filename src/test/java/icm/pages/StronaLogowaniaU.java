@@ -14,8 +14,14 @@ public class StronaLogowaniaU extends PageObject {
     @FindBy (name = "j_username")
     WebElementFacade wpisanyEmailU;
 
+    @FindBy (name = "j_username")
+    WebElementFacade wpisanyEmailU3;
+
     @FindBy (name = "j_password")
     WebElementFacade wpisaneHasloU;
+
+    @FindBy (name = "j_password")
+    WebElementFacade wpisaneHasloU3;
 
     public void wpiszEmailU() {
         element(wpisanyEmailU).type("icm-user1@icm.com");
@@ -23,5 +29,15 @@ public class StronaLogowaniaU extends PageObject {
 
     public void wpiszHasloU() {
         element(wpisaneHasloU).type("!1");
+    }
+
+/**Sprawdzenie listy incydentow*/
+
+    public void wpiszEmailU3() {
+        element(wpisanyEmailU3).type("icm-user3@icm.com");
+    }
+
+    public void wpiszHasloU3() {
+        element(wpisaneHasloU3).type("!1");
     }
 }

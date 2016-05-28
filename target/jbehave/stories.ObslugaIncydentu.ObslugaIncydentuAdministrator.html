@@ -2,58 +2,17 @@
 <h1></h1>
 <div class="path">stories/ObslugaIncydentu/ObslugaIncydentuAdministrator.story</div>
 <div class="scenario">
-<h2>Scenario: Narrative:
-Jako administrator
-Chce miec dostep do formularza obslugi incydentow
-Aby miec moc zarzadzac incydentami
-
-
-
-Scenario1: administrator zmienia status incydentu z &quot;niepotwierdzony&quot; lub &quot;rozwiazany&quot;</h2>
-<div class="step pending">Given formualarz obslugi incydentu posiada status,przypisanie incydentu, opis wykonanych prac <span class="keyword pending">(PENDING)</span></div>
-<div class="step pending">When administrator zmienia status incydentu <span class="keyword pending">(PENDING)</span></div>
-<div class="step pending">Then incydent posiada nowy status &quot;zgloszony&quot; lub &quot;zamkniety&quot;
-
-
-Scenario2: administrator przypisuje incydent do pracownika lub innego administratora <span class="keyword pending">(PENDING)</span></div>
-<div class="step pending">Given formualarz obslugi incydentu posiada status,przypisanie incydentu, opis wykonanych prac <span class="keyword pending">(PENDING)</span></div>
-<div class="step pending">When administrator przypisuje incydent do pracownika lub innego administratora <span class="keyword pending">(PENDING)</span></div>
-<div class="step pending">Then w opisie incdentu pojawia sie nowy teskt <span class="keyword pending">(PENDING)</span></div>
-<div><pre class="pending">@Given(&quot;formualarz obslugi incydentu posiada status,przypisanie incydentu, opis wykonanych prac&quot;)
-@Pending
-public void givenFormualarzObslugiIncydentuPosiadaStatusprzypisanieIncydentuOpisWykonanychPrac() {
-  // PENDING
-}
-</pre></div>
-<div><pre class="pending">@When(&quot;administrator zmienia status incydentu&quot;)
-@Pending
-public void whenAdministratorZmieniaStatusIncydentu() {
-  // PENDING
-}
-</pre></div>
-<div><pre class="pending">@Then(&quot;incydent posiada nowy status \&quot;zgloszony\&quot; lub \&quot;zamkniety\&quot;\r\n\r\n\r\nScenario2: administrator przypisuje incydent do pracownika lub innego administratora&quot;)
-@Pending
-public void thenIncydentPosiadaNowyStatuszgloszonyLubzamknietyScenario2AdministratorPrzypisujeIncydentDoPracownikaLubInnegoAdministratora() {
-  // PENDING
-}
-</pre></div>
-<div><pre class="pending">@Given(&quot;formualarz obslugi incydentu posiada status,przypisanie incydentu, opis wykonanych prac&quot;)
-@Pending
-public void givenFormualarzObslugiIncydentuPosiadaStatusprzypisanieIncydentuOpisWykonanychPrac() {
-  // PENDING
-}
-</pre></div>
-<div><pre class="pending">@When(&quot;administrator przypisuje incydent do pracownika lub innego administratora&quot;)
-@Pending
-public void whenAdministratorPrzypisujeIncydentDoPracownikaLubInnegoAdministratora() {
-  // PENDING
-}
-</pre></div>
-<div><pre class="pending">@Then(&quot;w opisie incdentu pojawia sie nowy teskt&quot;)
-@Pending
-public void thenWOpisieIncdentuPojawiaSieNowyTeskt() {
-  // PENDING
-}
-</pre></div>
+<h2>Scenario: administrator zmienia status incydentu z niepotwierdzony na zg&#322;oszony</h2>
+<div class="step successful">Given zalogowany administrator jest w zakladce incydenty</div>
+<div class="step successful">When wybierze wybierze akcje dodaj audyt incydentu w statusie niepotwierdzony</div>
+<div class="step successful">And w formularzu audytu zmieni status na zgloszony</div>
+<div class="step successful">Then status incydentu powinien zostac zmieniny</div>
+</div>
+<div class="scenario">
+<h2>Scenario: administrator przypisuje incydent do pracownika</h2>
+<div class="step successful">Given zalogowany administrator jest w zakladce incydenty</div>
+<div class="step successful">When wybierze wybierze akcje dodaj audyt incydentu</div>
+<div class="step successful">And w formularzu audytu przypisze incydent do pracownika</div>
+<div class="step successful">Then incydent powinien zostac przypisany do pracownika</div>
 </div>
 </div>

@@ -3,7 +3,7 @@ package icm.steps;
 import net.serenitybdd.jbehave.SerenityStory;
 
 /**
- * Created by Anetka on 2016-05-26.
+ * Created by Bartek on 2016-05-23.
  */
 public class SprawdzenieListyIncydentow extends SerenityStory {
 }

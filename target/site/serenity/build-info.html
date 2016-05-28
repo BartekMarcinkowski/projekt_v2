@@ -36,15 +36,15 @@
     <script class="code" type="text/javascript">$(document).ready(function () {
         var test_results_plot = $.jqplot('test_results_pie_chart', [
             [
-                ['Passing', 1],
+                ['Passing', 0.727273],
                 
-                ['Pending', 0],
+                ['Pending', 0.181818],
                 
                 ['Ignored', 0],
                 
-                ['Failing', 0],
+                ['Failing', 0.045455],
                 
-                ['Errors',  0]
+                ['Errors',  0.045455]
             ]
         ], {
 
@@ -73,25 +73,25 @@
                 marginTop: '15px'
             },
             series: [
-                {label: '3 / 3 tests passed' },
-                {label: '0 / 3 tests pending'},
-                {label: '0 / 3 tests not executed'},
-                {label: '0 / 3 tests failed'},
-                {label: '0 / 3 errors'}
+                {label: '16 / 22 tests passed' },
+                {label: '4 / 22 tests pending'},
+                {label: '0 / 22 tests not executed'},
+                {label: '1 / 22 tests failed'},
+                {label: '1 / 22 errors'}
             ]
         });
 
         var weighted_test_results_plot = $.jqplot('weighted_test_results_pie_chart', [
             [
-                ['Passing', 1],
+                ['Passing', 0.828],
                 
-                ['Pending', 0],
+                ['Pending', 0.08],
                 
                 ['Ignored', 0],
                 
-                ['Failing', 0],
+                ['Failing', 0.052],
                 
-                ['Errors', 0]
+                ['Errors', 0.04]
             ]
         ], {
 
@@ -121,11 +121,11 @@
                 marginTop: '15px'
             },
             series: [
-                {label: '3 / 3 tests passed (1% of all test steps)' },
-                {label: '0 / 3 tests pending'},
-                {label: '0 / 3 tests not executed'},
-                {label: '0 / 3 tests failed (0% of all test steps)'},
-                {label: '0 / 3 errors (0% of all test steps)'}
+                {label: '16 / 22 tests passed (0.828% of all test steps)' },
+                {label: '4 / 22 tests pending'},
+                {label: '0 / 22 tests not executed'},
+                {label: '1 / 22 tests failed (0.052% of all test steps)'},
+                {label: '1 / 22 errors (0.04% of all test steps)'}
             ]
         });
 
@@ -160,7 +160,7 @@
     <div id="topbanner">
         <div id="logo"><a href="index.html"><img src="images/serenity-bdd-logo.png" border="0"/></a></div>
         <div id="projectname-banner" style="float:right">
-            <span class="projectname">Demo Project using Serenity and JBehave</span>
+            <span class="projectname">Projekt automatycznych testow funkcjonalnych aplikacji ICM v1.1</span>
         </div>
     </div>
 </div>
@@ -192,7 +192,7 @@
             <a href="2a4631d87648e59c428d4cf0e9247f9d286e4679f436ca2ce872e931eb4dfd58.html"><i class="fa fa-comments-o"></i> Stories</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 18-05-2016 17:46</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 28-05-2016 16:40</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>

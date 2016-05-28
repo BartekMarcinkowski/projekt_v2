@@ -1,0 +1,100 @@
+<acceptance-test-run title="Pracownik dodaje plik do incydentu" name="Pracownik dodaje plik do incydentu" steps="11" successful="11" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="15632" timestamp="2016-05-28T16:36:07.756+02:00" session-id="a81bbc87-c084-4148-9fa1-ab93c0d1a47a">
+  <user-story id="SzczegolyIncydentuPracownik" name="Szczegoly incydentu pracownik" path="stories/SzczegolyIncydentu/SzczegolyIncydentuPracownik.story"/>
+  <tags>
+    <tag name="Szczegoly incydentu" type="feature"/>
+    <tag name="Szczegoly incydentu/Szczegoly incydentu pracownik" type="story"/>
+  </tags>
+  <test-group name="Given pracownik jest zalogowany i znajduje sie w zakladce incydenty" result="SUCCESS">
+    <screenshots>
+      <screenshot image="b4fbe2eb9b7f1605f5f8cf1886c94648.png"/>
+      <screenshot image="dee448f3b4655370ec3beb0b37e46fdc.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="788">
+      <screenshots>
+        <screenshot image="b4fbe2eb9b7f1605f5f8cf1886c94648.png"/>
+        <screenshot image="6c3a89bbfc175351796ad0362bcde23e.png"/>
+      </screenshots>
+      <description>Otworz strone logowania p</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1212">
+      <screenshots>
+        <screenshot image="6c3a89bbfc175351796ad0362bcde23e.png"/>
+        <screenshot image="a82c87ed2f58e94b4c043b33ce12bf4f.png"/>
+      </screenshots>
+      <description>Wpisz email p</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="816">
+      <screenshots>
+        <screenshot image="a82c87ed2f58e94b4c043b33ce12bf4f.png"/>
+        <screenshot image="7b9c00f59bd9eceaba81976b2b53357e.png"/>
+      </screenshots>
+      <description>Wpisz haslo p</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="991">
+      <screenshots>
+        <screenshot image="7b9c00f59bd9eceaba81976b2b53357e.png"/>
+        <screenshot image="dee448f3b4655370ec3beb0b37e46fdc.png"/>
+      </screenshots>
+      <description>Wcisnij przycisk zaloguj sie p</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="331">
+      <screenshots>
+        <screenshot image="dee448f3b4655370ec3beb0b37e46fdc.png"/>
+      </screenshots>
+      <description>Assert napis incydenty</description>
+    </test-step>
+  </test-group>
+  <test-group name="And pracownik wyswietli szczegoly incydentu" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4272ccfe67e12b254650bdcf0dbbff35.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="663">
+      <screenshots>
+        <screenshot image="7838d65fa7963d72c5e3fa2d6f171b6c.png"/>
+      </screenshots>
+      <description>Wybierze akcja</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1162">
+      <screenshots>
+        <screenshot image="7838d65fa7963d72c5e3fa2d6f171b6c.png"/>
+        <screenshot image="e8ef05eb1dc24fda44ece5dee80f03bf.png"/>
+      </screenshots>
+      <description>Wybierze szczegoly incydentu</description>
+    </test-step>
+  </test-group>
+  <test-group name="When w sekcji pliki wybierze plik do dodania i kliknie upload" result="SUCCESS">
+    <screenshots>
+      <screenshot image="388523c91bcb22ab4d14a598381c5444.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="4532">
+      <screenshots>
+        <screenshot image="bd0a41132042ff71f8d839eef017bff9.png"/>
+      </screenshots>
+      <description>Kliknij przegladaj</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1818">
+      <screenshots>
+        <screenshot image="bd0a41132042ff71f8d839eef017bff9.png"/>
+      </screenshots>
+      <description>Wyszukanie pliku</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1642">
+      <screenshots>
+        <screenshot image="c85a671d40dc5a496164599df58fd679.png"/>
+        <screenshot image="388523c91bcb22ab4d14a598381c5444.png"/>
+      </screenshots>
+      <description>Kliknij upload</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then nowy plik powinien zostac dodany do incydentu" result="SUCCESS">
+    <screenshots>
+      <screenshot image="388523c91bcb22ab4d14a598381c5444.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="403">
+      <screenshots>
+        <screenshot image="388523c91bcb22ab4d14a598381c5444.png"/>
+      </screenshots>
+      <description>Plik dodany</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

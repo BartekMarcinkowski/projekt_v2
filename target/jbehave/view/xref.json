@@ -1,5 +1,5 @@
 {"xref": {
-  "whenMade": 1464279899479,
+  "whenMade": 1464446397180,
   "createdBy": "JBehave",
   "metaFilter": "-ignore",
   "meta": [],
@@ -12,10 +12,10 @@
       "html": "stories.UsuwaniePracownika.UsunieciePracownika.html",
       "meta": "",
       "scenarios": "Scenario:Usuniecie pracownika z listy\nGiven zalogowany administrator jest w zakladce uzytkownicy\nWhen wyszuka pracownika\nAnd wybierze akcje delete\nThen konto powinno zostac usuniete\n\n\n",
-      "passed": true,
-      "pending": true,
-      "started": 1464279684607,
-      "duration": 19717
+      "passed": false,
+      "pending": false,
+      "started": 1464446100730,
+      "duration": 41480
     },
     {
       "description": "",
@@ -24,11 +24,11 @@
       "path": "stories/SzczegolyIncydentu/SzczegolyIncydentuPracownik.story",
       "html": "stories.SzczegolyIncydentu.SzczegolyIncydentuPracownik.html",
       "meta": "",
-      "scenarios": "Scenario:Narrative:\r\nJako pracownik\r\nChce miec dostep do szczegolow incydentow\r\nAby miec moc edytowac i sprawdzac incydenty\r\n\r\n\r\n\r\nScenario1: Pracownik edytuje opis incydentu\nGiven pracownik zalogowany wyswietla liste incydentow\nWhen pracownik edytuje opis incydentu\nThen w opisie incdentu pojawia sie nowy teskt\r\n\r\n\r\nScenario2: Pracownik dodaje plik do incydentu\nGiven poprawne logowanie uzytkownika i wyswietlenie listy plikow na stronie szczegolow\nWhen pracownik dodaje plik do incydentu\nThen nowy plik zostaje dodany do incydentu\n\n\n",
+      "scenarios": "Scenario:Pracownik edytuje opis incydentu\nGiven pracownik jest zalogowany i znajduje sie w zakladce incydenty\nWhen pracownik wyswietli szczegoly incydentu\nAnd edytuje opis incydentu\nThen w opisie incdentu pojawia sie nowy teskt\n\n\nScenario:Pracownik dodaje plik do incydentu\nGiven pracownik jest zalogowany i znajduje sie w zakladce incydenty\nAnd pracownik wyswietli szczegoly incydentu\nWhen w sekcji pliki wybierze plik do dodania i kliknie upload\nThen nowy plik powinien zostac dodany do incydentu\n\n\n",
       "passed": true,
-      "pending": true,
-      "started": 1464279705590,
-      "duration": 140
+      "pending": false,
+      "started": 1464446144166,
+      "duration": 39223
     },
     {
       "description": "",
@@ -37,11 +37,11 @@
       "path": "stories/SprawdzenieListyIncydentow/SprawdzenieListyIncydentow.story",
       "html": "stories.SprawdzenieListyIncydentow.SprawdzenieListyIncydentow.html",
       "meta": "",
-      "scenarios": "Scenario:Brak zgloszonych incydentow\nGiven uzytkownik jest zalogowany do systemu\nWhen sprawdza liste incydentow\nThen system wyswietla komunikat o braku incydentow do wyswietlenia\n\n\n",
+      "scenarios": "Scenario:Brak zgloszonych incydentow dla zalogowanego uzytkownika\nGiven uzytkownik, ktory nie zglosil zadnego incydentu jest zalogowany do systemu\nWhen sprawdza liste incydentow\nThen system wyswietla komunikat o braku incydentow do wyswietlenia\n\n\n",
       "passed": true,
       "pending": false,
-      "started": 1464279705753,
-      "duration": 15973
+      "started": 1464446183899,
+      "duration": 11166
     },
     {
       "description": "",
@@ -53,8 +53,8 @@
       "scenarios": "Scenario:Dodanie nowego pracownika\nGiven zalogowany administrator jest w zakladce uzytkownicy\nWhen wybierze opcje dodaj pracownika\nAnd wprowdzi nazwe, email i haslo\nThen konto powinno zostac utworzone\n\n\n",
       "passed": true,
       "pending": false,
-      "started": 1464279722683,
-      "duration": 24455
+      "started": 1464446195536,
+      "duration": 17086
     },
     {
       "description": "",
@@ -66,8 +66,8 @@
       "scenarios": "Scenario:Poprawne zalozenie nowego konta\nGiven uzytkownik ma otwarta strone rejstracji\nWhen wprowadzi nazwe uzytkownika, email i haslo\nThen uzytkownik powinien zostac zalogowany\n\n\n",
       "passed": true,
       "pending": false,
-      "started": 1464279748143,
-      "duration": 17963
+      "started": 1464446213028,
+      "duration": 13666
     },
     {
       "description": "",
@@ -76,11 +76,11 @@
       "path": "stories/ObslugaIncydentu/ObslugaIncydentuAdministrator.story",
       "html": "stories.ObslugaIncydentu.ObslugaIncydentuAdministrator.html",
       "meta": "",
-      "scenarios": "Scenario:Narrative:\r\nJako administrator\r\nChce miec dostep do formularza obslugi incydentow\r\nAby miec moc zarzadzac incydentami\r\n\r\n\r\n\r\nScenario1: administrator zmienia status incydentu z \"niepotwierdzony\" lub \"rozwiazany\"\nGiven formualarz obslugi incydentu posiada status,przypisanie incydentu, opis wykonanych prac\nWhen administrator zmienia status incydentu\nThen incydent posiada nowy status \"zgloszony\" lub \"zamkniety\"\r\n\r\n\r\nScenario2: administrator przypisuje incydent do pracownika lub innego administratora\nGiven formualarz obslugi incydentu posiada status,przypisanie incydentu, opis wykonanych prac\nWhen administrator przypisuje incydent do pracownika lub innego administratora\nThen w opisie incdentu pojawia sie nowy teskt\n\n\n",
+      "scenarios": "Scenario:administrator zmienia status incydentu z niepotwierdzony na zgłoszony\nGiven zalogowany administrator jest w zakladce incydenty\nWhen wybierze wybierze akcje dodaj audyt incydentu w statusie niepotwierdzony\nAnd w formularzu audytu zmieni status na zgloszony\nThen status incydentu powinien zostac zmieniny\n\n\nScenario:administrator przypisuje incydent do pracownika\nGiven zalogowany administrator jest w zakladce incydenty\nWhen wybierze wybierze akcje dodaj audyt incydentu\nAnd w formularzu audytu przypisze incydent do pracownika\nThen incydent powinien zostac przypisany do pracownika\n\n\n",
       "passed": true,
-      "pending": true,
-      "started": 1464279767043,
-      "duration": 86
+      "pending": false,
+      "started": 1464446227157,
+      "duration": 24417
     },
     {
       "description": "",
@@ -92,8 +92,8 @@
       "scenarios": "Scenario:Filtrowanie uzytkownikow po roli ROLE_USER\nGiven zalogowany administrator jest w zakladce uzytkownicy\nWhen wybierze opcje filtruj\nAnd wybierze role ROLE_USER\nThen powinni zostac pokazani uzytkownicy z rola ROLE_USER\n\n\n",
       "passed": true,
       "pending": false,
-      "started": 1464279767143,
-      "duration": 18869
+      "started": 1464446252361,
+      "duration": 13597
     },
     {
       "description": "",
@@ -105,8 +105,8 @@
       "scenarios": "Scenario:Uzytkownik dodaje nowy incydent poprawnie\nGiven poprawne logowanie uzytkownika\nWhen kliknie przycisk utworz incydent\nAnd poprawne wprowadzi wszystkie dane incydentu\nThen incydent powinien zostac poprawnie dodany\n\n\nScenario:Uzytkownik dodaje nowy incydent blednie\nGiven poprawne logowanie uzytkownika\nWhen kliknie przycisk utworz incydent\nWhen nie wypelni wszystkich wymaganych pol danych incydentu\nThen incydend powinien nie zostac utworzony\n\n\n",
       "passed": true,
       "pending": false,
-      "started": 1464279786935,
-      "duration": 36744
+      "started": 1464446266876,
+      "duration": 25519
     },
     {
       "description": "",
@@ -115,11 +115,11 @@
       "path": "stories/ObslugaIncydentu/ObsługaIncydentuPracownik.story",
       "html": "stories.ObslugaIncydentu.ObsługaIncydentuPracownik.html",
       "meta": "",
-      "scenarios": "Scenario:Narrative:\r\nJako pracownik \r\nChce miec dostep do formularza oblsugi incydentow\r\nAby moc oslugiwac incydenty\r\n\r\n\r\n\r\nScenario1: Pracownik zmienia status incydentu poprawnie\nGiven poprawne logowanie uzytkownika\nWhen uzytkownik wprowadza poprawne dane do formularza\nThen poprawne wyswietlenie przez system komunikatu\r\n\r\nScenario2: Pracownik zmienia status incydentu blednie\nGiven poprawne logowanie uzytkownika\nWhen uzytkownik wprowadza niepoprawne dane do formularza\nThen system wyswietla komunikat \"Nie mozna utworzyc nowego rekordu\"\n\n\n",
+      "scenarios": "Scenario:Pracownik zmienia status incydentu poprawnie\nGiven poprawne logowanie uzytkownika\nWhen uzytkownik wprowadza poprawne dane do formularza\nThen poprawne wyswietlenie przez system komunikatu\n\n\nScenario:Pracownik zmienia status incydentu blednie\nGiven poprawne logowanie uzytkownika\nWhen uzytkownik wprowadza niepoprawne dane do formularza\nThen system wyswietla komunikat \"Nie mozna utworzyc nowego rekordu\"\n\n\n",
       "passed": true,
       "pending": true,
-      "started": 1464279824640,
-      "duration": 14149
+      "started": 1464446292942,
+      "duration": 12973
     },
     {
       "description": "",
@@ -131,8 +131,8 @@
       "scenarios": "Scenario:Poprawne logowanie do systemu ICM\nGiven uzytkownik ma otwarta strone logowania\nWhen poprawnie wprowadzi email i haslo\nThen uzytkownik powinien zostac zalogowany na strone z lista incydentow\n\n\n",
       "passed": true,
       "pending": false,
-      "started": 1464279839703,
-      "duration": 15444
+      "started": 1464446306452,
+      "duration": 9451
     },
     {
       "description": "",
@@ -141,11 +141,11 @@
       "path": "stories/SzczegolyIncydentu/SzczegolyIncydentuUzytkownik.story",
       "html": "stories.SzczegolyIncydentu.SzczegolyIncydentuUzytkownik.html",
       "meta": "",
-      "scenarios": "Scenario:Narrative:\r\nJako uzytkownik\r\nChce miec dostep do incydentow\r\nAby miec moc edytowac opis incydentu\r\n\r\n\r\nScenario1: Edytowanie opisu incydentu\nGiven uzytkownik zalogowany do konta \r\nAND lista incydentow zawiera incydenty i je  wyswietla\nWhen uzytkownik edytuje opis incydentu\nThen w opisie incydentu pojawia sie nowy teskt\r\n\r\n\r\nScenario2: uzytkownik dodaje plik do incydentu\nGiven lista plikow znajduje sie na stronie szczegolow\nWhen uzytkownik dodaje plik do incydentu\nThen nowy plik zostaje dodany do incydentu\n\n\n",
+      "scenarios": "Scenario:Uzytkownik edytuje opis incydentu\nGiven uzytkownik jest zalogowany i znajduje sie w zakladce incydenty\nAnd uzytkownik wyswietli szczegoly incydentu\nWhen uzytkownik edytuje opis incydentu\nThen w opisie incydentu pojawia sie nowy teskt\n\n\nScenario:uzytkownik dodaje plik do incydentu\nGiven uzytkownik jest zalogowany i znajduje sie w zakladce incydenty\nAnd uzytkownik wyswietli szczegoly incydentu\nWhen w sekcji pliki wybierze plik do dodania i kliknie upload\nThen plik powinien zostac dodany do incydentu\n\n\n",
       "passed": true,
-      "pending": true,
-      "started": 1464279856189,
-      "duration": 54
+      "pending": false,
+      "started": 1464446316299,
+      "duration": 28557
     },
     {
       "description": "",
@@ -157,8 +157,8 @@
       "scenarios": "Scenario:Filtrowanie incydentow po statusie \"zgloszony\"\nGiven pracownik jest zalogowany i znajduje sie w zakladce incydenty\nWhen filtruje incydenty po statusie zgloszony\nThen na liscie incydentow pozostaja incydenty ze statusem zgloszony\n\n\n",
       "passed": true,
       "pending": false,
-      "started": 1464279856260,
-      "duration": 18066
+      "started": 1464446345301,
+      "duration": 11586
     },
     {
       "description": "",
@@ -167,10 +167,10 @@
       "path": "stories/SzczegolyIncydentu/SzczegołyIncydentuAdministrator.story",
       "html": "stories.SzczegolyIncydentu.SzczegołyIncydentuAdministrator.html",
       "meta": "",
-      "scenarios": "Scenario:Narrative:\r\nJako administrator\r\nChce miec dostep do szczegolow incydentu\r\nAby zarzadzac incydentami\r\n\r\n\r\nScenario1: Administrator edytuje opis incydentu\nGiven poprawne zalogowanie administratora \r\nAND wyswietlenie listy incydentow\nWhen administrator edytuje opis incydentu\nThen w opisie incdentu pojawia sie nowy teskt\r\n\r\nScenario2: Administrator dodaje plik do incydentu\nGiven poprawne zalogowanie administratora \r\nAND wyswietlenie listy incydentow\nWhen dodanie pliku do incydentu\nThen nowy plik zostaje dodany do incydentu\n\n\n",
+      "scenarios": "Scenario:Administrator edytuje opis incydentu\nGiven poprawne zalogowanie administratora \r\nAND wyswietlenie listy incydentow\nWhen administrator edytuje opis incydentu\nThen w opisie incdentu pojawia sie nowy teskt\n\n\nScenario:Administrator dodaje plik do incydentu\nGiven poprawne zalogowanie administratora \r\nAND wyswietlenie listy incydentow\nWhen dodanie pliku do incydentu\nThen nowy plik zostaje dodany do incydentu\n\n\n",
       "passed": true,
       "pending": true,
-      "started": 1464279875364,
+      "started": 1464446357378,
       "duration": 69
     },
     {
@@ -182,9 +182,9 @@
       "meta": "",
       "scenarios": "Scenario:Przegladanie statystyk incydentow\nGiven zalogowany administrator\nWhen wybierze zakladke dashboard\nThen powinien widziec statystyki incydentow\n\n\n",
       "passed": true,
-      "pending": true,
-      "started": 1464279875448,
-      "duration": 40
+      "pending": false,
+      "started": 1464446357459,
+      "duration": 10348
     },
     {
       "description": "",
@@ -193,11 +193,11 @@
       "path": "stories/WyszukiwanieIncydentowPoIdentyfikatorze/WyszukiwanieIncydentowPoIdentyfikatorze.story",
       "html": "stories.WyszukiwanieIncydentowPoIdentyfikatorze.WyszukiwanieIncydentowPoIdentyfikatorze.html",
       "meta": "",
-      "scenarios": "Scenario:Narrative:\r\nJako uzytkownik\r\nChce wyszukac incydent o danym identyfikatorze\r\nAby odnalezc konkretny incydent\r\n\r\nScenario1: Incydent o danym identyfikatorze istnieje\nGiven uzytkownik jest zalogowany do konta and lista incydentow zawiera incydenty\nWhen uzytkownik wprowadza istniejacy identyfikator incydentu\nThen sytsem wyswietla strone zawierajaca szczegoly incydentu\r\n\r\nScenario2: Incydent o danym identyfikatorze nie istnieje\nGiven uzytkownik jest zalogowany do konta\nWhen uzytkownik wprowadza nieistniejacy identyfikator incydentu\nThen system wyswietla komunikat \"Nie znaleziono incydentu\"\n\n\n",
-      "passed": true,
-      "pending": true,
-      "started": 1464279875505,
-      "duration": 18201
+      "scenarios": "Scenario:Wyszukiwanie istniejacego incydentu\nGiven uzytkownik jest zalogowany i znajduje sie w zakladce incydenty\nWhen uzytkownik wprowadza identyfikator istniejacego incydentu\nThen sytsem wyswietla strone zawierajaca szczegoly incydentu\n\n\nScenario:Wyszukiwanie nieistniejacego incydentu\nGiven uzytkownik jest zalogowany i znajduje sie w zakladce incydenty\nWhen uzytkownik wprowadza identyfikator nieistniejacego incydentu\nThen system wyswietla komunikat: Nie znaleziono incydentu\n\n\n",
+      "passed": false,
+      "pending": false,
+      "started": 1464446368258,
+      "duration": 19019
     }
   ],
   "stepMatches": []

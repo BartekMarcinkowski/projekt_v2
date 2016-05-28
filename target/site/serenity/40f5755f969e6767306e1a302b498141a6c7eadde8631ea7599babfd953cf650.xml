@@ -1,0 +1,67 @@
+<acceptance-test-run title="Wyszukiwanie istniejacego incydentu" name="Wyszukiwanie istniejacego incydentu" steps="7" successful="7" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="13185" timestamp="2016-05-28T16:39:28.260+02:00" session-id="eef03a5b-6f34-4b29-8557-4cc4316281bd">
+  <user-story id="WyszukiwanieIncydentowPoIdentyfikatorze" name="Wyszukiwanie incydentow po identyfikatorze" path="stories/WyszukiwanieIncydentowPoIdentyfikatorze/WyszukiwanieIncydentowPoIdentyfikatorze.story"/>
+  <tags>
+    <tag name="Wyszukiwanie incydentow po identyfikatorze" type="feature"/>
+    <tag name="Wyszukiwanie incydentow po identyfikatorze/Wyszukiwanie incydentow po identyfikatorze" type="story"/>
+  </tags>
+  <test-group name="Given uzytkownik jest zalogowany i znajduje sie w zakladce incydenty" result="SUCCESS">
+    <screenshots>
+      <screenshot image="bed0f5b3d0b69302fd04d755487faf66.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="4916">
+      <screenshots>
+        <screenshot image="6c3a89bbfc175351796ad0362bcde23e.png"/>
+      </screenshots>
+      <description>Otworz strone logowania u</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="953">
+      <screenshots>
+        <screenshot image="6c3a89bbfc175351796ad0362bcde23e.png"/>
+        <screenshot image="a9904202824df84fd239c62358ae51e3.png"/>
+      </screenshots>
+      <description>Wpisz email u</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="791">
+      <screenshots>
+        <screenshot image="a9904202824df84fd239c62358ae51e3.png"/>
+        <screenshot image="bd530e324714e15d69fcdad7cccd12c1.png"/>
+      </screenshots>
+      <description>Wpisz haslo u</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1582">
+      <screenshots>
+        <screenshot image="bd530e324714e15d69fcdad7cccd12c1.png"/>
+        <screenshot image="bed0f5b3d0b69302fd04d755487faf66.png"/>
+      </screenshots>
+      <description>Wcisnij przycisk zaloguj sie</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="294">
+      <screenshots>
+        <screenshot image="bed0f5b3d0b69302fd04d755487faf66.png"/>
+      </screenshots>
+      <description>Assert napis incydenty</description>
+    </test-step>
+  </test-group>
+  <test-group name="When uzytkownik wprowadza identyfikator istniejacego incydentu" result="SUCCESS">
+    <screenshots>
+      <screenshot image="2f0807d2b020bb888b5ea921b736dbc5.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1181">
+      <screenshots>
+        <screenshot image="2f0807d2b020bb888b5ea921b736dbc5.png"/>
+      </screenshots>
+      <description>Wyszukanie incydentu id1</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then sytsem wyswietla strone zawierajaca szczegoly incydentu" result="SUCCESS">
+    <screenshots>
+      <screenshot image="2f0807d2b020bb888b5ea921b736dbc5.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="2760">
+      <screenshots>
+        <screenshot image="2f0807d2b020bb888b5ea921b736dbc5.png"/>
+      </screenshots>
+      <description>Szczegoly incydentu id1</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

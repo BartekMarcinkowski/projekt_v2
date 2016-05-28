@@ -1,4 +1,4 @@
-<acceptance-test-run title="Poprawne logowanie do systemu ICM" name="Poprawne logowanie do systemu ICM" steps="5" successful="5" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="15439" timestamp="2016-05-26T18:23:59.706+02:00" session-id="877662ef-2bde-412c-ad89-cc7bba785ede">
+<acceptance-test-run title="Poprawne logowanie do systemu ICM" name="Poprawne logowanie do systemu ICM" steps="5" successful="5" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="9449" timestamp="2016-05-28T16:38:26.454+02:00" session-id="59bd4c5b-3303-4b1c-a723-9ea8aae8cead">
   <user-story id="PoprawneLogowanie" name="Poprawne logowanie" path="stories/Logowanie/PoprawneLogowanie.story"/>
   <tags>
     <tag name="Logowanie" type="feature"/>
@@ -6,47 +6,47 @@
   </tags>
   <test-group name="Given uzytkownik ma otwarta strone logowania" result="SUCCESS">
     <screenshots>
-      <screenshot image="ef1fa3ec8fc8cdb91179a536af817046.png"/>
+      <screenshot image="6c3a89bbfc175351796ad0362bcde23e.png"/>
     </screenshots>
-    <test-step result="SUCCESS" duration="9377">
+    <test-step result="SUCCESS" duration="5607">
       <screenshots>
-        <screenshot image="ef1fa3ec8fc8cdb91179a536af817046.png"/>
+        <screenshot image="6c3a89bbfc175351796ad0362bcde23e.png"/>
       </screenshots>
       <description>Otworz strone logowania</description>
     </test-step>
   </test-group>
   <test-group name="When poprawnie wprowadzi email i haslo" result="SUCCESS">
     <screenshots>
-      <screenshot image="74ec03e5eefde34abbe974747fd3ff80.png"/>
+      <screenshot image="dff8e1f37e2c3487757a1d58f7383eaf.png"/>
     </screenshots>
-    <test-step result="SUCCESS" duration="1880">
+    <test-step result="SUCCESS" duration="1062">
       <screenshots>
-        <screenshot image="dd17d1ee784203ec813376a95d3d6460.png"/>
+        <screenshot image="cd978d08e3bb2afb9180e9cbdd068289.png"/>
       </screenshots>
       <description>Wpisz email</description>
     </test-step>
-    <test-step result="SUCCESS" duration="1458">
+    <test-step result="SUCCESS" duration="873">
       <screenshots>
-        <screenshot image="dd17d1ee784203ec813376a95d3d6460.png"/>
-        <screenshot image="0e25e16d36672178bc4e77c39dc77785.png"/>
+        <screenshot image="cd978d08e3bb2afb9180e9cbdd068289.png"/>
+        <screenshot image="cbb996963ea1a3b581b7e03583e3da98.png"/>
       </screenshots>
       <description>Wpisz haslo</description>
     </test-step>
-    <test-step result="SUCCESS" duration="1423">
+    <test-step result="SUCCESS" duration="942">
       <screenshots>
-        <screenshot image="0e25e16d36672178bc4e77c39dc77785.png"/>
-        <screenshot image="74ec03e5eefde34abbe974747fd3ff80.png"/>
+        <screenshot image="cbb996963ea1a3b581b7e03583e3da98.png"/>
+        <screenshot image="dff8e1f37e2c3487757a1d58f7383eaf.png"/>
       </screenshots>
       <description>Wcisnij przycisk zaloguj sie</description>
     </test-step>
   </test-group>
   <test-group name="Then uzytkownik powinien zostac zalogowany na strone z lista incydentow" result="SUCCESS">
     <screenshots>
-      <screenshot image="74ec03e5eefde34abbe974747fd3ff80.png"/>
+      <screenshot image="dff8e1f37e2c3487757a1d58f7383eaf.png"/>
     </screenshots>
-    <test-step result="SUCCESS" duration="393">
+    <test-step result="SUCCESS" duration="311">
       <screenshots>
-        <screenshot image="74ec03e5eefde34abbe974747fd3ff80.png"/>
+        <screenshot image="dff8e1f37e2c3487757a1d58f7383eaf.png"/>
       </screenshots>
       <description>Assert napis incydenty</description>
     </test-step>

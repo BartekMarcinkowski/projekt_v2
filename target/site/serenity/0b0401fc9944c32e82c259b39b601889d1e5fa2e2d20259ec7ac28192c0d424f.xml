@@ -1,0 +1,122 @@
+<acceptance-test-run title="Pracownik edytuje opis incydentu" name="Pracownik edytuje opis incydentu" steps="14" successful="14" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="23563" timestamp="2016-05-28T16:35:44.171+02:00" session-id="a81bbc87-c084-4148-9fa1-ab93c0d1a47a">
+  <user-story id="SzczegolyIncydentuPracownik" name="Szczegoly incydentu pracownik" path="stories/SzczegolyIncydentu/SzczegolyIncydentuPracownik.story"/>
+  <tags>
+    <tag name="Szczegoly incydentu" type="feature"/>
+    <tag name="Szczegoly incydentu/Szczegoly incydentu pracownik" type="story"/>
+  </tags>
+  <test-group name="Given pracownik jest zalogowany i znajduje sie w zakladce incydenty" result="SUCCESS">
+    <screenshots>
+      <screenshot image="dee448f3b4655370ec3beb0b37e46fdc.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="7084">
+      <screenshots>
+        <screenshot image="6c3a89bbfc175351796ad0362bcde23e.png"/>
+      </screenshots>
+      <description>Otworz strone logowania p</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1182">
+      <screenshots>
+        <screenshot image="6c3a89bbfc175351796ad0362bcde23e.png"/>
+        <screenshot image="a82c87ed2f58e94b4c043b33ce12bf4f.png"/>
+      </screenshots>
+      <description>Wpisz email p</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1093">
+      <screenshots>
+        <screenshot image="a82c87ed2f58e94b4c043b33ce12bf4f.png"/>
+        <screenshot image="7b9c00f59bd9eceaba81976b2b53357e.png"/>
+      </screenshots>
+      <description>Wpisz haslo p</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1071">
+      <screenshots>
+        <screenshot image="7b9c00f59bd9eceaba81976b2b53357e.png"/>
+        <screenshot image="dee448f3b4655370ec3beb0b37e46fdc.png"/>
+      </screenshots>
+      <description>Wcisnij przycisk zaloguj sie p</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="480">
+      <screenshots>
+        <screenshot image="dee448f3b4655370ec3beb0b37e46fdc.png"/>
+      </screenshots>
+      <description>Assert napis incydenty</description>
+    </test-step>
+  </test-group>
+  <test-group name="When pracownik wyswietli szczegoly incydentu" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4272ccfe67e12b254650bdcf0dbbff35.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="651">
+      <screenshots>
+        <screenshot image="7838d65fa7963d72c5e3fa2d6f171b6c.png"/>
+      </screenshots>
+      <description>Wybierze akcja</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1266">
+      <screenshots>
+        <screenshot image="7838d65fa7963d72c5e3fa2d6f171b6c.png"/>
+        <screenshot image="4272ccfe67e12b254650bdcf0dbbff35.png"/>
+      </screenshots>
+      <description>Wybierze szczegoly incydentu</description>
+    </test-step>
+  </test-group>
+  <test-group name="And edytuje opis incydentu" result="SUCCESS">
+    <screenshots>
+      <screenshot image="3fe71249cbc931921e911cd01d6c6f21.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="808">
+      <screenshots>
+        <screenshot image="22984030ca26847e25b9518351f2e4bd.png"/>
+      </screenshots>
+      <description>Kliknij opis incydentu</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3750">
+      <screenshots>
+        <screenshot image="f5ef15867e69c679070487119a8ec738.png"/>
+        <screenshot image="b9be7f09888ff8f4104ae50e94e8be04.png"/>
+      </screenshots>
+      <description>Wprowadzi nowy opis</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then w opisie incdentu pojawia sie nowy teskt" result="SUCCESS">
+    <screenshots>
+      <screenshot image="b4fbe2eb9b7f1605f5f8cf1886c94648.png"/>
+      <screenshot image="332e148f8b4dab979df6c69b262e19fe.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="850">
+      <screenshots>
+        <screenshot image="b4fbe2eb9b7f1605f5f8cf1886c94648.png"/>
+        <screenshot image="e8ef05eb1dc24fda44ece5dee80f03bf.png"/>
+      </screenshots>
+      <description>Wybierz incydenty</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="608">
+      <screenshots>
+        <screenshot image="dee448f3b4655370ec3beb0b37e46fdc.png"/>
+        <screenshot image="7838d65fa7963d72c5e3fa2d6f171b6c.png"/>
+      </screenshots>
+      <description>Wybierze akcja</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="923">
+      <screenshots>
+        <screenshot image="7838d65fa7963d72c5e3fa2d6f171b6c.png"/>
+        <screenshot image="4272ccfe67e12b254650bdcf0dbbff35.png"/>
+      </screenshots>
+      <description>Wybierze szczegoly incydentu</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="698">
+      <screenshots>
+        <screenshot image="4272ccfe67e12b254650bdcf0dbbff35.png"/>
+        <screenshot image="c581c64edcad3469872f98073801850f.png"/>
+      </screenshots>
+      <description>Kliknij opis incydentu</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1272">
+      <screenshots>
+        <screenshot image="7a994532fccfc1c77bb73378a403bc90.png"/>
+        <screenshot image="d40e88908b03e25c4adb3a86df3d418f.png"/>
+      </screenshots>
+      <description>Sprawdz nowy opis</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

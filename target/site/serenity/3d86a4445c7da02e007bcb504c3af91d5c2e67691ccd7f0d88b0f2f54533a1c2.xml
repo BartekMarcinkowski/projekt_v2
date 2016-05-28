@@ -1,16 +1,61 @@
-<acceptance-test-run title="Przegladanie statystyk incydentow" name="Przegladanie statystyk incydentow" steps="3" successful="0" failures="0" skipped="0" ignored="0" pending="3" annotated-result="PENDING" result="PENDING" duration="35" timestamp="2016-05-26T18:24:35.452+02:00">
+<acceptance-test-run title="Przegladanie statystyk incydentow" name="Przegladanie statystyk incydentow" steps="6" successful="6" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="10346" timestamp="2016-05-28T16:39:17.460+02:00" session-id="22ac2543-2d63-4273-81d5-eb0a91c968c4">
   <user-story id="Statystyki" name="Statystyki" path="stories/Statystyki/Statystyki.story"/>
   <tags>
     <tag name="Statystyki" type="feature"/>
     <tag name="Statystyki/Statystyki" type="story"/>
   </tags>
-  <test-step result="PENDING" duration="0">
-    <description>Given zalogowany administrator</description>
-  </test-step>
-  <test-step result="PENDING" duration="0">
-    <description>When wybierze zakladke dashboard</description>
-  </test-step>
-  <test-step result="PENDING" duration="0">
-    <description>Then powinien widziec statystyki incydentow</description>
-  </test-step>
+  <test-group name="Given zalogowany administrator" result="SUCCESS">
+    <screenshots>
+      <screenshot image="dff8e1f37e2c3487757a1d58f7383eaf.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="5443">
+      <screenshots>
+        <screenshot image="6c3a89bbfc175351796ad0362bcde23e.png"/>
+      </screenshots>
+      <description>Otworz strone logowania</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1011">
+      <screenshots>
+        <screenshot image="6c3a89bbfc175351796ad0362bcde23e.png"/>
+        <screenshot image="cd978d08e3bb2afb9180e9cbdd068289.png"/>
+      </screenshots>
+      <description>Wpisz email</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="808">
+      <screenshots>
+        <screenshot image="cd978d08e3bb2afb9180e9cbdd068289.png"/>
+        <screenshot image="cbb996963ea1a3b581b7e03583e3da98.png"/>
+      </screenshots>
+      <description>Wpisz haslo</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="932">
+      <screenshots>
+        <screenshot image="cbb996963ea1a3b581b7e03583e3da98.png"/>
+        <screenshot image="dff8e1f37e2c3487757a1d58f7383eaf.png"/>
+      </screenshots>
+      <description>Wcisnij przycisk zaloguj sie</description>
+    </test-step>
+  </test-group>
+  <test-group name="When wybierze zakladke dashboard" result="SUCCESS">
+    <screenshots>
+      <screenshot image="9e34828f1dbaf0428f390ad9e909d7d5.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="890">
+      <screenshots>
+        <screenshot image="9e34828f1dbaf0428f390ad9e909d7d5.png"/>
+      </screenshots>
+      <description>Wybierz dashboard</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then powinien widziec statystyki incydentow" result="SUCCESS">
+    <screenshots>
+      <screenshot image="9e34828f1dbaf0428f390ad9e909d7d5.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="447">
+      <screenshots>
+        <screenshot image="9e34828f1dbaf0428f390ad9e909d7d5.png"/>
+      </screenshots>
+      <description>Statystyki incydentow</description>
+    </test-step>
+  </test-group>
 </acceptance-test-run>

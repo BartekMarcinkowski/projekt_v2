@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Szczegoły incydentu administrator","Administrator dodaje plik do incydentu","PENDING","2016-05-28T16:39:17.410+02:00","0.0","0.04"
+"Szczegoły incydentu administrator","Administrator edytuje opis incydentu","PENDING","2016-05-28T16:39:17.380+02:00","0.0","0.03"
+"Obsługa incydentu pracownik","Pracownik zmienia status incydentu blednie","PENDING","2016-05-28T16:38:21.924+02:00","0.0","3.99"
+"Obsługa incydentu pracownik","Pracownik zmienia status incydentu poprawnie","PENDING","2016-05-28T16:38:12.944+02:00","0.0","8.98"

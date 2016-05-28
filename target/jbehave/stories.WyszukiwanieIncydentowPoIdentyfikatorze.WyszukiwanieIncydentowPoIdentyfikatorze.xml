@@ -1,41 +1,31 @@
 <story path="stories/WyszukiwanieIncydentowPoIdentyfikatorze/WyszukiwanieIncydentowPoIdentyfikatorze.story" title="">
-<scenario keyword="Scenario:" title="Narrative:
-Jako uzytkownik
-Chce wyszukac incydent o danym identyfikatorze
-Aby odnalezc konkretny incydent
-
-Scenario1: Incydent o danym identyfikatorze istnieje">
-<step outcome="successful">Given uzytkownik jest zalogowany do konta and lista incydentow zawiera incydenty</step>
-<step outcome="successful">When uzytkownik wprowadza istniejacy identyfikator incydentu</step>
-<step outcome="pending" keyword="PENDING">Then sytsem wyswietla strone zawierajaca szczegoly incydentu
-
-Scenario2: Incydent o danym identyfikatorze nie istnieje</step>
-<step outcome="pending" keyword="PENDING">Given uzytkownik jest zalogowany do konta</step>
-<step outcome="pending" keyword="PENDING">When uzytkownik wprowadza nieistniejacy identyfikator incydentu</step>
-<step outcome="pending" keyword="PENDING">Then system wyswietla komunikat &quot;Nie znaleziono incydentu&quot;</step>
-<pendingMethod>@Then(&quot;sytsem wyswietla strone zawierajaca szczegoly incydentu\r\n\r\nScenario2: Incydent o danym identyfikatorze nie istnieje&quot;)
-@Pending
-public void thenSytsemWyswietlaStroneZawierajacaSzczegolyIncydentuScenario2IncydentODanymIdentyfikatorzeNieIstnieje() {
-  // PENDING
-}
-</pendingMethod>
-<pendingMethod>@Given(&quot;uzytkownik jest zalogowany do konta&quot;)
-@Pending
-public void givenUzytkownikJestZalogowanyDoKonta() {
-  // PENDING
-}
-</pendingMethod>
-<pendingMethod>@When(&quot;uzytkownik wprowadza nieistniejacy identyfikator incydentu&quot;)
-@Pending
-public void whenUzytkownikWprowadzaNieistniejacyIdentyfikatorIncydentu() {
-  // PENDING
-}
-</pendingMethod>
-<pendingMethod>@Then(&quot;system wyswietla komunikat \&quot;Nie znaleziono incydentu\&quot;&quot;)
-@Pending
-public void thenSystemWyswietlaKomunikatNieZnalezionoIncydentu() {
-  // PENDING
-}
-</pendingMethod>
+<scenario keyword="Scenario:" title="Wyszukiwanie istniejacego incydentu">
+<step outcome="successful">Given uzytkownik jest zalogowany i znajduje sie w zakladce incydenty</step>
+<step outcome="successful">When uzytkownik wprowadza identyfikator istniejacego incydentu</step>
+<step outcome="successful">Then sytsem wyswietla strone zawierajaca szczegoly incydentu</step>
+</scenario>
+<scenario keyword="Scenario:" title="Wyszukiwanie nieistniejacego incydentu">
+<step outcome="successful">Given uzytkownik jest zalogowany i znajduje sie w zakladce incydenty</step>
+<step outcome="successful">When uzytkownik wprowadza identyfikator nieistniejacego incydentu</step>
+<step outcome="failed" keyword="FAILED">Then system wyswietla komunikat: Nie znaleziono incydentu<failure>net.serenitybdd.core.exceptions.SerenityManagedException: The text &apos;Nie znaleziono incydentu&apos; was not found in the page
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;Bartek-Komputer&apos;, ip: &apos;192.168.0.105&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: driver.version: unknown</failure></step>
+<failure>net.serenitybdd.core.exceptions.SerenityManagedException: The text &apos;Nie znaleziono incydentu&apos; was not found in the page
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;Bartek-Komputer&apos;, ip: &apos;192.168.0.105&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: driver.version: unknown
+	at net.serenitybdd.core.exceptions.SerenityManagedException.detachedCopyOf(SerenityManagedException.java:20)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:317)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:130)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:57)
+	at icm.steps.serenity.EndUserSteps$$EnhancerByCGLIB$$f7a1e52e.komunikatNieZnalezionoIncydentu(&lt;generated&gt;)
+	at icm.steps.DefinitionSteps.komunikatNieZnalezionoIncydentu(DefinitionSteps.java:283)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:595)
+	at org.jbehave.core.embedder.StoryRunner$FineSoFar.run(StoryRunner.java:566)
+...</failure>
 </scenario>
 </story>

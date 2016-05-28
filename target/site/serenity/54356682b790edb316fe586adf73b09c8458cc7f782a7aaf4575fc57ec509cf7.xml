@@ -1,0 +1,17 @@
+<acceptance-test-run title="Administrator edytuje opis incydentu" name="Administrator edytuje opis incydentu" steps="3" successful="0" failures="0" skipped="0" ignored="1" pending="2" annotated-result="PENDING" result="PENDING" duration="29" timestamp="2016-05-28T16:39:17.380+02:00">
+  <user-story id="SzczegołyIncydentuAdministrator" name="Szczegoły incydentu administrator" path="stories/SzczegolyIncydentu/SzczegołyIncydentuAdministrator.story"/>
+  <tags>
+    <tag name="Szczegoly incydentu" type="feature"/>
+    <tag name="Szczegoly incydentu/Szczegoły incydentu administrator" type="story"/>
+  </tags>
+  <test-step result="PENDING" duration="1">
+    <description>Given poprawne zalogowanie administratora &#xd;
+AND wyswietlenie listy incydentow</description>
+  </test-step>
+  <test-step result="PENDING" duration="0">
+    <description>When administrator edytuje opis incydentu</description>
+  </test-step>
+  <test-step result="IGNORED" duration="1">
+    <description>Then w opisie incdentu pojawia sie nowy teskt</description>
+  </test-step>
+</acceptance-test-run>

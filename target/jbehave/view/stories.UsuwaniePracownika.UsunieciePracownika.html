@@ -12,27 +12,56 @@
 <div class="scenario">
 <h2>Scenario: Usuniecie pracownika z listy</h2>
 <div class="step successful">Given zalogowany administrator jest w zakladce uzytkownicy</div>
-<div class="step pending">When wyszuka pracownika <span class="keyword pending">(PENDING)</span></div>
-<div class="step pending">And wybierze akcje delete <span class="keyword pending">(PENDING)</span></div>
-<div class="step pending">Then konto powinno zostac usuniete <span class="keyword pending">(PENDING)</span></div>
-<div><pre class="pending">@When(&quot;wyszuka pracownika&quot;)
-@Pending
-public void whenWyszukaPracownika() {
-  // PENDING
-}
-</pre></div>
-<div><pre class="pending">@When(&quot;wybierze akcje delete&quot;)
-@Pending
-public void whenWybierzeAkcjeDelete() {
-  // PENDING
-}
-</pre></div>
-<div><pre class="pending">@Then(&quot;konto powinno zostac usuniete&quot;)
-@Pending
-public void thenKontoPowinnoZostacUsuniete() {
-  // PENDING
-}
-</pre></div>
+<div class="step successful">When wyszuka pracownika</div>
+<div class="step successful">And wybierze akcje delete</div>
+<div class="step failed">Then konto powinno zostac usuniete <span class="keyword failed">(FAILED)</span><br/><span class="message failed">java.lang.AssertionError: The text 'jas@wp.pl' was found in the web element when it should not have. Element text 'Id Nazwa E-mail Rola Telefon Akcja
+1 icm-admin icm-admin@icm.com ROLE_ADMIN (58) 111-11-10
+Akcja 
+2 icm-employee icm-employee@icm.com ROLE_EMPLOYEE (58) 111-11-11
+Akcja 
+6 jas jas@wp.pl ROLE_EMPLOYEE 987654321
+Akcja 
+3 icm-user1 icm-user1@icm.com ROLE_USER (58) 111-11-12
+Akcja 
+4 icm-user2 icm-user2@icm.com ROLE_USER (58) 111-11-13
+Akcja 
+5 icm-user3 icm-user3@icm.com ROLE_USER (58) 111-11-14
+Akcja 
+Filter
+Dodaj pracownika'.</span></div>
+<pre class="failure">java.lang.AssertionError: The text 'jas@wp.pl' was found in the web element when it should not have. Element text 'Id Nazwa E-mail Rola Telefon Akcja
+1 icm-admin icm-admin@icm.com ROLE_ADMIN (58) 111-11-10
+Akcja 
+2 icm-employee icm-employee@icm.com ROLE_EMPLOYEE (58) 111-11-11
+Akcja 
+6 jas jas@wp.pl ROLE_EMPLOYEE 987654321
+Akcja 
+3 icm-user1 icm-user1@icm.com ROLE_USER (58) 111-11-12
+Akcja 
+4 icm-user2 icm-user2@icm.com ROLE_USER (58) 111-11-13
+Akcja 
+5 icm-user3 icm-user3@icm.com ROLE_USER (58) 111-11-14
+Akcja 
+Filter
+Dodaj pracownika'.
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.failWithMessage(WebElementFacadeImpl.java:710)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.shouldNotContainText(WebElementFacadeImpl.java:542)
+	at icm.pages.ListaKont.brakKontaNaLiscie(ListaKont.java:86)
+	at icm.steps.serenity.EndUserSteps.brakKontaNaLiscie(EndUserSteps.java:307)
+	at icm.steps.serenity.EndUserSteps$$EnhancerByCGLIB$$f7a1e52e.CGLIB$brakKontaNaLiscie$11(&lt;generated&gt;)
+	at icm.steps.serenity.EndUserSteps$$EnhancerByCGLIB$$f7a1e52e$$FastClassByCGLIB$$a44a47e2.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:215)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:348)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:333)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:308)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:130)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:57)
+	at icm.steps.serenity.EndUserSteps$$EnhancerByCGLIB$$f7a1e52e.brakKontaNaLiscie(&lt;generated&gt;)
+	at icm.steps.DefinitionSteps.kontoUsunieta(DefinitionSteps.java:242)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:595)
+	at org.jbehave.core.embedder.StoryRunner$FineSoFar.run(StoryRunner.java:566)
+...</pre>
 </div>
 </div>
 

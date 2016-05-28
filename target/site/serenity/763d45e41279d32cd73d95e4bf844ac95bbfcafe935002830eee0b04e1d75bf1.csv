@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Obsługa incydentu pracownik","Pracownik zmienia status incydentu blednie","PENDING","2016-05-28T16:38:21.924+02:00","0.0","3.99"
+"Obsługa incydentu pracownik","Pracownik zmienia status incydentu poprawnie","PENDING","2016-05-28T16:38:12.944+02:00","0.0","8.98"
+"Obsluga incydentu administrator","administrator przypisuje incydent do pracownika","SUCCESS","2016-05-28T16:37:22.247+02:00","0.0","9.33"
+"Obsluga incydentu administrator","administrator zmienia status incydentu z niepotwierdzony na zgłoszony","SUCCESS","2016-05-28T16:37:07.176+02:00","0.0","15.07"

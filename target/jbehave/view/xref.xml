@@ -1,5 +1,5 @@
 <xref>
-  <whenMade>1464279899479</whenMade>
+  <whenMade>1464446397180</whenMade>
   <createdBy>JBehave</createdBy>
   <metaFilter>-ignore</metaFilter>
   <meta/>
@@ -19,10 +19,10 @@ Then konto powinno zostac usuniete
 
 
 </scenarios>
-      <passed>true</passed>
-      <pending>true</pending>
-      <started>1464279684607</started>
-      <duration>19717</duration>
+      <passed>false</passed>
+      <pending>false</pending>
+      <started>1464446100730</started>
+      <duration>41480</duration>
     </story>
     <story>
       <description></description>
@@ -31,30 +31,25 @@ Then konto powinno zostac usuniete
       <path>stories/SzczegolyIncydentu/SzczegolyIncydentuPracownik.story</path>
       <html>stories.SzczegolyIncydentu.SzczegolyIncydentuPracownik.html</html>
       <meta></meta>
-      <scenarios>Scenario:Narrative:&#xd;
-Jako pracownik&#xd;
-Chce miec dostep do szczegolow incydentow&#xd;
-Aby miec moc edytowac i sprawdzac incydenty&#xd;
-&#xd;
-&#xd;
-&#xd;
-Scenario1: Pracownik edytuje opis incydentu
-Given pracownik zalogowany wyswietla liste incydentow
-When pracownik edytuje opis incydentu
-Then w opisie incdentu pojawia sie nowy teskt&#xd;
-&#xd;
-&#xd;
-Scenario2: Pracownik dodaje plik do incydentu
-Given poprawne logowanie uzytkownika i wyswietlenie listy plikow na stronie szczegolow
-When pracownik dodaje plik do incydentu
-Then nowy plik zostaje dodany do incydentu
+      <scenarios>Scenario:Pracownik edytuje opis incydentu
+Given pracownik jest zalogowany i znajduje sie w zakladce incydenty
+When pracownik wyswietli szczegoly incydentu
+And edytuje opis incydentu
+Then w opisie incdentu pojawia sie nowy teskt
+
+
+Scenario:Pracownik dodaje plik do incydentu
+Given pracownik jest zalogowany i znajduje sie w zakladce incydenty
+And pracownik wyswietli szczegoly incydentu
+When w sekcji pliki wybierze plik do dodania i kliknie upload
+Then nowy plik powinien zostac dodany do incydentu
 
 
 </scenarios>
       <passed>true</passed>
-      <pending>true</pending>
-      <started>1464279705590</started>
-      <duration>140</duration>
+      <pending>false</pending>
+      <started>1464446144166</started>
+      <duration>39223</duration>
     </story>
     <story>
       <description></description>
@@ -63,8 +58,8 @@ Then nowy plik zostaje dodany do incydentu
       <path>stories/SprawdzenieListyIncydentow/SprawdzenieListyIncydentow.story</path>
       <html>stories.SprawdzenieListyIncydentow.SprawdzenieListyIncydentow.html</html>
       <meta></meta>
-      <scenarios>Scenario:Brak zgloszonych incydentow
-Given uzytkownik jest zalogowany do systemu
+      <scenarios>Scenario:Brak zgloszonych incydentow dla zalogowanego uzytkownika
+Given uzytkownik, ktory nie zglosil zadnego incydentu jest zalogowany do systemu
 When sprawdza liste incydentow
 Then system wyswietla komunikat o braku incydentow do wyswietlenia
 
@@ -72,8 +67,8 @@ Then system wyswietla komunikat o braku incydentow do wyswietlenia
 </scenarios>
       <passed>true</passed>
       <pending>false</pending>
-      <started>1464279705753</started>
-      <duration>15973</duration>
+      <started>1464446183899</started>
+      <duration>11166</duration>
     </story>
     <story>
       <description></description>
@@ -92,8 +87,8 @@ Then konto powinno zostac utworzone
 </scenarios>
       <passed>true</passed>
       <pending>false</pending>
-      <started>1464279722683</started>
-      <duration>24455</duration>
+      <started>1464446195536</started>
+      <duration>17086</duration>
     </story>
     <story>
       <description></description>
@@ -111,8 +106,8 @@ Then uzytkownik powinien zostac zalogowany
 </scenarios>
       <passed>true</passed>
       <pending>false</pending>
-      <started>1464279748143</started>
-      <duration>17963</duration>
+      <started>1464446213028</started>
+      <duration>13666</duration>
     </story>
     <story>
       <description></description>
@@ -121,30 +116,25 @@ Then uzytkownik powinien zostac zalogowany
       <path>stories/ObslugaIncydentu/ObslugaIncydentuAdministrator.story</path>
       <html>stories.ObslugaIncydentu.ObslugaIncydentuAdministrator.html</html>
       <meta></meta>
-      <scenarios>Scenario:Narrative:&#xd;
-Jako administrator&#xd;
-Chce miec dostep do formularza obslugi incydentow&#xd;
-Aby miec moc zarzadzac incydentami&#xd;
-&#xd;
-&#xd;
-&#xd;
-Scenario1: administrator zmienia status incydentu z &quot;niepotwierdzony&quot; lub &quot;rozwiazany&quot;
-Given formualarz obslugi incydentu posiada status,przypisanie incydentu, opis wykonanych prac
-When administrator zmienia status incydentu
-Then incydent posiada nowy status &quot;zgloszony&quot; lub &quot;zamkniety&quot;&#xd;
-&#xd;
-&#xd;
-Scenario2: administrator przypisuje incydent do pracownika lub innego administratora
-Given formualarz obslugi incydentu posiada status,przypisanie incydentu, opis wykonanych prac
-When administrator przypisuje incydent do pracownika lub innego administratora
-Then w opisie incdentu pojawia sie nowy teskt
+      <scenarios>Scenario:administrator zmienia status incydentu z niepotwierdzony na zgłoszony
+Given zalogowany administrator jest w zakladce incydenty
+When wybierze wybierze akcje dodaj audyt incydentu w statusie niepotwierdzony
+And w formularzu audytu zmieni status na zgloszony
+Then status incydentu powinien zostac zmieniny
+
+
+Scenario:administrator przypisuje incydent do pracownika
+Given zalogowany administrator jest w zakladce incydenty
+When wybierze wybierze akcje dodaj audyt incydentu
+And w formularzu audytu przypisze incydent do pracownika
+Then incydent powinien zostac przypisany do pracownika
 
 
 </scenarios>
       <passed>true</passed>
-      <pending>true</pending>
-      <started>1464279767043</started>
-      <duration>86</duration>
+      <pending>false</pending>
+      <started>1464446227157</started>
+      <duration>24417</duration>
     </story>
     <story>
       <description></description>
@@ -163,8 +153,8 @@ Then powinni zostac pokazani uzytkownicy z rola ROLE_USER
 </scenarios>
       <passed>true</passed>
       <pending>false</pending>
-      <started>1464279767143</started>
-      <duration>18869</duration>
+      <started>1464446252361</started>
+      <duration>13597</duration>
     </story>
     <story>
       <description></description>
@@ -190,8 +180,8 @@ Then incydend powinien nie zostac utworzony
 </scenarios>
       <passed>true</passed>
       <pending>false</pending>
-      <started>1464279786935</started>
-      <duration>36744</duration>
+      <started>1464446266876</started>
+      <duration>25519</duration>
     </story>
     <story>
       <description></description>
@@ -200,19 +190,13 @@ Then incydend powinien nie zostac utworzony
       <path>stories/ObslugaIncydentu/ObsługaIncydentuPracownik.story</path>
       <html>stories.ObslugaIncydentu.ObsługaIncydentuPracownik.html</html>
       <meta></meta>
-      <scenarios>Scenario:Narrative:&#xd;
-Jako pracownik &#xd;
-Chce miec dostep do formularza oblsugi incydentow&#xd;
-Aby moc oslugiwac incydenty&#xd;
-&#xd;
-&#xd;
-&#xd;
-Scenario1: Pracownik zmienia status incydentu poprawnie
+      <scenarios>Scenario:Pracownik zmienia status incydentu poprawnie
 Given poprawne logowanie uzytkownika
 When uzytkownik wprowadza poprawne dane do formularza
-Then poprawne wyswietlenie przez system komunikatu&#xd;
-&#xd;
-Scenario2: Pracownik zmienia status incydentu blednie
+Then poprawne wyswietlenie przez system komunikatu
+
+
+Scenario:Pracownik zmienia status incydentu blednie
 Given poprawne logowanie uzytkownika
 When uzytkownik wprowadza niepoprawne dane do formularza
 Then system wyswietla komunikat &quot;Nie mozna utworzyc nowego rekordu&quot;
@@ -221,8 +205,8 @@ Then system wyswietla komunikat &quot;Nie mozna utworzyc nowego rekordu&quot;
 </scenarios>
       <passed>true</passed>
       <pending>true</pending>
-      <started>1464279824640</started>
-      <duration>14149</duration>
+      <started>1464446292942</started>
+      <duration>12973</duration>
     </story>
     <story>
       <description></description>
@@ -240,8 +224,8 @@ Then uzytkownik powinien zostac zalogowany na strone z lista incydentow
 </scenarios>
       <passed>true</passed>
       <pending>false</pending>
-      <started>1464279839703</started>
-      <duration>15444</duration>
+      <started>1464446306452</started>
+      <duration>9451</duration>
     </story>
     <story>
       <description></description>
@@ -250,30 +234,25 @@ Then uzytkownik powinien zostac zalogowany na strone z lista incydentow
       <path>stories/SzczegolyIncydentu/SzczegolyIncydentuUzytkownik.story</path>
       <html>stories.SzczegolyIncydentu.SzczegolyIncydentuUzytkownik.html</html>
       <meta></meta>
-      <scenarios>Scenario:Narrative:&#xd;
-Jako uzytkownik&#xd;
-Chce miec dostep do incydentow&#xd;
-Aby miec moc edytowac opis incydentu&#xd;
-&#xd;
-&#xd;
-Scenario1: Edytowanie opisu incydentu
-Given uzytkownik zalogowany do konta &#xd;
-AND lista incydentow zawiera incydenty i je  wyswietla
+      <scenarios>Scenario:Uzytkownik edytuje opis incydentu
+Given uzytkownik jest zalogowany i znajduje sie w zakladce incydenty
+And uzytkownik wyswietli szczegoly incydentu
 When uzytkownik edytuje opis incydentu
-Then w opisie incydentu pojawia sie nowy teskt&#xd;
-&#xd;
-&#xd;
-Scenario2: uzytkownik dodaje plik do incydentu
-Given lista plikow znajduje sie na stronie szczegolow
-When uzytkownik dodaje plik do incydentu
-Then nowy plik zostaje dodany do incydentu
+Then w opisie incydentu pojawia sie nowy teskt
+
+
+Scenario:uzytkownik dodaje plik do incydentu
+Given uzytkownik jest zalogowany i znajduje sie w zakladce incydenty
+And uzytkownik wyswietli szczegoly incydentu
+When w sekcji pliki wybierze plik do dodania i kliknie upload
+Then plik powinien zostac dodany do incydentu
 
 
 </scenarios>
       <passed>true</passed>
-      <pending>true</pending>
-      <started>1464279856189</started>
-      <duration>54</duration>
+      <pending>false</pending>
+      <started>1464446316299</started>
+      <duration>28557</duration>
     </story>
     <story>
       <description></description>
@@ -291,8 +270,8 @@ Then na liscie incydentow pozostaja incydenty ze statusem zgloszony
 </scenarios>
       <passed>true</passed>
       <pending>false</pending>
-      <started>1464279856260</started>
-      <duration>18066</duration>
+      <started>1464446345301</started>
+      <duration>11586</duration>
     </story>
     <story>
       <description></description>
@@ -301,19 +280,14 @@ Then na liscie incydentow pozostaja incydenty ze statusem zgloszony
       <path>stories/SzczegolyIncydentu/SzczegołyIncydentuAdministrator.story</path>
       <html>stories.SzczegolyIncydentu.SzczegołyIncydentuAdministrator.html</html>
       <meta></meta>
-      <scenarios>Scenario:Narrative:&#xd;
-Jako administrator&#xd;
-Chce miec dostep do szczegolow incydentu&#xd;
-Aby zarzadzac incydentami&#xd;
-&#xd;
-&#xd;
-Scenario1: Administrator edytuje opis incydentu
+      <scenarios>Scenario:Administrator edytuje opis incydentu
 Given poprawne zalogowanie administratora &#xd;
 AND wyswietlenie listy incydentow
 When administrator edytuje opis incydentu
-Then w opisie incdentu pojawia sie nowy teskt&#xd;
-&#xd;
-Scenario2: Administrator dodaje plik do incydentu
+Then w opisie incdentu pojawia sie nowy teskt
+
+
+Scenario:Administrator dodaje plik do incydentu
 Given poprawne zalogowanie administratora &#xd;
 AND wyswietlenie listy incydentow
 When dodanie pliku do incydentu
@@ -323,7 +297,7 @@ Then nowy plik zostaje dodany do incydentu
 </scenarios>
       <passed>true</passed>
       <pending>true</pending>
-      <started>1464279875364</started>
+      <started>1464446357378</started>
       <duration>69</duration>
     </story>
     <story>
@@ -341,9 +315,9 @@ Then powinien widziec statystyki incydentow
 
 </scenarios>
       <passed>true</passed>
-      <pending>true</pending>
-      <started>1464279875448</started>
-      <duration>40</duration>
+      <pending>false</pending>
+      <started>1464446357459</started>
+      <duration>10348</duration>
     </story>
     <story>
       <description></description>
@@ -352,27 +326,23 @@ Then powinien widziec statystyki incydentow
       <path>stories/WyszukiwanieIncydentowPoIdentyfikatorze/WyszukiwanieIncydentowPoIdentyfikatorze.story</path>
       <html>stories.WyszukiwanieIncydentowPoIdentyfikatorze.WyszukiwanieIncydentowPoIdentyfikatorze.html</html>
       <meta></meta>
-      <scenarios>Scenario:Narrative:&#xd;
-Jako uzytkownik&#xd;
-Chce wyszukac incydent o danym identyfikatorze&#xd;
-Aby odnalezc konkretny incydent&#xd;
-&#xd;
-Scenario1: Incydent o danym identyfikatorze istnieje
-Given uzytkownik jest zalogowany do konta and lista incydentow zawiera incydenty
-When uzytkownik wprowadza istniejacy identyfikator incydentu
-Then sytsem wyswietla strone zawierajaca szczegoly incydentu&#xd;
-&#xd;
-Scenario2: Incydent o danym identyfikatorze nie istnieje
-Given uzytkownik jest zalogowany do konta
-When uzytkownik wprowadza nieistniejacy identyfikator incydentu
-Then system wyswietla komunikat &quot;Nie znaleziono incydentu&quot;
+      <scenarios>Scenario:Wyszukiwanie istniejacego incydentu
+Given uzytkownik jest zalogowany i znajduje sie w zakladce incydenty
+When uzytkownik wprowadza identyfikator istniejacego incydentu
+Then sytsem wyswietla strone zawierajaca szczegoly incydentu
+
+
+Scenario:Wyszukiwanie nieistniejacego incydentu
+Given uzytkownik jest zalogowany i znajduje sie w zakladce incydenty
+When uzytkownik wprowadza identyfikator nieistniejacego incydentu
+Then system wyswietla komunikat: Nie znaleziono incydentu
 
 
 </scenarios>
-      <passed>true</passed>
-      <pending>true</pending>
-      <started>1464279875505</started>
-      <duration>18201</duration>
+      <passed>false</passed>
+      <pending>false</pending>
+      <started>1464446368258</started>
+      <duration>19019</duration>
     </story>
   </stories>
   <stepMatches/>

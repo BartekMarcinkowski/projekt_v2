@@ -1,4 +1,4 @@
-<acceptance-test-run title="Uzytkownik dodaje nowy incydent poprawnie" name="Uzytkownik dodaje nowy incydent poprawnie" steps="11" successful="11" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="24540" timestamp="2016-05-26T18:23:06.937+02:00" session-id="61c972f6-171c-49cd-8bca-2690f5277b2b">
+<acceptance-test-run title="Uzytkownik dodaje nowy incydent poprawnie" name="Uzytkownik dodaje nowy incydent poprawnie" steps="11" successful="11" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="16510" timestamp="2016-05-28T16:37:46.878+02:00" session-id="41a431c8-28bb-4114-95fa-ec5bbbb5d8a4">
   <user-story id="FormularzDodaniaNowegoIncydentu" name="Formularz dodania nowego incydentu" path="stories/FormularzDodaniaNowegoIncydentu/FormularzDodaniaNowegoIncydentu.story"/>
   <tags>
     <tag name="Formularz dodania nowego incydentu" type="feature"/>
@@ -6,93 +6,93 @@
   </tags>
   <test-group name="Given poprawne logowanie uzytkownika" result="SUCCESS">
     <screenshots>
-      <screenshot image="9765a6181ab683c688866f23e5273b16.png"/>
+      <screenshot image="8507d370ada2c3538ecfc246d2c211e5.png"/>
     </screenshots>
-    <test-step result="SUCCESS" duration="9406">
+    <test-step result="SUCCESS" duration="5978">
       <screenshots>
-        <screenshot image="ef1fa3ec8fc8cdb91179a536af817046.png"/>
+        <screenshot image="6c3a89bbfc175351796ad0362bcde23e.png"/>
       </screenshots>
       <description>Otworz strone logowania u</description>
     </test-step>
-    <test-step result="SUCCESS" duration="1867">
+    <test-step result="SUCCESS" duration="1083">
       <screenshots>
-        <screenshot image="ef1fa3ec8fc8cdb91179a536af817046.png"/>
-        <screenshot image="43edbf8bea9c67a942e71cf11dcb7ec1.png"/>
+        <screenshot image="6c3a89bbfc175351796ad0362bcde23e.png"/>
+        <screenshot image="a9904202824df84fd239c62358ae51e3.png"/>
       </screenshots>
       <description>Wpisz email u</description>
     </test-step>
-    <test-step result="SUCCESS" duration="1439">
+    <test-step result="SUCCESS" duration="963">
       <screenshots>
-        <screenshot image="43edbf8bea9c67a942e71cf11dcb7ec1.png"/>
-        <screenshot image="405ed3cb5993cd0134c0c41e7f70ef54.png"/>
+        <screenshot image="a9904202824df84fd239c62358ae51e3.png"/>
+        <screenshot image="bd530e324714e15d69fcdad7cccd12c1.png"/>
       </screenshots>
       <description>Wpisz haslo u</description>
     </test-step>
-    <test-step result="SUCCESS" duration="1441">
+    <test-step result="SUCCESS" duration="963">
       <screenshots>
-        <screenshot image="405ed3cb5993cd0134c0c41e7f70ef54.png"/>
-        <screenshot image="9765a6181ab683c688866f23e5273b16.png"/>
+        <screenshot image="bd530e324714e15d69fcdad7cccd12c1.png"/>
+        <screenshot image="8507d370ada2c3538ecfc246d2c211e5.png"/>
       </screenshots>
       <description>Wcisnij przycisk zaloguj sie</description>
     </test-step>
   </test-group>
   <test-group name="When kliknie przycisk utworz incydent" result="SUCCESS">
     <screenshots>
-      <screenshot image="0c60c9e2a6452c3c9b45e9fe4a77672a.png"/>
+      <screenshot image="7cfaeb9afca12cf0d3ac45d66e4c6f5c.png"/>
     </screenshots>
-    <test-step result="SUCCESS" duration="989">
+    <test-step result="SUCCESS" duration="713">
       <screenshots>
-        <screenshot image="2724c859e714d49ee1223854cbea7835.png"/>
+        <screenshot image="7cfaeb9afca12cf0d3ac45d66e4c6f5c.png"/>
       </screenshots>
       <description>Kliknij przycisk utworz incydent</description>
     </test-step>
   </test-group>
   <test-group name="And poprawne wprowadzi wszystkie dane incydentu" result="SUCCESS">
     <screenshots>
-      <screenshot image="3c37e2e5fa0603056391d0ad39c2ef33.png"/>
+      <screenshot image="d0b61601f066eb1fd0378afa8ce40e6d.png"/>
     </screenshots>
-    <test-step result="SUCCESS" duration="1257">
+    <test-step result="SUCCESS" duration="851">
       <screenshots>
-        <screenshot image="95e19412d154cfeb647542a21690719c.png"/>
+        <screenshot image="5319887c8a4b34e2f206cbf1f31ed406.png"/>
       </screenshots>
       <description>Typ incydentu</description>
     </test-step>
-    <test-step result="SUCCESS" duration="1832">
+    <test-step result="SUCCESS" duration="1708">
       <screenshots>
-        <screenshot image="95e19412d154cfeb647542a21690719c.png"/>
-        <screenshot image="a7dfb42d39a9009739bf6d336b2a1f43.png"/>
+        <screenshot image="5319887c8a4b34e2f206cbf1f31ed406.png"/>
+        <screenshot image="4243e3a531ae362a440af1e66d4400cc.png"/>
       </screenshots>
       <description>Opis incydentu</description>
     </test-step>
-    <test-step result="SUCCESS" duration="1342">
+    <test-step result="SUCCESS" duration="933">
       <screenshots>
-        <screenshot image="a7dfb42d39a9009739bf6d336b2a1f43.png"/>
-        <screenshot image="206ccbc210b9bd411738bdaf1f81a5c5.png"/>
+        <screenshot image="4243e3a531ae362a440af1e66d4400cc.png"/>
+        <screenshot image="347f2f23d8101793df216643ae9e088c.png"/>
       </screenshots>
       <description>Adres incydentu</description>
     </test-step>
-    <test-step result="SUCCESS" duration="1248">
+    <test-step result="SUCCESS" duration="935">
       <screenshots>
-        <screenshot image="206ccbc210b9bd411738bdaf1f81a5c5.png"/>
-        <screenshot image="a6ffe735cd1964f1121d5d375b505b3c.png"/>
+        <screenshot image="347f2f23d8101793df216643ae9e088c.png"/>
+        <screenshot image="ae81cde5312d91f8fe766c229a8088fd.png"/>
       </screenshots>
       <description>Kod miasto incydentu</description>
     </test-step>
-    <test-step result="SUCCESS" duration="1641">
+    <test-step result="SUCCESS" duration="1084">
       <screenshots>
-        <screenshot image="a6ffe735cd1964f1121d5d375b505b3c.png"/>
-        <screenshot image="3c37e2e5fa0603056391d0ad39c2ef33.png"/>
+        <screenshot image="ae81cde5312d91f8fe766c229a8088fd.png"/>
+        <screenshot image="d0b61601f066eb1fd0378afa8ce40e6d.png"/>
       </screenshots>
       <description>Kliknij utworz i</description>
     </test-step>
   </test-group>
   <test-group name="Then incydent powinien zostac poprawnie dodany" result="SUCCESS">
     <screenshots>
-      <screenshot image="3c37e2e5fa0603056391d0ad39c2ef33.png"/>
+      <screenshot image="d0b61601f066eb1fd0378afa8ce40e6d.png"/>
     </screenshots>
-    <test-step result="SUCCESS" duration="638">
+    <test-step result="SUCCESS" duration="318">
       <screenshots>
-        <screenshot image="3c37e2e5fa0603056391d0ad39c2ef33.png"/>
+        <screenshot image="d0b61601f066eb1fd0378afa8ce40e6d.png"/>
       </screenshots>
       <description>Assert incydent utworzony</description>
     </test-step>

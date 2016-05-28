@@ -1,6 +1,6 @@
 <story path="stories/SprawdzenieListyIncydentow/SprawdzenieListyIncydentow.story" title="">
-<scenario keyword="Scenario:" title="Brak zgloszonych incydentow">
-<step outcome="successful">Given uzytkownik jest zalogowany do systemu</step>
+<scenario keyword="Scenario:" title="Brak zgloszonych incydentow dla zalogowanego uzytkownika">
+<step outcome="successful">Given uzytkownik, ktory nie zglosil zadnego incydentu jest zalogowany do systemu</step>
 <step outcome="successful">When sprawdza liste incydentow</step>
 <step outcome="successful">Then system wyswietla komunikat o braku incydentow do wyswietlenia</step>
 </scenario>

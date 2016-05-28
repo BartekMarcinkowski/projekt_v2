@@ -1,21 +1,9 @@
 <story path="stories/SzczegolyIncydentu/Szczego&#322;yIncydentuAdministrator.story" title="">
-<scenario keyword="Scenario:" title="Narrative:
-Jako administrator
-Chce miec dostep do szczegolow incydentu
-Aby zarzadzac incydentami
-
-
-Scenario1: Administrator edytuje opis incydentu">
+<scenario keyword="Scenario:" title="Administrator edytuje opis incydentu">
 <step outcome="pending" keyword="PENDING">Given poprawne zalogowanie administratora 
 AND wyswietlenie listy incydentow</step>
 <step outcome="pending" keyword="PENDING">When administrator edytuje opis incydentu</step>
-<step outcome="pending" keyword="PENDING">Then w opisie incdentu pojawia sie nowy teskt
-
-Scenario2: Administrator dodaje plik do incydentu</step>
-<step outcome="pending" keyword="PENDING">Given poprawne zalogowanie administratora 
-AND wyswietlenie listy incydentow</step>
-<step outcome="pending" keyword="PENDING">When dodanie pliku do incydentu</step>
-<step outcome="pending" keyword="PENDING">Then nowy plik zostaje dodany do incydentu</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then w opisie incdentu pojawia sie nowy teskt</step>
 <pendingMethod>@Given(&quot;poprawne zalogowanie administratora \r\nAND wyswietlenie listy incydentow&quot;)
 @Pending
 public void givenPoprawneZalogowanieAdministratoraANDWyswietlenieListyIncydentow() {
@@ -28,12 +16,12 @@ public void whenAdministratorEdytujeOpisIncydentu() {
   // PENDING
 }
 </pendingMethod>
-<pendingMethod>@Then(&quot;w opisie incdentu pojawia sie nowy teskt\r\n\r\nScenario2: Administrator dodaje plik do incydentu&quot;)
-@Pending
-public void thenWOpisieIncdentuPojawiaSieNowyTesktScenario2AdministratorDodajePlikDoIncydentu() {
-  // PENDING
-}
-</pendingMethod>
+</scenario>
+<scenario keyword="Scenario:" title="Administrator dodaje plik do incydentu">
+<step outcome="pending" keyword="PENDING">Given poprawne zalogowanie administratora 
+AND wyswietlenie listy incydentow</step>
+<step outcome="pending" keyword="PENDING">When dodanie pliku do incydentu</step>
+<step outcome="pending" keyword="PENDING">Then nowy plik zostaje dodany do incydentu</step>
 <pendingMethod>@Given(&quot;poprawne zalogowanie administratora \r\nAND wyswietlenie listy incydentow&quot;)
 @Pending
 public void givenPoprawneZalogowanieAdministratoraANDWyswietlenieListyIncydentow() {

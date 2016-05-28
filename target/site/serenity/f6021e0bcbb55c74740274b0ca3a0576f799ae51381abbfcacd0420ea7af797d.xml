@@ -1,0 +1,17 @@
+<acceptance-test-run title="Administrator dodaje plik do incydentu" name="Administrator dodaje plik do incydentu" steps="3" successful="0" failures="0" skipped="0" ignored="0" pending="3" annotated-result="PENDING" result="PENDING" duration="36" timestamp="2016-05-28T16:39:17.410+02:00">
+  <user-story id="SzczegołyIncydentuAdministrator" name="Szczegoły incydentu administrator" path="stories/SzczegolyIncydentu/SzczegołyIncydentuAdministrator.story"/>
+  <tags>
+    <tag name="Szczegoly incydentu" type="feature"/>
+    <tag name="Szczegoly incydentu/Szczegoły incydentu administrator" type="story"/>
+  </tags>
+  <test-step result="PENDING" duration="0">
+    <description>Given poprawne zalogowanie administratora &#xd;
+AND wyswietlenie listy incydentow</description>
+  </test-step>
+  <test-step result="PENDING" duration="0">
+    <description>When dodanie pliku do incydentu</description>
+  </test-step>
+  <test-step result="PENDING" duration="0">
+    <description>Then nowy plik zostaje dodany do incydentu</description>
+  </test-step>
+</acceptance-test-run>

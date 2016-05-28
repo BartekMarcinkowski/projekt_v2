@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Wyszukiwanie incydentow po identyfikatorze" skipped="0" tests="2" time="19.01" timestamp="2016-05-149 04:39:28"><testcase name="Wyszukiwanie istniejacego incydentu"/><testcase name="Wyszukiwanie nieistniejacego incydentu"><error message="The text 'Nie znaleziono incydentu' was not found in the page&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'&#10;System info: host: 'Bartek-Komputer', ip: '192.168.0.105', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_45'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">The text 'Nie znaleziono incydentu' was not found in the page
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
+System info: host: 'Bartek-Komputer', ip: '192.168.0.105', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_45'
+Driver info: driver.version: unknown</error><system-err>The text 'Nie znaleziono incydentu' was not found in the page
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
+System info: host: 'Bartek-Komputer', ip: '192.168.0.105', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_45'
+Driver info: driver.version: unknown&#13;
+icm.pages.Incydenty.komunikatNieZnalezionoIncydentu(Incydenty.java:122)&#13;
+icm.steps.serenity.EndUserSteps.komunikatNieZnalezionoIncydentu(EndUserSteps.java:329)&#13;
+icm.steps.DefinitionSteps.komunikatNieZnalezionoIncydentu(DefinitionSteps.java:283)&#13;
+</system-err></testcase></testsuite>

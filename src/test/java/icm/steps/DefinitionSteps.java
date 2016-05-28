@@ -7,23 +7,21 @@ import org.jbehave.core.annotations.When;
 
 import icm.steps.serenity.EndUserSteps;
 
+
 public class DefinitionSteps {
 
     @Steps
     EndUserSteps endUser;
 
-
-    /**
-     * Zakladanie konta
-     */
+/**Zakladanie konta*/
 
     @Given("uzytkownik ma otwarta strone rejstracji")
-    public void otworzStroneRejstracji() {
+    public void otworzStroneRejstracji(){
         endUser.otworzStroneRejstracji();
     }
 
     @When("wprowadzi nazwe uzytkownika, email i haslo")
-    public void zakladanieKonta() {
+    public void zakladanieKonta(){
         endUser.wpiszNazweUzytkownika();
         endUser.wpiszEmail1();
         endUser.wpiszHaslo1();
@@ -32,36 +30,32 @@ public class DefinitionSteps {
     }
 
     @Then("uzytkownik powinien zostac zalogowany")
-    public void sprawdzenieCzyJestPrzyciskLogout() {
+    public void sprawdzenieCzyJestPrzyciskLogout(){
         endUser.assertPrzyciskLogout();
     }
 
 
-    /**
-     * Logowanie
-     */
+/**Logowanie*/
 
     @Given("uzytkownik ma otwarta strone logowania")
-    public void otworzStroneLogowania() {
+    public void otworzStroneLogowania(){
         endUser.otworzStroneLogowania();
     }
 
     @When("poprawnie wprowadzi email i haslo")
-    public void logowanie() {
+    public void logowanie(){
         endUser.wpiszEmail();
         endUser.wpiszHaslo();
         endUser.wcisnijPrzyciskZalogujSie();
     }
 
     @Then("uzytkownik powinien zostac zalogowany na strone z lista incydentow")
-    public void sprawdzenieCzyJestNapisIncydenty() {
+    public void sprawdzenieCzyJestNapisIncydenty(){
         endUser.assertNapisIncydenty();
     }
 
 
-    /**
-     * Dodawanie nowego pracownika
-     */
+/** Dodawanie nowego pracownika*/
 
     @Given("zalogowany administrator jest w zakladce uzytkownicy")
     public void zalogujJakoAdministrator() {
@@ -91,9 +85,7 @@ public class DefinitionSteps {
         endUser.assertNapisKontoUtworzone();
     }
 
-    /**
-     * Filtrowanie incydentow
-     */
+/**Filtrowanie incydentow*/
 
     @Given("pracownik jest zalogowany i znajduje sie w zakladce incydenty")
     public void zalogujJakoPracownik() {
@@ -115,19 +107,16 @@ public class DefinitionSteps {
         endUser.assertZgloszonyIncydent();
     }
 
-    /**
-     * Filtrowanie uzytkowników
-     * Krok zdefiniowany wcześniej
-     *
-     * @Given("zalogowany administrator jest w zakladce uzytkownicy")
-     * public void zalogujJakoAdministrator() {
-     * endUser.otworzStroneLogowania();
-     * endUser.wpiszEmail();
-     * endUser.wpiszHaslo();
-     * endUser.wcisnijPrzyciskZalogujSie();
-     * endUser.wcisnijPrzyciskUzytkownicy();
-     * }
-     */
+/**Filtrowanie uzytkowników
+ * Krok zdefiniowany wcześniej
+ * @Given("zalogowany administrator jest w zakladce uzytkownicy")
+   public void zalogujJakoAdministrator() {
+       endUser.otworzStroneLogowania();
+       endUser.wpiszEmail();
+       endUser.wpiszHaslo();
+       endUser.wcisnijPrzyciskZalogujSie();
+       endUser.wcisnijPrzyciskUzytkownicy();
+   }*/
 
     @When("wybierze opcje filtruj")
     public void filtrujPracownikow() {
@@ -144,9 +133,7 @@ public class DefinitionSteps {
         endUser.assertRoleUser();
     }
 
-    /**
-     * Dodanie nowego incydentu
-     */
+/**Dodanie nowego incydentu*/
 
     @Given("poprawne logowanie uzytkownika")
     public void logowanieUzytkownika() {
@@ -187,49 +174,236 @@ public class DefinitionSteps {
         endUser.assertIncydentNieUtworzony();
     }
 
+/**Sprawdzenie listy incydentow*/
 
-/**Sprawdzanie listy incydentow*/
-
-    @Given("uzytkownik jest zalogowany do systemu")
-    public void otworzStroneLogowania2() {
-        endUser.otworzStroneLogowania2();
-        endUser.wpiszEmail2();
-        endUser.wpiszHaslo2();
-        endUser.wcisnijPrzyciskZalogujSie2();}
+    @Given("uzytkownik, ktory nie zglosil zadnego incydentu jest zalogowany do systemu")
+    public void logowanieUzytkownika3() {
+        endUser.otworzStroneLogowaniaU();
+        endUser.wpiszEmailU3();
+        endUser.wpiszHasloU3();
+        endUser.wcisnijPrzyciskZalogujSie();
+    }
 
     @When("sprawdza liste incydentow")
-    public void sprawdzenieListyIncydentow() {
-        endUser.assertNapisIncydenty2();
+    public void wyswietlenieListyIncedentow() {
+        endUser.assertNapisIncydenty();
     }
 
     @Then("system wyswietla komunikat o braku incydentow do wyswietlenia")
-    public void asercja() {
-        endUser.assertNieZnalezionoRekordow();
+    public void pustaListaIncydentow() {
+        endUser.pustaListaIncydentow();
     }
 
+/**Statystyki*/
+
+    @Given("zalogowany administrator")
+    public void zalogujAdministratora() {
+        endUser.otworzStroneLogowania();
+        endUser.wpiszEmail();
+        endUser.wpiszHaslo();
+        endUser.wcisnijPrzyciskZalogujSie();
+    }
+
+    @When("wybierze zakladke dashboard")
+    public void wybierzDashboard() {
+        endUser.wybierzDashboard();
+    }
+
+    @Then("powinien widziec statystyki incydentow")
+    public void statystykiIncydentow() {
+        endUser.statystykiIncydentow();
+    }
+
+/**Usuwanie pracownika*/
+/**Krok zdefiniowany wcześniej*/
+/** @Given("zalogowany administrator jest w zakladce uzytkownicy")
+    public void zalogujJakoAdministrator() {
+        endUser.otworzStroneLogowania();
+        endUser.wpiszEmail();
+        endUser.wpiszHaslo();
+        endUser.wcisnijPrzyciskZalogujSie();
+        endUser.wcisnijPrzyciskUzytkownicy();
+    }*/
+
+    @When("wyszuka pracownika")
+    public void wybieraPracownika() {
+        endUser.wybieraPracownika();
+    }
+
+    @When("wybierze akcje delete")
+    public void wybierzDelete() {
+        endUser.kliknijAkcja();
+        endUser.kliknijDelete();
+    }
+
+    @Then("konto powinno zostac usuniete")
+    public void kontoUsunieta() {
+        endUser.komunikatKontoUsuniete();
+        endUser.brakKontaNaLiscie();
+    }
 
 /**Wyszukiwanie incydentow po identyfikatorze*/
 
-    /**Secnario1*/
-
-    @Given("uzytkownik jest zalogowany do konta and lista incydentow zawiera incydenty")
-    public void istniejeIncydentOPodanymID() {
+    @Given("uzytkownik jest zalogowany i znajduje sie w zakladce incydenty")
+    public void zalogowanyUzytkownik() {
         endUser.otworzStroneLogowaniaU();
         endUser.wpiszEmailU();
         endUser.wpiszHasloU();
         endUser.wcisnijPrzyciskZalogujSie();
-
+        endUser.assertNapisIncydenty();
     }
 
-    @When("uzytkownik wprowadza istniejacy identyfikator incydentu")
-    public void wprowadzenieIDIncydentu() {
-        endUser.assertNieZnalezionoRekordow2();
-        endUser.wpiszIDIncydentu();
-        endUser.kliknijSzukaj();
+    @When("uzytkownik wprowadza identyfikator istniejacego incydentu")
+    public void wyszukanieIncydentuId1() {
+        endUser.wyszukanieIncydentuId1();
     }
 
     @Then("sytsem wyswietla strone zawierajaca szczegoly incydentu")
-    public void wyswietlanieSzczegolow() {
-        endUser.assert2();
+    public void szczegolyIncydentuId1() {
+        endUser.szczegolyIncydentuId1();
+    }
+
+ /**@Given("uzytkownik jest zalogowany i znajduje sie w zakladce incydenty")
+    public void zalogowanyUzytkownik() {
+        endUser.otworzStroneLogowaniaU();
+        endUser.wpiszEmailU();
+        endUser.wpiszHasloU();
+        endUser.wcisnijPrzyciskZalogujSie();
+        endUser.assertNapisIncydenty();
+    }
+    */
+
+    @When("uzytkownik wprowadza identyfikator nieistniejacego incydentu")
+    public void wyszukanieIncydentuId21() {
+        endUser.wyszukanieIncydentuId21();
+    }
+
+    @Then("system wyswietla komunikat: Nie znaleziono incydentu")
+    public void komunikatNieZnalezionoIncydentu() {
+        endUser.komunikatNieZnalezionoIncydentu();
+    }
+
+/**Szczegoly incydentu - pracownik*/
+
+ /**@Given("pracownik jest zalogowany i znajduje sie w zakladce incydenty")
+    public void zalogujJakoPracownik() {
+        endUser.otworzStroneLogowaniaP();
+        endUser.wpiszEmailP();
+        endUser.wpiszHasloP();
+        endUser.wcisnijPrzyciskZalogujSieP();
+        endUser.assertNapisIncydenty();
+    }
+    */
+
+    @When("pracownik wyswietli szczegoly incydentu")
+    public void szczegolyIncydentu() {
+        endUser.wybierzeAkcja();
+        endUser.wybierzeSzczegolyIncydentu();
+    }
+
+    @When("edytuje opis incydentu")
+    public void edytujeOpisIncydentu() {
+        endUser.kliknijOpisIncydentu();
+        endUser.wprowadziNowyOpis();
+    }
+
+    @Then("w opisie incdentu pojawia sie nowy teskt")
+    public void sprawdzNowyOpisIncydentu() {
+        endUser.wybierzIncydenty();
+        endUser.wybierzeAkcja();
+        endUser.wybierzeSzczegolyIncydentu();
+        endUser.kliknijOpisIncydentu();
+        endUser.sprawdzNowyOpis();
+    }
+
+    @Given("pracownik wyswietli szczegoly incydentu")
+    public void wyswietliSzczegolyIncydentu() {
+        endUser.wybierzeAkcja();
+        endUser.wybierzeSzczegolyIncydentu();
+    }
+
+    @When("w sekcji pliki wybierze plik do dodania i kliknie upload")
+    public void dodaniePliku() throws Exception {
+        endUser.kliknijPrzegladaj();
+        endUser.wyszukaniePliku();
+        endUser.kliknijUpload();
+    }
+
+    @Then("nowy plik powinien zostac dodany do incydentu")
+    public void plikDodanyDoSzczegolow() {
+        endUser.plikDodany();
+    }
+
+/**Szczegóły incydentu - użytkownik*/
+
+    @Given("uzytkownik wyswietli szczegoly incydentu")
+    public void uzytkownikWyswietlaSzczegoly() {
+        endUser.kliknieAkcja();
+        endUser.kliknieSzczegoly();
+    }
+
+    @When("uzytkownik edytuje opis incydentu")
+    public void uzytkownikEdytujeOpisIncydentu() {
+        endUser.kliknijOpisIncydentu();
+        endUser.wprodzaNowyOpis();
+    }
+
+    @Then("w opisie incydentu pojawia sie nowy teskt")
+    public void nowyOpisIncydentu() {
+        endUser.wybierzIncydenty();
+        endUser.kliknieAkcja();
+        endUser.kliknieSzczegoly();
+        endUser.kliknijOpisIncydentu();
+        endUser.nowyOpis();
+    }
+
+    @Then("plik powinien zostac dodany do incydentu")
+    public void nowyPlikDodany() {
+        endUser.nowyPlikDodany();
+    }
+
+/**Obsługa incydentu - administrator*/
+
+    @Given("zalogowany administrator jest w zakladce incydenty")
+    public void zalogujAdministrator() {
+        endUser.otworzStroneLogowania();
+        endUser.wpiszEmail();
+        endUser.wpiszHaslo();
+        endUser.wcisnijPrzyciskZalogujSie();
+        endUser.assertNapisIncydenty();
+    }
+
+    @When("wybierze wybierze akcje dodaj audyt incydentu w statusie niepotwierdzony")
+    public void dodanieAudytuNiepotwierdzony() {
+        endUser.wyborIncydentu();
+        endUser.wybierzDodajAudyt();
+    }
+
+    @When("w formularzu audytu zmieni status na zgloszony")
+    public void zmianaStatusu() throws InterruptedException {
+        endUser.rozwijanieListyStatusow();
+        endUser.klikniecieDodajAudyt();
+    }
+
+    @Then("status incydentu powinien zostac zmieniny")
+    public void statusZmieniony() {
+        endUser.komunikatAudytDodany();
+    }
+
+    @When("wybierze wybierze akcje dodaj audyt incydentu")
+    public void dodanieAdytuZgloszony() {
+        endUser.wybranieAkcja();
+        endUser.wybierzDodajAudyt();
+    }
+
+    @When("w formularzu audytu przypisze incydent do pracownika")
+    public void przypisanieIncydentuDoPracownika() {
+        endUser.wybraniePracownika();
+        endUser.klikniecieDodajAudyt();
+    }
+
+    @Then("incydent powinien zostac przypisany do pracownika")
+    public void incydentPrzypisany() {
+        endUser.incydentPrzypisany();
     }
 }

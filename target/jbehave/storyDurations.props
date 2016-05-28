@@ -1,20 +1,20 @@
 #org.jbehave.core.embedder.StoryManager
-#Thu May 26 18:24:54 CEST 2016
-stories/FiltrowanieIncydentow/FiltrowanieIncydentow.story=19000
-stories/Statystyki/Statystyki.story=0
+#Sat May 28 16:39:48 CEST 2016
+stories/FiltrowanieIncydentow/FiltrowanieIncydentow.story=12000
+stories/Statystyki/Statystyki.story=10000
 stories/WyszukiwanieIncydentowPoIdentyfikatorze/WyszukiwanieIncydentowPoIdentyfikatorze.story=19000
-stories/DodawaniePracownika/DodanieNowegoPracownika.story=25000
+stories/DodawaniePracownika/DodanieNowegoPracownika.story=17000
 stories/SzczegolyIncydentu/SzczegołyIncydentuAdministrator.story=0
-stories/FormularzDodaniaNowegoIncydentu/FormularzDodaniaNowegoIncydentu.story=37000
-threadAverage=204000
-stories/FiltrowanieUzytkownikow/FiltrowanieUzytkownikow.story=19000
-stories/ObslugaIncydentu/ObsługaIncydentuPracownik.story=15000
-stories/SzczegolyIncydentu/SzczegolyIncydentuPracownik.story=0
-stories/Zakladanie\ Konta/ZakladanieKonta.story=18000
-stories/SzczegolyIncydentu/SzczegolyIncydentuUzytkownik.story=0
-stories/SprawdzenieListyIncydentow/SprawdzenieListyIncydentow.story=16000
-stories/Logowanie/PoprawneLogowanie.story=16000
+stories/FormularzDodaniaNowegoIncydentu/FormularzDodaniaNowegoIncydentu.story=25000
+threadAverage=279000
+stories/FiltrowanieUzytkownikow/FiltrowanieUzytkownikow.story=14000
+stories/ObslugaIncydentu/ObsługaIncydentuPracownik.story=13000
+stories/SzczegolyIncydentu/SzczegolyIncydentuPracownik.story=39000
+stories/Zakladanie\ Konta/ZakladanieKonta.story=14000
+stories/SzczegolyIncydentu/SzczegolyIncydentuUzytkownik.story=28000
+stories/SprawdzenieListyIncydentow/SprawdzenieListyIncydentow.story=11000
+stories/Logowanie/PoprawneLogowanie.story=9000
 threads=1
-stories/ObslugaIncydentu/ObslugaIncydentuAdministrator.story=0
-stories/UsuwaniePracownika/UsunieciePracownika.story=20000
-total=204000
+stories/ObslugaIncydentu/ObslugaIncydentuAdministrator.story=25000
+stories/UsuwaniePracownika/UsunieciePracownika.story=43000
+total=279000

@@ -1,0 +1,61 @@
+<acceptance-test-run title="Brak zgloszonych incydentow dla zalogowanego uzytkownika" name="Brak zgloszonych incydentow dla zalogowanego uzytkownika" steps="6" successful="6" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="11163" timestamp="2016-05-28T16:36:23.901+02:00" session-id="1104bb6c-2cbd-444c-bbc0-a65089e162ca">
+  <user-story id="SprawdzenieListyIncydentow" name="Sprawdzenie listy incydentow" path="stories/SprawdzenieListyIncydentow/SprawdzenieListyIncydentow.story"/>
+  <tags>
+    <tag name="Sprawdzenie listy incydentow" type="feature"/>
+    <tag name="Sprawdzenie listy incydentow/Sprawdzenie listy incydentow" type="story"/>
+  </tags>
+  <test-group name="Given uzytkownik, ktory nie zglosil zadnego incydentu jest zalogowany do systemu" result="SUCCESS">
+    <screenshots>
+      <screenshot image="3c37e64d105f797b750b6df752e133d2.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="6884">
+      <screenshots>
+        <screenshot image="6c3a89bbfc175351796ad0362bcde23e.png"/>
+      </screenshots>
+      <description>Otworz strone logowania u</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1088">
+      <screenshots>
+        <screenshot image="6c3a89bbfc175351796ad0362bcde23e.png"/>
+        <screenshot image="41babac63ee39d495bd5ea1a1f61c06e.png"/>
+      </screenshots>
+      <description>Wpisz email u3</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="929">
+      <screenshots>
+        <screenshot image="41babac63ee39d495bd5ea1a1f61c06e.png"/>
+        <screenshot image="666d042d775893e3edcb2b1a20430d5a.png"/>
+      </screenshots>
+      <description>Wpisz haslo u3</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1044">
+      <screenshots>
+        <screenshot image="666d042d775893e3edcb2b1a20430d5a.png"/>
+        <screenshot image="3c37e64d105f797b750b6df752e133d2.png"/>
+      </screenshots>
+      <description>Wcisnij przycisk zaloguj sie</description>
+    </test-step>
+  </test-group>
+  <test-group name="When sprawdza liste incydentow" result="SUCCESS">
+    <screenshots>
+      <screenshot image="3c37e64d105f797b750b6df752e133d2.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="299">
+      <screenshots>
+        <screenshot image="3c37e64d105f797b750b6df752e133d2.png"/>
+      </screenshots>
+      <description>Assert napis incydenty</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then system wyswietla komunikat o braku incydentow do wyswietlenia" result="SUCCESS">
+    <screenshots>
+      <screenshot image="3c37e64d105f797b750b6df752e133d2.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="330">
+      <screenshots>
+        <screenshot image="3c37e64d105f797b750b6df752e133d2.png"/>
+      </screenshots>
+      <description>Pusta lista incydentow</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

@@ -1,0 +1,92 @@
+<acceptance-test-run title="administrator zmienia status incydentu z niepotwierdzony na zgłoszony" name="administrator zmienia status incydentu z niepotwierdzony na zgłoszony" steps="10" successful="10" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="15069" timestamp="2016-05-28T16:37:07.176+02:00" session-id="9a5b03e1-95d3-4bba-9e23-cbe893be386a">
+  <user-story id="ObslugaIncydentuAdministrator" name="Obsluga incydentu administrator" path="stories/ObslugaIncydentu/ObslugaIncydentuAdministrator.story"/>
+  <tags>
+    <tag name="Obsluga incydentu" type="feature"/>
+    <tag name="Obsluga incydentu/Obsluga incydentu administrator" type="story"/>
+  </tags>
+  <test-group name="Given zalogowany administrator jest w zakladce incydenty" result="SUCCESS">
+    <screenshots>
+      <screenshot image="0e1b8812b4139d3f032578a7c2dd423c.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="6446">
+      <screenshots>
+        <screenshot image="6c3a89bbfc175351796ad0362bcde23e.png"/>
+      </screenshots>
+      <description>Otworz strone logowania</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1056">
+      <screenshots>
+        <screenshot image="6c3a89bbfc175351796ad0362bcde23e.png"/>
+        <screenshot image="cd978d08e3bb2afb9180e9cbdd068289.png"/>
+      </screenshots>
+      <description>Wpisz email</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="836">
+      <screenshots>
+        <screenshot image="cd978d08e3bb2afb9180e9cbdd068289.png"/>
+        <screenshot image="cbb996963ea1a3b581b7e03583e3da98.png"/>
+      </screenshots>
+      <description>Wpisz haslo</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1080">
+      <screenshots>
+        <screenshot image="cbb996963ea1a3b581b7e03583e3da98.png"/>
+        <screenshot image="0e1b8812b4139d3f032578a7c2dd423c.png"/>
+      </screenshots>
+      <description>Wcisnij przycisk zaloguj sie</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="323">
+      <screenshots>
+        <screenshot image="0e1b8812b4139d3f032578a7c2dd423c.png"/>
+      </screenshots>
+      <description>Assert napis incydenty</description>
+    </test-step>
+  </test-group>
+  <test-group name="When wybierze wybierze akcje dodaj audyt incydentu w statusie niepotwierdzony" result="SUCCESS">
+    <screenshots>
+      <screenshot image="dc06906ab8ee2fb8371697fb3d875483.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="631">
+      <screenshots>
+        <screenshot image="f886f50a21130abbc02208d7bc614fb8.png"/>
+      </screenshots>
+      <description>Wybor incydentu</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1141">
+      <screenshots>
+        <screenshot image="f886f50a21130abbc02208d7bc614fb8.png"/>
+        <screenshot image="dc06906ab8ee2fb8371697fb3d875483.png"/>
+      </screenshots>
+      <description>Wybierz dodaj audyt</description>
+    </test-step>
+  </test-group>
+  <test-group name="And w formularzu audytu zmieni status na zgloszony" result="SUCCESS">
+    <screenshots>
+      <screenshot image="e80796b80aa87ed71f920ca32b740395.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="652">
+      <screenshots>
+        <screenshot image="da566615384ae0266edaa54e7edb05b8.png"/>
+      </screenshots>
+      <description>Rozwijanie listy statusow</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1335">
+      <screenshots>
+        <screenshot image="02ff7d205559d46997046d40410e3b48.png"/>
+        <screenshot image="e80796b80aa87ed71f920ca32b740395.png"/>
+      </screenshots>
+      <description>Klikniecie dodaj audyt</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then status incydentu powinien zostac zmieniny" result="SUCCESS">
+    <screenshots>
+      <screenshot image="e80796b80aa87ed71f920ca32b740395.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="452">
+      <screenshots>
+        <screenshot image="e80796b80aa87ed71f920ca32b740395.png"/>
+      </screenshots>
+      <description>Komunikat audyt dodany</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

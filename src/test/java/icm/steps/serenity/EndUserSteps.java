@@ -1,11 +1,22 @@
 package icm.steps.serenity;
 
+import com.sun.deploy.security.URLClassPathControl;
+import com.thoughtworks.selenium.webdriven.commands.Type;
 import icm.pages.*;
 import net.thucydides.core.annotations.Step;
+import net.thucydides.core.pages.components.FileToUpload;
 import net.thucydides.core.steps.ScenarioSteps;
+import org.hibernate.validator.constraints.URL;
+import org.openqa.selenium.support.FindBy;
+import sun.awt.im.InputContext;
+
+import javax.lang.model.element.Element;
+
+import java.io.IOException;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.hasItem;
+import static org.hamcrest.Matchers.theInstance;
 
 public class EndUserSteps extends ScenarioSteps {
 
@@ -19,12 +30,12 @@ public class EndUserSteps extends ScenarioSteps {
     ListaKontRoleUser listaKontRoleUser;
     StronaLogowaniaU stronaLogowaniaU;
     NowyIncydent nowyIncydent;
-    SprawdzanieListyIncydentow sprawdzanieListyIncydentow;
-    WyszukiwanieIncydentowPoIdentyfikatorze wyszukiwanieIncydentowPoIdentyfikatorze;
+    Dashboard dashboard;
+    SzczegolyIncydentu incydent;
+    TworzenieAudytu tworzenieAudytu;
 
-    /**
-     * Zakladanie konta
-     */
+
+/**Zakladanie konta*/
 
     @Step
     public void otworzStroneRejstracji() {
@@ -61,13 +72,10 @@ public class EndUserSteps extends ScenarioSteps {
     public void assertPrzyciskLogout() {
         incydenty.assertPrzyciskLogout();
     }
-
-    /**
-     * Logowanie
-     */
+/**Logowanie*/
 
     @Step
-    public void otworzStroneLogowania() {
+    public void otworzStroneLogowania(){
         stronaLogowania.open();
         getDriver().navigate().refresh();
     }
@@ -76,12 +84,10 @@ public class EndUserSteps extends ScenarioSteps {
     public void wpiszEmail() {
         stronaLogowania.wpiszEmail();
     }
-
     @Step
     public void wpiszHaslo() {
         stronaLogowania.wpiszHaslo();
     }
-
     @Step
     public void wcisnijPrzyciskZalogujSie() {
         stronaLogowania.wcisnijPrzyciskZalogujSie();
@@ -93,9 +99,7 @@ public class EndUserSteps extends ScenarioSteps {
     }
 
 
-    /**
-     * Dodawanie nowego pracownika
-     */
+/** Dodawanie nowego pracownika*/
 
     @Step
     public void wcisnijPrzyciskUzytkownicy() {
@@ -138,16 +142,13 @@ public class EndUserSteps extends ScenarioSteps {
     }
 
 
-    /**
-     * Filtrowanie incydentow
-     */
+/**Filtrowanie incydentow*/
 
     @Step
     public void otworzStroneLogowaniaP() {
         stronaLogowaniaP.open();
         getDriver().navigate().refresh();
     }
-
     @Step
     public void wpiszEmailP() {
         stronaLogowaniaP.wpiszEmailP();
@@ -178,9 +179,7 @@ public class EndUserSteps extends ScenarioSteps {
         noweIncydenty.assertZgloszonyIncydent();
     }
 
-    /**
-     * Filtrowanie pracownikow
-     */
+/**Filtrowanie pracownikow*/
 
     @Step
     public void kliknijFilter() {
@@ -197,9 +196,7 @@ public class EndUserSteps extends ScenarioSteps {
         listaKontRoleUser.assertRoleUser();
     }
 
-    /**
-     * Dodanie nowego incydentu
-     */
+/**Dodanie nowego incydentu*/
 
     @Step
     public void otworzStroneLogowaniaU() {
@@ -257,71 +254,199 @@ public class EndUserSteps extends ScenarioSteps {
         nowyIncydent.assertIncydentNieUtworzony();
     }
 
-
-    /**
-     * Sprawdzanie listy incydentow
-     */
+/**Sprawdzenie listy incydentow*/
 
     @Step
-    public void otworzStroneLogowania2() {
-        stronaLogowania.open();
-        getDriver().navigate().refresh();
+    public void wpiszEmailU3() {
+        stronaLogowaniaU.wpiszEmailU3();
     }
 
     @Step
-    public void wpiszEmail2() {
-        sprawdzanieListyIncydentow.wpiszEmail();
+    public void wpiszHasloU3() {
+        stronaLogowaniaU.wpiszHasloU3();
     }
 
     @Step
-    public void wpiszHaslo2() {
-        sprawdzanieListyIncydentow.wpiszHaslo();
+    public void pustaListaIncydentow() {
+        incydenty.brakIncydentow();
+    }
+
+/**Statystyki*/
+
+    @Step
+    public void wybierzDashboard() {
+        incydenty.wybierzDashboard();
     }
 
     @Step
-    public void wcisnijPrzyciskZalogujSie2() {
-        sprawdzanieListyIncydentow.wcisnijPrzyciskZalogujSie();
+    public void statystykiIncydentow() {
+        dashboard.statystykaIncydentyTabela();
+    }
+/**Usuwanie pracownika*/
+    public void wybieraPracownika() {
+        listaKont.wybieraPracownika();
     }
 
     @Step
-    public void assertNapisIncydenty2() {
-        incydenty.assertNapisIncydenty();
+    public void kliknijAkcja() {
+        listaKont.kliknijAkcja();
     }
 
     @Step
-    public void assertNieZnalezionoRekordow() {sprawdzanieListyIncydentow.assertNieZnalezionoRekordow();}
-
-
-    /**
-     * Wyszukiwanie incydentow po identyfikatorze
-     */
-
-    @Step
-    public void otworzStroneLogowania3() {
-        stronaLogowaniaU.open();
-        getDriver().navigate().refresh();
+    public void kliknijDelete() {
+        listaKont.kliknijDelete();
     }
 
     @Step
-    public void wpiszEmail3() {
-        stronaLogowaniaU.wpiszEmailU();
+    public void komunikatKontoUsuniete() {
+        listaKont.komunikatKontoUsuniete();
     }
 
     @Step
-    public void wpiszHaslo3() {
-        stronaLogowaniaU.wpiszHasloU();
+    public void brakKontaNaLiscie() {
+        listaKont.brakKontaNaLiscie();
+    }
+
+/**Wyszukiwanie incydentow po identyfikatorze*/
+
+    @Step
+    public void wyszukanieIncydentuId1() {
+        incydenty.wyszukajIncydent1();
     }
 
     @Step
-    public void assertNieZnalezionoRekordow2() {wyszukiwanieIncydentowPoIdentyfikatorze.assertNieZnalezionoRekordow2();}
+    public void szczegolyIncydentuId1() {
+        incydent.szczegolyIncydentuId1();
+    }
 
     @Step
-    public void wpiszIDIncydentu() { wyszukiwanieIncydentowPoIdentyfikatorze.wpiszIDIncydentu(); }
+    public void wyszukanieIncydentuId21() {
+        incydenty.wyszukajIncydent21();
+    }
 
     @Step
-    public void kliknijSzukaj() { wyszukiwanieIncydentowPoIdentyfikatorze.kliknijSzukaj(); }
+    public void komunikatNieZnalezionoIncydentu() {
+        incydenty.komunikatNieZnalezionoIncydentu();
+    }
+
+/**Szczegoly incydentu - pracownik*/
 
     @Step
-    public void assert2() { wyszukiwanieIncydentowPoIdentyfikatorze.assert2(); }
+    public void wybierzeAkcja() {
+        incydenty.wybierzAkcja();
+    }
 
+    @Step
+    public void wybierzeSzczegolyIncydentu() {
+        incydenty.wybierzSzczegolyIncydentu();
+    }
+
+    @Step
+    public void kliknijOpisIncydentu() {
+        incydent.kliknijOpisIncydentu();
+    }
+
+    @Step
+    public void wprowadziNowyOpis() {
+        incydent.wprowadziNowyOpis();
+    }
+
+    @Step
+    public void wybierzIncydenty() {
+        incydent.kliknikIncydenty();
+    }
+
+    @Step
+    public void sprawdzNowyOpis() {
+        incydent.sprawdzNowyOpis();
+    }
+
+    @Step
+    public void kliknijPrzegladaj() {
+        incydent.kliknijPrzegladaj();
+    }
+
+    @Step
+    public void wyszukaniePliku() throws IOException {
+        Runtime.getRuntime().exec("C:\\DodawaniePliku.exe");
+    }
+
+    @Step
+    public void kliknijUpload() {
+        incydent.przyciskUpload();
+    }
+
+    @Step
+    public void plikDodany() {
+        incydent.sprawdzCzyPlikDodany();
+    }
+
+/**Szczegóły incydentu - użytkownik*/
+
+    @Step
+    public void kliknieAkcja() {
+        incydenty.kliknijAkcja();
+    }
+
+    @Step
+    public void kliknieSzczegoly() {
+        incydenty.kliknijSzczegoly();
+    }
+
+    @Step
+    public void wprodzaNowyOpis() {
+        incydent.wprowadzaNowyOpis();
+    }
+
+    @Step
+    public void nowyOpis() {
+        incydent.nowyOpisUzytkownika();
+    }
+
+    @Step
+    public void nowyPlikDodany() {
+        incydent.komunikatPlikDodany();
+    }
+
+/**Obsługa incydentu - administrator*/
+
+    @Step
+    public void wyborIncydentu() {
+        incydenty.wyborIncydentu();
+    }
+
+    @Step
+    public void wybierzDodajAudyt() {
+        incydenty.wybierzDodajAudyt();
+    }
+
+    @Step
+    public void rozwijanieListyStatusow() {
+        tworzenieAudytu.klikniecieNowyStatus();
+    }
+
+    @Step
+    public void klikniecieDodajAudyt() {
+        tworzenieAudytu.kliknijDodajAudyt();
+    }
+
+    @Step
+    public void komunikatAudytDodany() {
+        incydent.komunikatAudytDodany();
+    }
+
+    @Step
+    public void wybranieAkcja() {
+        incydenty.wybranieAkcja();
+    }
+
+    @Step
+    public void wybraniePracownika() {
+        tworzenieAudytu.wyborPracownika();
+    }
+
+    @Step
+    public void incydentPrzypisany() {
+        incydent.przypisanie();
+    }
 }

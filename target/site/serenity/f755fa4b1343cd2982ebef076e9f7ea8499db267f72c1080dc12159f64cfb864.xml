@@ -1,0 +1,49 @@
+<acceptance-test-run title="Pracownik zmienia status incydentu blednie" name="Pracownik zmienia status incydentu blednie" steps="6" successful="4" failures="0" skipped="0" ignored="0" pending="2" annotated-result="PENDING" result="PENDING" duration="3991" timestamp="2016-05-28T16:38:21.924+02:00" session-id="7ae59de2-20f5-4c4f-8c69-24e87462ff53">
+  <user-story id="ObsługaIncydentuPracownik" name="Obsługa incydentu pracownik" path="stories/ObslugaIncydentu/ObsługaIncydentuPracownik.story"/>
+  <tags>
+    <tag name="Obsluga incydentu" type="feature"/>
+    <tag name="Obsluga incydentu/Obsługa incydentu pracownik" type="story"/>
+  </tags>
+  <test-group name="Given poprawne logowanie uzytkownika" result="SUCCESS">
+    <screenshots>
+      <screenshot image="bed0f5b3d0b69302fd04d755487faf66.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="756">
+      <screenshots>
+        <screenshot image="bed0f5b3d0b69302fd04d755487faf66.png"/>
+        <screenshot image="ccbca3691ad9616d55af383e06a914a8.png"/>
+      </screenshots>
+      <description>Otworz strone logowania u</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="863">
+      <screenshots>
+        <screenshot image="ccbca3691ad9616d55af383e06a914a8.png"/>
+        <screenshot image="74ee86a291b2fa278f536a0d47e399af.png"/>
+      </screenshots>
+      <description>Wpisz email u</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="782">
+      <screenshots>
+        <screenshot image="74ee86a291b2fa278f536a0d47e399af.png"/>
+        <screenshot image="ef0496d614ea70d555d3292b0c136fd3.png"/>
+      </screenshots>
+      <description>Wpisz haslo u</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1229">
+      <screenshots>
+        <screenshot image="ef0496d614ea70d555d3292b0c136fd3.png"/>
+        <screenshot image="bed0f5b3d0b69302fd04d755487faf66.png"/>
+      </screenshots>
+      <description>Wcisnij przycisk zaloguj sie</description>
+    </test-step>
+  </test-group>
+  <test-step result="PENDING" duration="102">
+    <screenshots>
+      <screenshot image="bed0f5b3d0b69302fd04d755487faf66.png"/>
+    </screenshots>
+    <description>When uzytkownik wprowadza niepoprawne dane do formularza</description>
+  </test-step>
+  <test-step result="PENDING" duration="1">
+    <description>Then system wyswietla komunikat &quot;Nie mozna utworzyc nowego rekordu&quot;</description>
+  </test-step>
+</acceptance-test-run>

@@ -2,6 +2,7 @@ package icm.pages;
 
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.PageObject;
+import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.DefaultUrl;
 import org.openqa.selenium.WebElement;
 
@@ -31,6 +32,33 @@ public class Incydenty extends PageObject {
 
     @FindBy (id = "alert")
     private WebElement komunikat;
+
+    @FindBy(className = "text-muted")
+    private WebElement pustaLista;
+
+    @FindBy(xpath = "//a[contains(.,'Dashboard')]")
+    private WebElement kliknijDashboard;
+
+    @FindBy(name = "q")
+    WebElementFacade oknoWyszukiwaniaIncydentu;
+
+    @FindBy(xpath = "/html/body/div/div[1]/table/tbody/tr[3]/td[5]/div/button")
+    private WebElement przyciskAkcja;
+
+    @FindBy(linkText = "Szczegóły")
+    private WebElement przyciskSzczegoly;
+
+    @FindBy(xpath = "/html/body/div/div[1]/table/tbody/tr[1]/td[5]/div/button")
+    private WebElement przyciskAkcja1;
+
+    @FindBy(xpath = "/html/body/div/div[1]/table/tbody/tr[2]/td[5]/div/button")
+    private WebElement przyciskAkcja2;
+
+    @FindBy(linkText = "Dodaj audyt")
+    private WebElement przyciskDodajAudyt;
+
+    @FindBy(xpath = "/html/body/div/div[1]/table/tbody/tr[1]/td[5]/div/button")
+    private WebElement przyciskAkcja3;
 
     /**Logowanie*/
     public void assertNapisIncydenty() {
@@ -66,5 +94,65 @@ public class Incydenty extends PageObject {
 
     public void assertIncydentUtworzony() {
         element(komunikat).containsElements("//span[@id='alert']");
+    }
+
+/**SprawdzenieListyIncydentow*/
+
+    public void brakIncydentow() {
+        element(pustaLista).containsElements("//p[contains(@class,'text-muted')]");
+    }
+
+/**Statystyki*/
+
+    public void wybierzDashboard() {
+        element(kliknijDashboard).click();
+    }
+
+/**Wyszukiwanie incydentu po identyfikatorze*/
+
+    public void wyszukajIncydent1() {
+        element(oknoWyszukiwaniaIncydentu).typeAndEnter("1");
+    }
+
+    public void wyszukajIncydent21() {
+        element(oknoWyszukiwaniaIncydentu).typeAndEnter("21");
+    }
+
+    public void komunikatNieZnalezionoIncydentu() {
+        shouldContainText("Nie znaleziono incydentu");
+    }
+
+/**Szczegoly incydentu - pracownik*/
+
+    public void wybierzAkcja() {
+        element(przyciskAkcja).click();
+    }
+
+    public void wybierzSzczegolyIncydentu() {
+        element(przyciskSzczegoly).click();
+    }
+
+/**Szczegóły incydentu - użytkownik*/
+
+    public void kliknijAkcja() {
+        element(przyciskAkcja1).click();
+    }
+
+    public void kliknijSzczegoly() {
+        element(przyciskSzczegoly).click();
+    }
+
+/**Obsługa incydentu - administrator*/
+
+    public void wyborIncydentu() {
+        element(przyciskAkcja2).click();
+    }
+
+    public void wybierzDodajAudyt() {
+        element(przyciskDodajAudyt).click();
+    }
+
+    public void wybranieAkcja() {
+        element(przyciskAkcja3).click();
     }
 }

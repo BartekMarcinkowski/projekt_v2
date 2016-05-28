@@ -5,13 +5,15 @@ Aby miec moc edytowac i sprawdzac incydenty
 
 
 
-Scenario1: Pracownik edytuje opis incydentu
-Given pracownik zalogowany wyswietla liste incydentow
-When pracownik edytuje opis incydentu
+Scenario: Pracownik edytuje opis incydentu
+Given pracownik jest zalogowany i znajduje sie w zakladce incydenty
+When pracownik wyswietli szczegoly incydentu
+And edytuje opis incydentu
 Then w opisie incdentu pojawia sie nowy teskt
 
 
-Scenario2: Pracownik dodaje plik do incydentu
-Given poprawne logowanie uzytkownika i wyswietlenie listy plikow na stronie szczegolow
-When pracownik dodaje plik do incydentu
-Then nowy plik zostaje dodany do incydentu
+Scenario: Pracownik dodaje plik do incydentu
+Given pracownik jest zalogowany i znajduje sie w zakladce incydenty
+And pracownik wyswietli szczegoly incydentu
+When w sekcji pliki wybierze plik do dodania i kliknie upload
+Then nowy plik powinien zostac dodany do incydentu

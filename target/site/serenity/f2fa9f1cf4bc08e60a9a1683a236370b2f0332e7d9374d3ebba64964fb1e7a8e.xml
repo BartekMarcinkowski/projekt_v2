@@ -1,4 +1,4 @@
-<acceptance-test-run title="Filtrowanie incydentow po statusie &quot;zgloszony&quot;" name="Filtrowanie incydentow po statusie &quot;zgloszony&quot;" steps="8" successful="8" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="18061" timestamp="2016-05-26T18:24:16.263+02:00" session-id="3e410052-b0d3-4be3-9151-ba83c3c1ee0a">
+<acceptance-test-run title="Filtrowanie incydentow po statusie &quot;zgloszony&quot;" name="Filtrowanie incydentow po statusie &quot;zgloszony&quot;" steps="8" successful="8" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="11583" timestamp="2016-05-28T16:39:05.303+02:00" session-id="4f5e2774-274a-49af-830d-d099e6cd8de2">
   <user-story id="FiltrowanieIncydentow" name="Filtrowanie incydentow" path="stories/FiltrowanieIncydentow/FiltrowanieIncydentow.story"/>
   <tags>
     <tag name="Filtrowanie incydentow" type="feature"/>
@@ -6,67 +6,67 @@
   </tags>
   <test-group name="Given pracownik jest zalogowany i znajduje sie w zakladce incydenty" result="SUCCESS">
     <screenshots>
-      <screenshot image="acc2865d9d20746c4f466d7d48f4a27f.png"/>
+      <screenshot image="55bca4725933376d6bd422cfe26ce78c.png"/>
     </screenshots>
-    <test-step result="SUCCESS" duration="9144">
+    <test-step result="SUCCESS" duration="6015">
       <screenshots>
-        <screenshot image="ef1fa3ec8fc8cdb91179a536af817046.png"/>
+        <screenshot image="6c3a89bbfc175351796ad0362bcde23e.png"/>
       </screenshots>
       <description>Otworz strone logowania p</description>
     </test-step>
-    <test-step result="SUCCESS" duration="2204">
+    <test-step result="SUCCESS" duration="957">
       <screenshots>
-        <screenshot image="ef1fa3ec8fc8cdb91179a536af817046.png"/>
-        <screenshot image="c379f085160f9c49a6d21f1da3cabec0.png"/>
+        <screenshot image="6c3a89bbfc175351796ad0362bcde23e.png"/>
+        <screenshot image="a82c87ed2f58e94b4c043b33ce12bf4f.png"/>
       </screenshots>
       <description>Wpisz email p</description>
     </test-step>
-    <test-step result="SUCCESS" duration="1438">
+    <test-step result="SUCCESS" duration="809">
       <screenshots>
-        <screenshot image="c379f085160f9c49a6d21f1da3cabec0.png"/>
-        <screenshot image="857e1dbaac0216c6b6812fc9c4ea47d8.png"/>
+        <screenshot image="a82c87ed2f58e94b4c043b33ce12bf4f.png"/>
+        <screenshot image="7b9c00f59bd9eceaba81976b2b53357e.png"/>
       </screenshots>
       <description>Wpisz haslo p</description>
     </test-step>
-    <test-step result="SUCCESS" duration="1436">
+    <test-step result="SUCCESS" duration="993">
       <screenshots>
-        <screenshot image="857e1dbaac0216c6b6812fc9c4ea47d8.png"/>
-        <screenshot image="acc2865d9d20746c4f466d7d48f4a27f.png"/>
+        <screenshot image="7b9c00f59bd9eceaba81976b2b53357e.png"/>
+        <screenshot image="55bca4725933376d6bd422cfe26ce78c.png"/>
       </screenshots>
       <description>Wcisnij przycisk zaloguj sie p</description>
     </test-step>
-    <test-step result="SUCCESS" duration="584">
+    <test-step result="SUCCESS" duration="375">
       <screenshots>
-        <screenshot image="acc2865d9d20746c4f466d7d48f4a27f.png"/>
+        <screenshot image="55bca4725933376d6bd422cfe26ce78c.png"/>
       </screenshots>
       <description>Assert napis incydenty</description>
     </test-step>
   </test-group>
   <test-group name="When filtruje incydenty po statusie zgloszony" result="SUCCESS">
     <screenshots>
-      <screenshot image="a4861640762124f8f85be09a9d39e0dc.png"/>
+      <screenshot image="62eb42b97b13bcad36b19c4573367083.png"/>
     </screenshots>
-    <test-step result="SUCCESS" duration="814">
+    <test-step result="SUCCESS" duration="632">
       <screenshots>
-        <screenshot image="ddfbdd94798ea6cb4f297774f9e2427e.png"/>
+        <screenshot image="cba14260832676440c6f45e5d34155d4.png"/>
       </screenshots>
       <description>Kliknij filtruj</description>
     </test-step>
-    <test-step result="SUCCESS" duration="1170">
+    <test-step result="SUCCESS" duration="856">
       <screenshots>
-        <screenshot image="ddfbdd94798ea6cb4f297774f9e2427e.png"/>
-        <screenshot image="2724c859e714d49ee1223854cbea7835.png"/>
+        <screenshot image="cba14260832676440c6f45e5d34155d4.png"/>
+        <screenshot image="62eb42b97b13bcad36b19c4573367083.png"/>
       </screenshots>
       <description>Wybierz zgloszony</description>
     </test-step>
   </test-group>
   <test-group name="Then na liscie incydentow pozostaja incydenty ze statusem zgloszony" result="SUCCESS">
     <screenshots>
-      <screenshot image="a4861640762124f8f85be09a9d39e0dc.png"/>
+      <screenshot image="62eb42b97b13bcad36b19c4573367083.png"/>
     </screenshots>
-    <test-step result="SUCCESS" duration="401">
+    <test-step result="SUCCESS" duration="299">
       <screenshots>
-        <screenshot image="a4861640762124f8f85be09a9d39e0dc.png"/>
+        <screenshot image="62eb42b97b13bcad36b19c4573367083.png"/>
       </screenshots>
       <description>Assert zgloszony incydent</description>
     </test-step>
