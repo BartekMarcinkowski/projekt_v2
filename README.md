@@ -11,9 +11,11 @@ Raport z wykonanych testów znajduje się w katalogu  target / site / serenity /
 Uruchomienie projektu:
 1. Download ZIP
 2. Rozpakować pobrany plik
-3. Uruchomić IntelliJ
-4. Wybrać plik -> otwórz
-5. Wybrać rozpakowany katalog z projektem
-6. Testy uruchamia się z pliku AcceptanceTestSuite.java
+3. Pliki icm.txt i DodawaniePLiku.exe przenieść bezpośrednio na dysk C:\ (konieczne do wykonania testu dodawania załącznika do incydentu)
+4. Uruchomić IntelliJ
+5. Wybrać plik -> otwórz
+6. Wybrać rozpakowany katalog z projektem
+7. W aplikacji ICM będąc zalogowanym na konto administratora utworzyć konto pracownika: "jas", "jas@wp.pl" (potrzebne do wykonania testu usuwania konta)
+8. Testy uruchamia się z pliku AcceptanceTestSuite.java
 
 Testy wykonywane są na wersji ICM 1.1. Musi być uruchominy plik .bat
