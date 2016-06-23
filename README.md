@@ -17,4 +17,5 @@ Uruchomienie projektu:
 7. W aplikacji ICM będąc zalogowanym na konto administratora utworzyć konto pracownika: "jas", "jas@wp.pl" (potrzebne do wykonania testu usuwania konta)
 8. Testy uruchamia się z pliku AcceptanceTestSuite.java
 
-Testy wykonywane są na wersji ICM 1.1. Musi być uruchominy plik .bat
+Testy wykonywane są na aplikacji demo ICM, wersji 1.1.
+Aplikacja oraz instrukcja jej uruchomienia: https://github.com/kolorobot/spring-mvc-icm-demo/wiki/Uruchomienie-aplikacji
