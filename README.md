@@ -1,4 +1,3 @@
-Projekt stworzony przez grupę: Joanna Sobisz, Aneta Prześladkiewicz, Przemysław Kujawa, Bartosz marcinkowski.
 Projekt wykonywany w ramach pracy dyplomowej na temat: "Projekt i wykonanie automatycznych testów funkcjonalnych wg filozofii BDD za pomocą jBehave i Selenium".
 Projekt maven stworzony w programie IntelliJ IDEA, wykorzystuje Serenity, jBehave, Selenium.
 Jest to projekt testów automatycznych aplikacji ICM.
@@ -12,7 +11,7 @@ Uruchomienie projektu:
 1. Download ZIP
 2. Rozpakować pobrany plik
 3. Pliki icm.txt i DodawaniePLiku.exe przenieść bezpośrednio na dysk C:\ (konieczne do wykonania testu dodawania załącznika do incydentu)
-4. Uruchomić IntelliJ
+4. Uruchomić IntelliJ (lub inne IDE)
 5. Wybrać plik -> otwórz
 6. Wybrać rozpakowany katalog z projektem
 7. W aplikacji ICM będąc zalogowanym na konto administratora utworzyć konto pracownika: "jas", "jas@wp.pl" (potrzebne do wykonania testu usuwania konta)
